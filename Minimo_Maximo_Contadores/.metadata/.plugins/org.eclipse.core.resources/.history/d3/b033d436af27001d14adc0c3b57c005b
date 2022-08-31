@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : 1_Numero_Promedio.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 2-1: Ingresar 7 números negativos distintos de 0 calcular y mostrar el
+ promedio de los números. Probar la aplicación con distintos valores.
+ Ejemplo 1: (-7)( - 5)( - 12) (- 1)( - 2)
+ Ejemplo 2: (-9)( - 15)( - 12) (- 1)( - 21)
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int i;
+	int acumulador = 0;
+	int numero;
+
+	for (i = 0; i == 7; i++) {
+
+		do {
+			printf("\nIngrese un numero: ");
+			fflush(stdin);
+			scanf("%d", &numero);
+		} while (numero > -1);
+
+		acumulador += numero;
+	}
+
+	printf("\nEl promedio es: %d", acumulador / 7);
+	return EXIT_SUCCESS;
+}

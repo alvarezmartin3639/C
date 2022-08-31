@@ -1,0 +1,7 @@
+14:54:05 **** Incremental Build of configuration Debug for project 3-3_Verificar_Par ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3-3_Verificar_Par.o" "..\\src\\3-3_Verificar_Par.c" 
+gcc -o 3-3_Verificar_Par.exe "src\\3-3_Verificar_Par.o" 
+
+14:54:06 Build Finished. 0 errors, 0 warnings. (took 950ms)
+

@@ -1,0 +1,15 @@
+LaunchTargetManager/configs/1_Numero_Promedio.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/2-2_IngresarNumerosEnBucle.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/3_Operadores_Logicos.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/4_ComparacionesEntreNumeros_Producto.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/5_Libretas_Universitarias.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/6_Contar_Caracteres_En_Minuscula.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_Numero_Promedio.exe,org.eclipse.launchbar.core.descriptorType.default\:2-2_IngresarNumerosEnBucle.exe,org.eclipse.launchbar.core.descriptorType.default\:3_Operadores_Logicos.exe,org.eclipse.launchbar.core.descriptorType.default\:4_ComparacionesEntreNumeros_Producto.exe,org.eclipse.launchbar.core.descriptorType.default\:5_Libretas_Universitarias.exe,org.eclipse.launchbar.core.descriptorType.default\:6_Contar_Caracteres_En_Minuscula.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1_Numero_Promedio.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1_Numero_Promedio.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:4_ComparacionesEntreNumeros_Producto.exe/activeLaunchMode=run

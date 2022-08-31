@@ -1,0 +1,65 @@
+/*
+ ============================================================================
+ Name        : 4_ComparacionesEntreNumeros_Producto.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 2-4:
+ Ingresar 8 números enteros, distintos de cero. Mostrar:
+ a. El menor número ingresado.
+ b. De los pares el mayor número ingresado.
+ c. Producto de los negativos.
+ d. En qué lugar fue ingresado el mayor numero
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numberInput;
+	int numberMin;
+	int numberMaxPair;
+	int numberProductOfAllNegative;
+	int numberGreaterIndex;
+
+	numberMin = 0;
+	numberMaxPair = 0;
+	numberProductOfAllNegative = 0;
+
+	for (int i = 0; i < 8; ++i) {
+		printf("\nIngrese el %d numero: ", i + 1);
+		fflush(stdin);
+		scanf("%d", &numberInput);
+
+		if(i==0)
+			numberMin = numberInput;
+
+
+		if (numberInput < numberMin)
+			numberMin = numberInput;
+
+		if (numberInput > numberMaxPair) {
+			numberGreaterIndex = i;
+			if (numberInput % 2 == 0)
+				numberMaxPair = numberInput;
+		}
+
+		if (numberInput < 0)
+			numberProductOfAllNegative *= numberInput;
+	}
+
+	printf("\na. Menor numero ingresado = %d", numberMin);
+	printf("\nb. Mayor numero par ingresado = %d", numberMaxPair);
+	printf("\nc. Producto de los negativos = %d", numberProductOfAllNegative);
+	printf("\nd. Indice del mayor numero = %d", numberGreaterIndex);
+
+	return EXIT_SUCCESS;
+}

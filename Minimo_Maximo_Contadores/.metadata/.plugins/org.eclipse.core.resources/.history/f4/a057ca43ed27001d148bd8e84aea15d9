@@ -1,0 +1,83 @@
+/*
+ ============================================================================
+ Name        : 2-2_IngresarNumerosEnBucle.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 2-2: Ingresar números enteros, hasta que el usuario pida. Mostrar:
+ a) El promedio de los positivos y su mínimo.
+ b) El promedio de los negativos y su máximo.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	int minimoPositivo;
+	int maximoNegativo;
+	int numeroActual;
+	int acumuladorDeNumerosPositivos;
+	int acumuladorDeNumerosNegativos;
+	int contadorNumerosIngresados;
+	char deseaContinuar;
+
+	acumuladorDeNumerosPositivos = 0;
+	acumuladorDeNumerosNegativos = 0;
+	contadorNumerosIngresados = 0;
+	deseaContinuar = 'y';
+
+	while (deseaContinuar != 'n') {
+
+		printf("\nIngrese un numero: ");
+		fflush(stdin);
+		scanf("%d", &numeroActual);
+
+		//INCIALIZO MAXIMO Y MINIMO, SUMO CONTADOR
+		if (contadorNumerosIngresados == 0) {
+			maximoNegativo = numeroActual;
+			minimoPositivo = numeroActual;
+		}
+		contadorNumerosIngresados++;
+
+		if(numeroActual > -1){
+			if(numeroActual<minimoPositivo)
+			{
+				minimoPositivo = numeroActual;
+			}
+		}
+		//CALCULO MAXIMOS Y MINIMOS ACTUAL
+		if (numeroActual > -1 && numeroActual < minimoPositivo)
+			minimoPositivo = numeroActual;
+		if (numeroActual < -1 && numeroActual > maximoNegativo)
+			maximoNegativo = numeroActual;
+
+		//ACUMULO LOS NUMEROS INGRESADOS
+		acumuladorDeNumeros += numeroActual;
+
+		do {
+			printf("\nDesea continuar? [y/n]\n");
+			fflush(stdin);
+			scanf("%c", &deseaContinuar);
+
+			if (deseaContinuar != 'n' || deseaContinuar != 'y')
+				printf(
+						"***Error, %c no es una opción valida, ingrese 'y' para continuar o 'n' para no continuar ");
+		} while (deseaContinuar != 'n' || deseaContinuar != 'y');
+
+	}
+
+	printf("\na)Promedio positivo: %d");
+	printf("\nMinimo positivo: %d");
+
+	printf("\nb)Promedio negativo: %d");
+	printf("\nMaximo negativo: %d");
+
+	return EXIT_SUCCESS;
+}

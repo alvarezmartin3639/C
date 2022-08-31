@@ -1,0 +1,86 @@
+/*
+ ============================================================================
+ Name        : 3-7_Funcion_Validar_Inputs.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 3-7: Realizar un programa que: asigne a las variables numero1 y numero2
+ los valores solicitados al usuario, valide los mismos entre 10 y 100, asigne a la
+ variable operacion el valor solicitado al usuario, valide el mismo 's'-sumar, 'r'-restar,
+ realice la operación de dichos valores a través de una función. Mostrar el resultado
+ por pantalla.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int scanNumber();
+int validarRangoNumerico(int numero, int minimo, int maximo);
+
+int main(void) {
+
+	int numero;
+	char operacion;
+	int errorEnInputs;
+
+	do {
+		errorEnInputs = 1;
+		printf("\nIngrese un numero: ");
+
+		if ((numero = scanNumber()) == NULL) {
+			printf("\n***Error, no se ingresó un numero***");
+			errorEnInputs = 0;
+		}
+
+		if (!validarRangoNumerico(numero, 11, 101)) {
+			printf("\n***Error, el numero ingresado no es uno entre 10 y 100");
+			errorEnInputs = 0;
+		}
+	} while (errorEnInputs == 0);
+
+	do{
+
+		printf("\n¿Que operación desea hacer? [suma=s/resta=r]: ");
+		if(operacion !='s' && operacion != 'n')
+			printf("\n***Error, %c no es una opción valida, estas son 's' para la suma o 'r' para la resta***", operacion);
+
+	}while(operacion != 's' && operacion != 'n');
+
+	return EXIT_SUCCESS;
+}
+
+int scanNumber() {
+
+	int numeroValidadoCorrectamente = 1;
+	int numero;
+
+	fflush(stdin);
+	scanf("%d", &numero);
+
+	for (int i = 0; i < strlen(numero); i++) {
+
+		if (!isdigit(numero[i])) {
+			numeroValidadoCorrectamente = NULL;
+		}
+
+	}
+
+	return numero;
+
+}
+
+int validarRangoNumerico(int numero, int minimo, int maximo) {
+
+	if (numero >= minimo && numero <= maximo)
+		return 1;
+
+	else
+		return 0;
+
+}
+
+

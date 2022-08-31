@@ -1,0 +1,8 @@
+LaunchTargetManager/configs/1_Validar_El_Mayor_Numero.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_Validar_El_Mayor_Numero.exe,org.eclipse.launchbar.core.descriptorType.default\:2_Bucar_Numero_Maximo.exe,org.eclipse.launchbar.core.descriptorType.default\:3_Buscar_Numero_Del_Medio.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1_Validar_El_Mayor_Numero.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1_Validar_El_Mayor_Numero.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

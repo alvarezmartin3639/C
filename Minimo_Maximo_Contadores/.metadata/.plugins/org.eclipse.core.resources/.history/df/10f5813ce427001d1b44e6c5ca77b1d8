@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : 2-2_IngresarNumerosEnBucle.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 2-2: Ingresar números enteros, hasta que el usuario pida. Mostrar:
+ a) El promedio de los positivos y su mínimo.
+ b) El promedio de los negativos y su máximo.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int minimo;
+	int maximo;
+	int numeroActual;
+	int acumuladorDeNumeros;
+	int contadorDeNumeros;
+	char deseaContinuar;
+
+	acumuladorDeNumeros = 0;
+	contadorDeNumeros = 0;
+
+	for (;;) {
+		printf("\nIngrese un numero: ");
+		fflush(stdin);
+		scanf("%d", &numeroActual);
+
+		acumuladorDeNumeros += numeroActual;
+
+		printf("\nDesea continuar? [y/n]\n");
+		fflush(stdin);
+		scanf("%c", &deseaContinuar);
+
+		if (deseaContinuar == 'n')
+			break;
+	}
+
+	return EXIT_SUCCESS;
+}

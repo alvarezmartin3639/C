@@ -1,0 +1,7 @@
+20:14:45 **** Incremental Build of configuration Debug for project 2-2_IngresarNumerosEnBucle ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2-2_IngresarNumerosEnBucle.o" "..\\src\\2-2_IngresarNumerosEnBucle.c" 
+gcc -o 2-2_IngresarNumerosEnBucle.exe "src\\2-2_IngresarNumerosEnBucle.o" 
+
+20:14:46 Build Finished. 0 errors, 0 warnings. (took 514ms)
+

@@ -1,0 +1,7 @@
+12:04:51 **** Incremental Build of configuration Debug for project 1_Validar_El_Mayor_Numero ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Validar_El_Mayor_Numero.o" "..\\src\\1_Validar_El_Mayor_Numero.c" 
+gcc -o 1_Validar_El_Mayor_Numero.exe "src\\1_Validar_El_Mayor_Numero.o" 
+
+12:04:51 Build Finished. 0 errors, 0 warnings. (took 539ms)
+

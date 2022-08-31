@@ -1,0 +1,7 @@
+13:25:58 **** Incremental Build of configuration Debug for project 1_Numero_Promedio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Numero_Promedio.o" "..\\src\\1_Numero_Promedio.c" 
+gcc -o 1_Numero_Promedio.exe "src\\1_Numero_Promedio.o" 
+
+13:25:59 Build Finished. 0 errors, 0 warnings. (took 507ms)
+

@@ -1,0 +1,7 @@
+12:07:43 **** Incremental Build of configuration Debug for project 2_Bucar_Numero_Maximo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Bucar_Numero_Maximo.o" "..\\src\\2_Bucar_Numero_Maximo.c" 
+gcc -o 2_Bucar_Numero_Maximo.exe "src\\2_Bucar_Numero_Maximo.o" 
+
+12:07:44 Build Finished. 0 errors, 0 warnings. (took 528ms)
+

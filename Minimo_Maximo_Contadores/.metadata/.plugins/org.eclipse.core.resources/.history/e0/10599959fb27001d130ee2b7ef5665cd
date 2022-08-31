@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : 4_ComparacionesEntreNumeros_Producto.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 2-4:
+Ingresar 8 números enteros, distintos de cero. Mostrar:
+a. El menor número ingresado.
+b. De los pares el mayor número ingresado.
+c. Producto de los negativos.
+d. En qué lugar fue ingresado el mayor numero
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout,NULL);
+
+	int numeroIngresado;
+
+	for (int i = 0; i < 6; ++i) {
+		printf("\nIngrese el %d numero");
+		fflush(stdin);
+		scanf("%d",numeroIngresado);
+	}
+
+	return EXIT_SUCCESS;
+}

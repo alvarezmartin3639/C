@@ -1,0 +1,9 @@
+14:42:32 **** Rebuild of configuration Debug for project 6_Contar_Caracteres_En_Minuscula ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\6_Contar_Caracteres_En_Minuscula.o" "..\\src\\6_Contar_Caracteres_En_Minuscula.c" 
+gcc -o 6_Contar_Caracteres_En_Minuscula.exe "src\\6_Contar_Caracteres_En_Minuscula.o" 
+Info: Nothing to build for 6_Contar_Caracteres_En_Minuscula
+14:43:06 **** Incremental Build of configuration Debug for project 6_Contar_Caracteres_En_Minuscula ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\6_Contar_Caracteres_En_Minuscula.o" "..\\src\\6_Contar_Caracteres_En_Minuscula.c" 
+gcc -o 6_Contar_Caracteres_En_Minuscula.exe "src\\6_Contar_Caracteres_En_Minuscula.o" 

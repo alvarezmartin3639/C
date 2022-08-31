@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;2_IngresarNumerosEnBucle/src/2-2_IngresarNumerosEnBucle.c&apos; to &apos;2_IngresarNumerosEnBucle.c&apos;" description="Rename resource &apos;2-2_IngresarNumerosEnBucle.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/2-2_IngresarNumerosEnBucle.c" name="2_IngresarNumerosEnBucle.c" stamp="1661815056327" updateReferences="true"/>
+</session>
