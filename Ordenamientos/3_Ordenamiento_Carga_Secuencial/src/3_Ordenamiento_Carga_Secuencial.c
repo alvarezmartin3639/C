@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ordenamiento.h"
-#define TAMEMPLEADOS 2
+#define TAMEMPLEADOS 15
 /*
  Ejercicio 6-3: Realizar un programa que permita el ingreso de datos de 15 empleados
  legajo (coincidente con el índice), edad, salario, sexo (1-Femenino, 2-Masculino, 3-No
@@ -86,10 +86,10 @@ int main(void) {
 		printf("\nNo se encontraron empleados no binario!");
 
 	else{
-		printf("\n||     LEGAJO      ||     SEXO      ||     EDAD     ||     SALARIO     ||");
+		printf("\n|| LEGAJO ||     SEXO      || EDAD  || SALARIO ||");
 		for (int i = 0; i < TAMEMPLEADOS; i++) {
 				if (sexo[i] == 3) {
-					printf("\n       %d     %s             %d            %2.f", i+1, "No binario", edad[i],
+					printf("\n       %d     %s          %d         %2.f", i+1, "No binario", edad[i],
 							salario[i]);
 				}
 			}
