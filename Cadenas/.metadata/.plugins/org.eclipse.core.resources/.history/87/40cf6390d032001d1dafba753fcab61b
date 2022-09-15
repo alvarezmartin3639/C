@@ -1,0 +1,16 @@
+/*
+ * manipuladorString.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#include "manipuladorString.h"
+
+void FormarApellidoNombre(char* pNombre,char* pApellido,char* pCompleto){
+
+	strcat(*pCompleto,*pNombre);
+	strcat(*pCompleto," ");
+	strcat(*pCompleto,*pApellido);
+
+}

@@ -1,0 +1,60 @@
+/*
+ ============================================================================
+ Name        : 3-Fahrenheit_A_Celsius.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+Ejercicio 4-3: Realizar un programa que permita la carga de temperaturas en Celsius y
+Fahrenheit, validando las temperaturas ingresadas estén entre el punto de congelación y de
+ebullición del agua para cada tipo de escala. Las validaciones se hacen en una biblioteca. Las
+funciones de conversión de Fahrenheit a Celsius y de Celsius a Fahrenheit se hacen en otra.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "vali"
+int main(void) {
+	int option;
+	int temperatureInput;
+
+	do{
+		printf("\n1- Ingresar Celsius.");
+		printf("\n2- Ingresar Fahrenheit.");
+		printf("\n3- Mostrar temperatura.");
+		printf("\n4- Salir.");
+		fflush(stdin);
+		scanf("%d",&option);
+
+		switch(option){
+
+		case 1:
+			while()
+			printf("\nIngrese la nueva temperatura en Celsius: ");
+			fflush(stdin);
+			scanf("%d", &temperatureInput);
+
+			if()
+			break;
+
+		case 2:
+			printf("\nIngrese la nueva temperatura en Fahrenheit: ");
+			fflush(stdin);
+			scanf("%d", &temperatureInput);
+			break;
+
+		case 3:
+
+			break;
+
+		 default:
+
+			break;
+		}
+	}while(option != 4);
+
+	return 0;
+}

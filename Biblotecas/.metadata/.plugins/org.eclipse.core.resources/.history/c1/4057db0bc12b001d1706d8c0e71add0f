@@ -1,0 +1,19 @@
+/*
+ * ValidateRange.c
+ *
+ *  Created on: 3 sept 2022
+ *      Author: kenyn
+ */
+#include "ValidateRange.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int validateIntegerRange(int numberToValidate, int minRange, int maxRange){
+
+	int retorno =EXIT_SUCCESS;
+
+	if(numberToValidate <= minRange || numberToValidate >= maxRange)
+		retorno = EXIT_FAILURE;
+
+	return retorno;
+}

@@ -1,0 +1,77 @@
+/*
+ ============================================================================
+ Name        : 3-Fahrenheit_A_Celsius.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 4-3: Realizar un programa que permita la carga de temperaturas en Celsius y
+ Fahrenheit, validando las temperaturas ingresadas estén entre el punto de congelación y de
+ ebullición del agua para cada tipo de escala. Las validaciones se hacen en una biblioteca. Las
+ funciones de conversión de Fahrenheit a Celsius y de Celsius a Fahrenheit se hacen en otra.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "validateRange.h"
+#include "convertTemperatures.h"
+
+int main(void) {
+	int option;
+	int temperatureInput;
+	char confirmacionSalida;
+	do {
+		printf("\n1- Ingresar Celsius.");
+		printf("\n2- Ingresar Fahrenheit.");
+		printf("\n3- Salir.");
+		fflush(stdin);
+		scanf("%d", &option);
+
+		switch (option) {
+
+		case 1:
+			printf("\nIngrese la nueva temperatura en Celsius: ");
+			fflush(stdin);
+			scanf("%d", &temperatureInput);
+
+			if (validateIntegerRange(temperatureInput, 0, 10))
+				printf("%d(Celsius) son %d(Fahrenheit) ", temperatureInput,
+						celsiusToFahrenheit(temperatureInput));
+			else
+				printf("\n***Error,%d es un numero invalido, este debe estar entre 0 y 100***", temperatureInput);
+			break;
+
+		case 2:
+			printf("\nIngrese la nueva temperatura en Fahrenheit: ");
+			fflush(stdin);
+			scanf("%d", &temperatureInput);
+			if (validateIntegerRange(temperatureInput, 32, 210))
+				printf("%d(Fahrenheit) son %d(Celsius) ", temperatureInput,
+						fahrenheitToCelsius(temperatureInput));
+			else
+				printf("\n***Error,%d es un numero invalido, este debe estar entre 32 y 210***",temperatureInput);
+			break;
+			break;
+
+		case 3:
+			while (confirmacionSalida != 'y' || confirmacionSalida != 'n') {
+				printf("\n¿Seguro que desea salir?[y/n]");
+				fflush(stdin);
+				scanf("%c", &confirmacionSalida);
+			}
+			//Si no se desea salir se instancia con algo diferente a 3
+			if (confirmacionSalida == 'n')
+				option = 0;
+			break;
+
+		default:
+			printf("\n***Error, %d no es una opción valida!***", temperatureInput);
+			break;
+		}
+	} while (option != 3);
+
+	return 0;
+}

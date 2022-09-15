@@ -1,0 +1,15 @@
+/*
+ * pedirNumero.c
+ *
+ *  Created on: 3 sept 2022
+ *      Author: kenyn
+ */
+#include "pedirNumero.h"
+
+float getFloat() {
+	float numeroEscrito;
+	fprintf("\nIngrese un numero del tipo flotante");
+	fflush(stdin);
+	scanf(" %f", &numeroEscrito);
+	return numeroEscrito;
+}

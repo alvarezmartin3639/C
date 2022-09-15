@@ -1,0 +1,236 @@
+18:25:12 **** Rebuild of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:25:19 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:26:13 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:57:3: warning: implicit declaration of function 'sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+   57 |   sleep(5000);
+      |   ^~~~~
+      |   _sleep
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:26:29 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:57:3: warning: implicit declaration of function 'sleep'; did you mean '_sleep'? [-Wimplicit-function-declaration]
+   57 |   sleep(5);
+      |   ^~~~~
+      |   _sleep
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:26:49 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:57:3: warning: '_sleep' is deprecated [-Wdeprecated-declarations]
+   57 |   _sleep(5);
+      |   ^~~~~~
+In file included from ..\src\4_Menu_Opciones.c:22:
+c:\mingw\include\stdlib.h:694:39: note: declared here
+  694 | _CRTIMP __cdecl __MINGW_NOTHROW  void _sleep (unsigned long) __MINGW_ATTRIB_DEPRECATED;
+      |                                       ^~~~~~
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:27:40 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:57:3: warning: implicit declaration of function 'pause' [-Wimplicit-function-declaration]
+   57 |   pause();
+      |   ^~~~~
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\4_Menu_Opciones.o: in function `main':
+C:\Users\kenyn\eclipse-workspace\Biblotecas\4_Menu_Opciones\Debug/../src/4_Menu_Opciones.c:57: undefined reference to `pause'
+collect2.exe: error: ld returned 1 exit status
+18:28:24 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+Info: Nothing to build for 4_Menu_Opciones
+18:29:01 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:29:52 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:30:24 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:30:34 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:30:45 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:31:10 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:31:40 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:31:58 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:32:34 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:33:07 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:33:49 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:34:17 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:35:06 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:40:26 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:66:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+   66 |      scanf("%d", &confirmacionDeSalida);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~
+      |              |   |
+      |              |   char *
+      |              int *
+      |             %c
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+18:40:48 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:65:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+   65 |      scanf("%d", &confirmacionDeSalida);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~
+      |              |   |
+      |              |   char *
+      |              int *
+      |             %c
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+02:21:19 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+02:25:11 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:76:6: warning: implicit declaration of function 'fflsuh'; did you mean 'fflush'? [-Wimplicit-function-declaration]
+   76 |      fflsuh(stdin);
+      |      ^~~~~~
+      |      fflush
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\4_Menu_Opciones.o: in function `main':
+C:\Users\kenyn\eclipse-workspace\Biblotecas\4_Menu_Opciones\Debug/../src/4_Menu_Opciones.c:76: undefined reference to `fflsuh'
+collect2.exe: error: ld returned 1 exit status
+02:25:29 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:62:44: error: invalid operands to binary + (have 'char *' and 'char *')
+   62 |      printf("\nNo se encontraron compras," +
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+      |             |                              |
+      |             char *                         char *
+02:25:35 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+02:34:10 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" 
+02:46:56 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+..\src\configurarMenu.c: In function 'mostrarMenuPrincipal':
+..\src\configurarMenu.c:22:17: error: 'opcion' undeclared (first use in this function)
+   22 |    scanf("%d", &opcion);
+      |                 ^~~~~~
+..\src\configurarMenu.c:22:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\configurarMenu.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+   24 | }
+      | ^
+02:47:32 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+..\src\configurarMenu.c: In function 'mostrarMenuPrincipal':
+..\src\configurarMenu.c:22:17: error: 'opcion' undeclared (first use in this function)
+   22 |    scanf("%d", &opcion);
+      |                 ^~~~~~
+..\src\configurarMenu.c:22:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\configurarMenu.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+   24 | }
+      | ^
+02:48:09 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c:21:28: warning: extra tokens at end of #include directive
+   21 | #include "ConfigurarMenu.h";
+      |                            ^
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+02:49:09 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+02:52:48 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+03:09:21 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+..\src\configurarMenu.c: In function 'confirmarCierreSubmenuVender':
+..\src\configurarMenu.c:44:6: warning: variable 'opcion' set but not used [-Wunused-but-set-variable]
+   44 |  int opcion = 1;
+      |      ^~~~~~
+..\src\configurarMenu.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:57:23: warning: implicit declaration of function 'venderProducto'; did you mean 'venderPrudcto'? [-Wimplicit-function-declaration]
+   57 |       usuarioVendio = venderProducto(usuarioVendio,
+      |                       ^~~~~~~~~~~~~~
+      |                       venderPrudcto
+..\src\4_Menu_Opciones.c:26:7: warning: unused variable 'confirmacionDeSalida' [-Wunused-variable]
+   26 |  char confirmacionDeSalida = 'x';
+      |       ^~~~~~~~~~~~~~~~~~~~
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+03:10:06 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\configurarMenu.o" "..\\src\\configurarMenu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+..\src\4_Menu_Opciones.c: In function 'main':
+..\src\4_Menu_Opciones.c:26:7: warning: unused variable 'confirmacionDeSalida' [-Wunused-variable]
+   26 |  char confirmacionDeSalida = 'x';
+      |       ^~~~~~~~~~~~~~~~~~~~
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+03:10:21 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 

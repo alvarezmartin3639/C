@@ -1,0 +1,219 @@
+/*
+ * utnValidacion.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "utnValidacion.h"
+#include "utnCadenas.h"
+
+int getInt(int *pResultado) {
+
+	int retorno = -1;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0 && esNumero(buffer)) {
+			*pResultado = atoi(buffer);
+			retorno = 0;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getFloat(float *pResultado) {
+
+	int retorno = -1;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0 && esFlotante(buffer) == 0) {
+			*pResultado = atof(buffer);
+			retorno = 0;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getCharLetra(char *pResultado) {
+
+	int retorno = -1;
+	char buffer;
+
+	if (pResultado != NULL) {
+
+		fflush(stdin);
+		if (scanf("%c",&buffer) == 0 && isalpha(buffer)) {
+			*pResultado = buffer;
+			retorno = 0;
+		}
+
+	}
+
+	return retorno;
+
+}
+
+
+int getPedirInt(int *pNumero, char *mensaje, char *mensajeError, int minimo,
+		int maximo, int reintentos) {
+
+	int retorno = -1;
+	int num;
+
+	if (pNumero != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+			if (getInt(&num) == 0) {
+				if (num <= maximo && num >= minimo)
+					break;
+			}
+
+			fflush(stdin);
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno = 0;
+			*pNumero = num;
+		}
+	}
+
+	return retorno;
+}
+
+int getPedirFloat(float *pNumero, char *mensaje, char *mensajeError,
+		float minimo, float maximo, int reintentos) {
+
+	int retorno = -1;
+	float num;
+
+	if (pNumero != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+			if (getFloat(&num) == 0) {
+				if (num <= maximo && num >= minimo)
+					break;
+			}
+
+			fflush(stdin);
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno = 0;
+			*pNumero = num;
+		}
+	}
+
+	return retorno;
+
+}
+
+int getPedirChar(char *pNumero, char *mensaje, char *mensajeError, int minimo,
+		int maximo, int reintentos) {
+
+
+}
+
+int getPedirString(char *pNumero, char *mensaje, char *mensajeError, int minimo,
+		int maximo, int reintentos) {
+
+}
+
+int esNumero(char *cadena) {
+
+	int i = 0;
+	int retorno = 1;
+
+	if (cadena != NULL && strlen(cadena) > 0) {
+
+		while (cadena[i] != '\0') {
+
+			if (cadena[i] < '0' || cadena[i] > '9') {
+				retorno = 0;
+				break;
+			}
+
+			i++;
+		}
+	}
+
+	return retorno;
+}
+
+int esFlotante(char *cadena) {
+
+	int retorno = 0;
+	int tienePunto = 0;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (cadena[i] == '.')
+			tienePunto++;
+
+		if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1) {
+			retorno = -1;
+		}
+
+	}
+
+	return retorno;
+}
+
+int esLetra(char* cadena){
+
+	int retorno = 0;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (!isalpha(cadena[i]))
+			retorno = -1;
+
+	}
+
+	return retorno;
+
+}
+
+
+int getDeseaContinuar(char mensaje[60], char condicionParaContinuar[60],
+		char condicionParaSalir[60]) {
+
+	int retorno = -1;
+	char respuestaUsuario[60];
+
+	do {
+		puts(mensaje);
+		fflush(stdin);
+		gets(respuestaUsuario);
+	} while ((strcmp(condicionParaContinuar, respuestaUsuario) != 0)
+			&& (strcmp(condicionParaSalir, respuestaUsuario) != 0));
+
+	//Si ingresó correctamente la condicion para continuar retorná 1, sinó 0(si no ingresó el de continuar, ingresó el de salir).
+	if (strcmp(condicionParaContinuar, respuestaUsuario) == 0) {
+		retorno = 0;
+	}
+
+	return retorno;
+}

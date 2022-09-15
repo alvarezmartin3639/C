@@ -1,0 +1,8 @@
+16:24:33 **** Incremental Build of configuration Debug for project 2_Funcion_Sumadora ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Funcion_Sumadora.o" "..\\src\\2_Funcion_Sumadora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\operacionesMatematicas.o" "..\\src\\operacionesMatematicas.c" 
+gcc -o 2_Funcion_Sumadora.exe "src\\2_Funcion_Sumadora.o" "src\\operacionesMatematicas.o" 
+
+16:24:34 Build Finished. 0 errors, 0 warnings. (took 807ms)
+

@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : Utn_Bibloteca.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utnArray.h"
+
+int main(void) {
+
+	//utnArrays.h
+	int enteros[5];
+	float flotantes[5];
+	char caracteres[5];
+	char string[5][30];
+
+	printf("\nProbando Entero");
+
+
+	return EXIT_SUCCESS;
+}

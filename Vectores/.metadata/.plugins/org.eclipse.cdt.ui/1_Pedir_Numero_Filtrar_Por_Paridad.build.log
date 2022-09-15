@@ -1,0 +1,7 @@
+20:00:37 **** Incremental Build of configuration Debug for project 1_Pedir_Numero_Filtrar_Por_Paridad ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 1_Pedir_Numero_Filtrar_Por_Paridad.exe "src\\1_Pedir_Numero_Filtrar_Por_Paridad.o" "src\\utnCadenas.o" "src\\utnValidacion.o" 
+
+20:00:37 Build Finished. 0 errors, 0 warnings. (took 887ms)
+

@@ -1,0 +1,12 @@
+LaunchTargetManager/configs/1_Pedir_Numero_Filtrar_Por_Paridad.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/2_Calcular_Promedio.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/3_Calcular_Maximo.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/4_Acum_Cont_Par_YMas.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/5_Carga_Aleatoria.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:3_Calcular_Maximo.exe,org.eclipse.launchbar.core.descriptorType.default\:5_Carga_Aleatoria.exe,org.eclipse.launchbar.core.descriptorType.default\:1_Pedir_Numero_Filtrar_Por_Paridad.exe,org.eclipse.launchbar.core.descriptorType.default\:2_Calcular_Promedio.exe,org.eclipse.launchbar.core.descriptorType.default\:4_Acum_Cont_Par_YMas.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1_Pedir_Numero_Filtrar_Por_Paridad.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1_Pedir_Numero_Filtrar_Por_Paridad.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

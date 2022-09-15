@@ -1,0 +1,1490 @@
+10:51:43 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getInt':
+..\src\utnValidacion.c:18:46: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+   18 |   if (myGets(buffer, sizeof(buffer)) == 0 && esNumerica(buffer)) {
+      |                                              ^~~~~~~~~~
+..\src\utnValidacion.c:19:18: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   19 |    *pResultado = atoi(buffer);
+      |                  ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+..\src\utnCadenas.c: In function 'myGets':
+..\src\utnCadenas.c:17:14: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   17 |   if (cadena[strlen(cadena) - 1] == '\n') {
+      |              ^~~~~~
+..\src\utnCadenas.c:17:14: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\utnCadenas.c:8:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    7 | #include <stdio.h>
+  +++ |+#include <string.h>
+    8 | 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:19:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   19 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\utnValidacion.o: in function `getInt':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/utnValidacion.c:18: undefined reference to `esNumerica'
+collect2.exe: error: ld returned 1 exit status
+10:52:12 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:66:15: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   66 |    printf("\n%s", texto[i]);
+      |              ~^   ~~~~~~~~
+      |               |        |
+      |               char *   int
+      |              %d
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\utnValidacion.o: in function `getInt':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/utnValidacion.c:18: undefined reference to `esNumerica'
+collect2.exe: error: ld returned 1 exit status
+10:52:38 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getInt':
+..\src\utnValidacion.c:18:46: warning: implicit declaration of function 'esNumero' [-Wimplicit-function-declaration]
+   18 |   if (myGets(buffer, sizeof(buffer)) == 0 && esNumero(buffer)) {
+      |                                              ^~~~~~~~
+..\src\utnValidacion.c:19:18: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   19 |    *pResultado = atoi(buffer);
+      |                  ^~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+10:53:06 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getInt':
+..\src\utnValidacion.c:20:18: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   20 |    *pResultado = atoi(buffer);
+      |                  ^~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+10:53:26 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:09:24 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:19:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   19 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:59:15: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   59 |    printf("\n%s", texto[i]);
+      |              ~^   ~~~~~~~~
+      |               |        |
+      |               char *   int
+      |              %d
+..\src\utnGUI.c: In function 'textAndSleep':
+..\src\utnGUI.c:70:2: warning: implicit declaration of function 'Sleep' [-Wimplicit-function-declaration]
+   70 |  Sleep(3000);
+      |  ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirFloat':
+..\src\utnValidacion.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+   90 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:100:1: warning: control reaches end of non-void function [-Wreturn-type]
+  100 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\utnGUI.o: in function `textAndSleep':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/utnGUI.c:70: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+15:11:01 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:60:15: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   60 |    printf("\n%s", texto[i]);
+      |              ~^   ~~~~~~~~
+      |               |        |
+      |               char *   int
+      |              %d
+..\src\utnGUI.c: In function 'textAndSleep':
+..\src\utnGUI.c:71:2: warning: implicit declaration of function 'Sleep'; did you mean 'sleep'? [-Wimplicit-function-declaration]
+   71 |  Sleep(3000);
+      |  ^~~~~
+      |  sleep
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\utnGUI.o: in function `textAndSleep':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/utnGUI.c:71: undefined reference to `Sleep'
+collect2.exe: error: ld returned 1 exit status
+15:11:09 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:60:15: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   60 |    printf("\n%s", texto[i]);
+      |              ~^   ~~~~~~~~
+      |               |        |
+      |               char *   int
+      |              %d
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+15:21:15 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c:87:5: error: conflicting types for 'getPedirFloat'
+   87 | int getPedirFloat(float *pNumero, char *mensaje, char *mensajeError, float minimo,
+      |     ^~~~~~~~~~~~~
+In file included from ..\src\utnValidacion.c:10:
+..\src\utnValidacion.h:22:5: note: previous declaration of 'getPedirFloat' was here
+   22 | int getPedirFloat(float *pNumero, char *mensaje, char *mensajeError, int minimo,
+      |     ^~~~~~~~~~~~~
+..\src\utnValidacion.c: In function 'getPedirFloat':
+..\src\utnValidacion.c:100:17: warning: passing argument 1 of 'getFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |    if (getFloat(&num)) {
+      |                 ^~~~
+      |                 |
+      |                 int *
+..\src\utnValidacion.c:30:21: note: expected 'float *' but argument is of type 'int *'
+   30 | int getFloat(float *pResultado) {
+      |              ~~~~~~~^~~~~~~~~~
+..\src\utnValidacion.c: In function 'esFlotante':
+..\src\utnValidacion.c:163:16: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
+  163 |          if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1)
+      |                ^~~~~~~
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+15:21:31 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirFloat':
+..\src\utnValidacion.c:100:17: warning: passing argument 1 of 'getFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |    if (getFloat(&num)) {
+      |                 ^~~~
+      |                 |
+      |                 int *
+..\src\utnValidacion.c:30:21: note: expected 'float *' but argument is of type 'int *'
+   30 | int getFloat(float *pResultado) {
+      |              ~~~~~~~^~~~~~~~~~
+..\src\utnValidacion.c: In function 'esFlotante':
+..\src\utnValidacion.c:163:16: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
+  163 |          if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1)
+      |                ^~~~~~~
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:25:2: warning: implicit declaration of function 'getPedirFloat' [-Wimplicit-function-declaration]
+   25 |  getPedirFloat(pFlotante, "\nIngrese un numero flotante: ", "No es un numero flotante valido", 0, 100, 2);
+      |  ^~~~~~~~~~~~~
+..\src\Utn_Bibloteca.c:19:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   19 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+..\src\Utn_Bibloteca.c:25:2: warning: 'pFlotante' is used uninitialized in this function [-Wuninitialized]
+   25 |  getPedirFloat(pFlotante, "\nIngrese un numero flotante: ", "No es un numero flotante valido", 0, 100, 2);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+15:22:07 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+..\src\Utn_Bibloteca.c:26:2: warning: 'pFlotante' is used uninitialized in this function [-Wuninitialized]
+   26 |  getPedirFloat(pFlotante, "\nIngrese un numero flotante: ", "No es un numero flotante valido", 0, 100, 2);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:22:24 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:24:21: warning: initialization of 'float *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   24 |  float* pFlotante = 2;
+      |                     ^
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:22:36 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:27:16: error: invalid type argument of unary '*' (have 'float')
+   27 |  printf("%.2f",*pFlotante);
+      |                ^~~~~~~~~~
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+15:22:43 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:24:22 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirFloat':
+..\src\utnValidacion.c:100:17: warning: passing argument 1 of 'getFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |    if (getFloat(&num)) {
+      |                 ^~~~
+      |                 |
+      |                 int *
+..\src\utnValidacion.c:30:21: note: expected 'float *' but argument is of type 'int *'
+   30 | int getFloat(float *pResultado) {
+      |              ~~~~~~~^~~~~~~~~~
+..\src\utnValidacion.c: In function 'esFlotante':
+..\src\utnValidacion.c:163:16: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
+  163 |          if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1)
+      |                ^~~~~~~
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:25:03 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirFloat':
+..\src\utnValidacion.c:101:17: warning: passing argument 1 of 'getFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  101 |    if (getFloat(&num)) {
+      |                 ^~~~
+      |                 |
+      |                 int *
+..\src\utnValidacion.c:31:21: note: expected 'float *' but argument is of type 'int *'
+   31 | int getFloat(float *pResultado) {
+      |              ~~~~~~~^~~~~~~~~~
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+  130 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+15:25:48 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+  130 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:26:19 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+  126 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:131:1: warning: control reaches end of non-void function [-Wreturn-type]
+  131 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:26:45 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+  130 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:27:00 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+  130 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:27:36 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+   51 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:55:1: warning: control reaches end of non-void function [-Wreturn-type]
+   55 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+  126 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:131:1: warning: control reaches end of non-void function [-Wreturn-type]
+  131 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:31:48 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getChar':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+15:34:15 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+15:34:42 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+15:36:21 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:60:15: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   60 |    printf("\n%s", texto[i]);
+      |              ~^   ~~~~~~~~
+      |               |        |
+      |               char *   int
+      |              %d
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:37:00 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c: In function 'mostrarArrayString':
+..\src\utnGUI.c:60:19: error: invalid type argument of unary '*' (have 'int')
+   60 |    printf("\n%s", *texto[i]);
+      |                   ^~~~~~~~~
+15:37:26 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+..\src\utnGUI.c:54:5: error: conflicting types for 'mostrarArrayString'
+   54 | int mostrarArrayString(char texto[][50], int tamTexo) {
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\utnGUI.c:9:
+..\src\utnGUI.h:17:5: note: previous declaration of 'mostrarArrayString' was here
+   17 | int mostrarArrayString(char texto[], int tamTexo);
+      |     ^~~~~~~~~~~~~~~~~~
+15:37:39 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:39:15 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharSinSigno':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:44:55 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'esLetra':
+..\src\utnValidacion.c:178:17: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z") {
+      |                 ^
+..\src\utnValidacion.c:178:17: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:178:33: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z") {
+      |                                 ^
+..\src\utnValidacion.c:178:52: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z") {
+      |                                                    ^
+..\src\utnValidacion.c:178:52: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:178:69: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z") {
+      |                                                                     ^
+..\src\utnValidacion.c:178:69: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:178:74: error: expected ')' before '{' token
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z") {
+      |      ~                                                                   ^~
+      |                                                                          )
+..\src\utnValidacion.c:182:2: error: expected expression before '}' token
+  182 |  }
+      |  ^
+..\src\utnValidacion.c:183:1: error: expected statement before ')' token
+  183 | )
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+15:45:05 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'esLetra':
+..\src\utnValidacion.c:178:17: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z")) {
+      |                 ^
+..\src\utnValidacion.c:178:17: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:178:33: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z")) {
+      |                                 ^
+..\src\utnValidacion.c:178:52: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z")) {
+      |                                                    ^
+..\src\utnValidacion.c:178:52: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:178:69: warning: comparison between pointer and integer
+  178 |   if ((cadena[i]< "A" && cadena >"Z") || (cadena[i]<"a" && cadena[i]>"z")) {
+      |                                                                     ^
+..\src\utnValidacion.c:178:69: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\utnValidacion.c:183:1: error: expected statement before ')' token
+  183 | )
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+15:46:05 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'esLetra':
+..\src\utnValidacion.c:183:1: error: expected statement before ')' token
+  183 | )
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+15:46:20 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+  124 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:47:53 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:16: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   56 |    *pResultado = buffer;
+      |                ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:48:09 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:50:14 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:38:17: warning: passing argument 1 of 'getPedirFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+   38 |   getPedirFloat(&pChar, "\nIngrese un caracter letra: ", "No es un numero flotante valido", 0, 100, 2);
+      |                 ^~~~~~
+      |                 |
+      |                 char *
+In file included from ..\src\Utn_Bibloteca.c:14:
+..\src\utnValidacion.h:22:26: note: expected 'float *' but argument is of type 'char *'
+   22 | int getPedirFloat(float *pNumero, char *mensaje, char *mensajeError, float minimo,
+      |                   ~~~~~~~^~~~~~~
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:51:14 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:51:44 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+15:52:41 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:52:53 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:16: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   56 |    *pResultado = buffer;
+      |                ^
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:53:06 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:10 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+   69 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
+  139 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:23 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:46: warning: format '%c' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+   56 |    printf("\nBuffer en la posicion [strlen] %c",buffer);
+      |                                             ~^  ~~~~~~
+      |                                              |  |
+      |                                              |  char *
+      |                                              int
+      |                                             %s
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+   69 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
+  139 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:51 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+   69 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
+  139 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+15:55:32 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getString':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+15:57:03 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:58:39 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:55:14: warning: passing argument 1 of 'myGets' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |              ^~~~~~
+      |              |
+      |              char
+In file included from ..\src\utnValidacion.c:12:
+..\src\utnCadenas.h:11:18: note: expected 'char *' but argument is of type 'char'
+   11 | int myGets(char* cadena, int longitud);
+      |            ~~~~~~^~~~~~
+..\src\utnValidacion.c:55:54: warning: passing argument 1 of 'esLetra' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |                                                      ^~~~~~
+      |                                                      |
+      |                                                      char
+In file included from ..\src\utnValidacion.c:11:
+..\src\utnValidacion.h:35:19: note: expected 'char *' but argument is of type 'char'
+   35 | int esLetra(char* cadena);
+      |             ~~~~~~^~~~~~
+..\src\utnValidacion.c:56:24: error: subscripted value is neither array nor pointer nor vector
+   56 |    *pResultado = buffer[strlen(pResultado)];
+      |                        ^
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+15:58:55 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:55:14: warning: passing argument 1 of 'myGets' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |              ^~~~~~
+      |              |
+      |              char
+In file included from ..\src\utnValidacion.c:12:
+..\src\utnCadenas.h:11:18: note: expected 'char *' but argument is of type 'char'
+   11 | int myGets(char* cadena, int longitud);
+      |            ~~~~~~^~~~~~
+..\src\utnValidacion.c:55:54: warning: passing argument 1 of 'esLetra' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |                                                      ^~~~~~
+      |                                                      |
+      |                                                      char
+In file included from ..\src\utnValidacion.c:11:
+..\src\utnValidacion.h:35:19: note: expected 'char *' but argument is of type 'char'
+   35 | int esLetra(char* cadena);
+      |             ~~~~~~^~~~~~
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:55:7: warning: 'buffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   55 |   if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:59:07 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:55:55: warning: passing argument 1 of 'esLetra' makes pointer from integer without a cast [-Wint-conversion]
+   55 |   if (myGets(&buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+      |                                                       ^~~~~~
+      |                                                       |
+      |                                                       char
+In file included from ..\src\utnValidacion.c:11:
+..\src\utnValidacion.h:35:19: note: expected 'char *' but argument is of type 'char'
+   35 | int esLetra(char* cadena);
+      |             ~~~~~~^~~~~~
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:59:12 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:59:20 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+15:59:43 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getStringLetra':
+..\src\utnValidacion.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+  138 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+  143 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:00:22 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:03:06 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:16: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   56 |   if ( scanf("%c",buffer) == 0 && esLetra(buffer) == 0) {
+      |               ~^  ~~~~~~
+      |                |  |
+      |                |  int
+      |                char *
+..\src\utnValidacion.c:56:43: warning: passing argument 1 of 'esLetra' makes pointer from integer without a cast [-Wint-conversion]
+   56 |   if ( scanf("%c",buffer) == 0 && esLetra(buffer) == 0) {
+      |                                           ^~~~~~
+      |                                           |
+      |                                           char
+In file included from ..\src\utnValidacion.c:11:
+..\src\utnValidacion.h:33:19: note: expected 'char *' but argument is of type 'char'
+   33 | int esLetra(char* cadena);
+      |             ~~~~~~^~~~~~
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:8: warning: 'buffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   56 |   if ( scanf("%c",buffer) == 0 && esLetra(buffer) == 0) {
+      |        ^~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:03:16 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:44: warning: passing argument 1 of 'esLetra' makes pointer from integer without a cast [-Wint-conversion]
+   56 |   if ( scanf("%c",&buffer) == 0 && esLetra(buffer) == 0) {
+      |                                            ^~~~~~
+      |                                            |
+      |                                            char
+In file included from ..\src\utnValidacion.c:11:
+..\src\utnValidacion.h:33:19: note: expected 'char *' but argument is of type 'char'
+   33 | int esLetra(char* cadena);
+      |             ~~~~~~^~~~~~
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:03:20 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+16:04:38 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:04:56 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:05:12 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:05:26 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+  142 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:05:58 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:44: warning: passing argument 1 of 'isalpha' makes integer from pointer without a cast [-Wint-conversion]
+   56 |   if (scanf("%c", &buffer) == 1 && isalpha(&buffer) == 1) {
+      |                                            ^~~~~~~
+      |                                            |
+      |                                            char *
+In file included from ..\src\utnValidacion.c:10:
+c:\mingw\include\ctype.h:71:46: note: expected 'int' but argument is of type 'char *'
+   71 | _CRTIMP __cdecl __MINGW_NOTHROW  int isalpha(int);
+      |                                              ^~~
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:06:38 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:06:47 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:44: error: invalid type argument of unary '*' (have 'int')
+   56 |   if (scanf("%c", &buffer) == 1 && isalpha(*buffer)) {
+      |                                            ^~~~~~~
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+16:06:58 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:43: warning: passing argument 1 of 'isalpha' makes integer from pointer without a cast [-Wint-conversion]
+   56 |   if (scanf("%c", buffer) == 1 && isalpha(buffer)) {
+      |                                           ^~~~~~
+      |                                           |
+      |                                           char *
+In file included from ..\src\utnValidacion.c:10:
+c:\mingw\include\ctype.h:71:46: note: expected 'int' but argument is of type 'char *'
+   71 | _CRTIMP __cdecl __MINGW_NOTHROW  int isalpha(int);
+      |                                              ^~~
+..\src\utnValidacion.c:57:16: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   57 |    *pResultado = buffer;
+      |                ^
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+..\src\utnValidacion.c: In function 'getCharLetra':
+..\src\utnValidacion.c:56:7: warning: 'buffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   56 |   if (scanf("%c", buffer) == 1 && isalpha(buffer)) {
+      |       ^~~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:07:10 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirChar':
+..\src\utnValidacion.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+  135 | }
+      | ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+  140 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+16:12:30 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:167:1: warning: control reaches end of non-void function [-Wreturn-type]
+  167 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:38:6: warning: implicit declaration of function 'getCharLetra'; did you mean 'getCharDeLetra'? [-Wimplicit-function-declaration]
+   38 |  if (getCharLetra(&pChar) == 0) {
+      |      ^~~~~~~~~~~~
+      |      getCharDeLetra
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Utn_Bibloteca.o: in function `main':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/Utn_Bibloteca.c:38: undefined reference to `getCharLetra'
+collect2.exe: error: ld returned 1 exit status
+16:12:48 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:15:41 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:167:1: warning: control reaches end of non-void function [-Wreturn-type]
+  167 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:46:23: warning: passing argument 1 of 'getPedirCharDeLetras' makes pointer from integer without a cast [-Wint-conversion]
+   46 |  getPedirCharDeLetras(pChar,"\nIngrese un char!","\nError",0,100,2);
+      |                       ^~~~~
+      |                       |
+      |                       char
+In file included from ..\src\Utn_Bibloteca.c:14:
+..\src\utnValidacion.h:23:32: note: expected 'char *' but argument is of type 'char'
+   23 | int getPedirCharDeLetras(char *pChar, char *mensaje, char *mensajeError, int minimo,
+      |                          ~~~~~~^~~~~
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+..\src\Utn_Bibloteca.c:46:2: warning: 'pChar' is used uninitialized in this function [-Wuninitialized]
+   46 |  getPedirCharDeLetras(pChar,"\nIngrese un char!","\nError",0,100,2);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:15:49 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+Info: Nothing to build for Utn_Bibloteca
+16:20:13 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getStringDeLetras':
+..\src\utnValidacion.c:76:16: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   76 |    *pResultado = buffer;
+      |                ^
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:186:1: warning: control reaches end of non-void function [-Wreturn-type]
+  186 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:20:50 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:186:1: warning: control reaches end of non-void function [-Wreturn-type]
+  186 | }
+      | ^
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:21:30 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:21:38 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:51:3: warning: implicit declaration of function 'getPedirStringDeLetras'; did you mean 'getStringDeLetras'? [-Wimplicit-function-declaration]
+   51 |   getPedirStringDeLetras(pChar,"\nIngrese un string!","\nError",0,100,2);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   getStringDeLetras
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Utn_Bibloteca.o: in function `main':
+C:\Users\kenyn\eclipse-workspace\Mi_Bibloteca\Utn_Bibloteca\Debug/../src/Utn_Bibloteca.c:51: undefined reference to `getPedirStringDeLetras'
+collect2.exe: error: ld returned 1 exit status
+16:23:48 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c: In function 'getPedirString':
+..\src\utnValidacion.c:197:17: warning: comparison between pointer and integer
+  197 |      if (cadena <= maximo && cadena >= minimo)
+      |                 ^~
+..\src\utnValidacion.c:197:37: warning: comparison between pointer and integer
+  197 |      if (cadena <= maximo && cadena >= minimo)
+      |                                     ^~
+..\src\utnValidacion.c:209:18: error: 'caracter' undeclared (first use in this function)
+  209 |    *pArrayChar = caracter;
+      |                  ^~~~~~~~
+..\src\utnValidacion.c:209:18: note: each undeclared identifier is reported only once for each function it appears in
+16:26:34 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:51:3: error: too many arguments to function 'getPedirStringDeLetras'
+   51 |   getPedirStringDeLetras(pChar,"\nIngrese un string!","\nError",0,100,2);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Utn_Bibloteca.c:14:
+..\src\utnValidacion.h:28:5: note: declared here
+   28 | int getPedirStringDeLetras(char *pArrayChar, char *mensaje, char *mensajeError, int reintentos);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+16:26:48 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:27:49 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:28:54 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:29:10 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:29:26 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for Utn_Bibloteca
+16:29:46 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:58:39 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c:98:5: error: conflicting types for 'ordenarEnterosDescendiente'
+   98 | int ordenarEnterosDescendiente(float numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:77:5: note: previous definition of 'ordenarEnterosDescendiente' was here
+   77 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+16:58:56 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+In file included from ..\src\utnArray.c:8:
+..\src\utnArray.h:22:5: error: conflicting types for 'ordenarEnterosDescendiente'
+   22 | int ordenarEnterosDescendiente(float numeros[], int tamNumeros);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.h:20:5: note: previous declaration of 'ordenarEnterosDescendiente' was here
+   20 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:98:5: error: conflicting types for 'ordenarEnterosDescendiente'
+   98 | int ordenarEnterosDescendiente(float numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:77:5: note: previous definition of 'ordenarEnterosDescendiente' was here
+   77 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+16:59:14 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c:98:5: error: redefinition of 'ordenarEnterosDescendiente'
+   98 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:77:5: note: previous definition of 'ordenarEnterosDescendiente' was here
+   77 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+16:59:34 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+In file included from ..\src\utnArray.c:8:
+..\src\utnArray.h:22:5: error: conflicting types for 'ordenarEnterosDescendiente'
+   22 | int ordenarEnterosDescendiente(float numeros[], int tamNumeros);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.h:20:5: note: previous declaration of 'ordenarEnterosDescendiente' was here
+   20 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:98:5: error: conflicting types for 'ordenarEnterosDescendiente'
+   98 | int ordenarEnterosDescendiente(float numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\utnArray.c:77:5: note: previous definition of 'ordenarEnterosDescendiente' was here
+   77 | int ordenarEnterosDescendiente(int numeros[], int tamNumeros) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+16:59:47 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 

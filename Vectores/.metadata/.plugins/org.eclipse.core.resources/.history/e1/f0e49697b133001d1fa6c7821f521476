@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : 1_Pedir_Numero_Filtrar_Por_Paridad.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout,NULL);
+	int numeroInput[5];
+
+	for(int i =0 ;i<5;i++){
+		printf("\nIngrese un numero: ");
+		fflush(stdin);
+		scanf("%d", &numeroInput[i]);
+	}
+
+
+
+	return EXIT_SUCCESS;
+}

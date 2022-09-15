@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+ Name        : 4_Acum_Cont_Par_YMas.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 5-4: Pedir 10 números entre -100 y 100, guardarlos en un Array. Determinar:
+ a) Cantidad de negativos.
+ b) Sumatoria de los impares.
+ c) El mayor de los pares.
+ d) Listado de los números ingresados.
+ e) Listado de los números mayores a 15.
+ f) Listado de los números de las posiciones impares.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <climits.h>
+#define TAMNUMEROS 10
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int numeros[TAMNUMEROS];
+
+	for (int i = 0; i < TAMNUMEROS; i++) {
+
+		while (numeros[i] < -101 && numeros[i] > 99) {
+			printf("\nIngrese un numero: ");
+			fflush(stdin);
+			scanf("%d", numeros[i]);
+
+			if (numeros[i] < -101 && numeros[i] > 99)
+				printf(
+						"\n***Error,%d no es un numero valido esta debe estar entre %d y %d",
+						numeros[i], -100, 100);
+		}
+	}
+
+	printf("\n\na) Cantidad de negativos: %d",ccontarPorRangoNumerico(numeros,TAMNUMEROS,INT_MIN,3));
+
+	return EXIT_SUCCESS;
+}

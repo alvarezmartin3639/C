@@ -1,0 +1,13 @@
+/*
+ * ValidateRange.h
+ *
+ *  Created on: 3 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef VALIDATERANGE_H_
+#define VALIDATERANGE_H_
+
+int validateIntegerRange(int numberToValidate, int minRange, int maxRange);
+
+#endif /* VALIDATERANGE_H_ */

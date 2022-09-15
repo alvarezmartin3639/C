@@ -1,0 +1,7 @@
+18:05:52 **** Incremental Build of configuration Debug for project 3-Fahrenheit_To_Celsius ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validateRange.o" "..\\src\\validateRange.c" 
+gcc -o 3-Fahrenheit_To_Celsius.exe "src\\3-Fahrenheit_To_Celsius.o" "src\\convertTemperatures.o" "src\\validateRange.o" 
+
+18:05:53 Build Finished. 0 errors, 0 warnings. (took 507ms)
+

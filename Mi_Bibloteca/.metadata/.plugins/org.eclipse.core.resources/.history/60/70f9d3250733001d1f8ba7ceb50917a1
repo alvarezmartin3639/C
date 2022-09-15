@@ -1,0 +1,17 @@
+/*
+ * utnMostrar.h
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNGUI_H_
+#define UTNGUI_H_
+
+int mostrarArrayInt(int enteros[], int tamEnteros);
+
+int mostrarArrayFloat(float flotantes[], int tamFloat);
+
+int mostrarArrayChar(float flotantes[], int tamFloat);
+
+#endif /* UTNGUI_H_ */

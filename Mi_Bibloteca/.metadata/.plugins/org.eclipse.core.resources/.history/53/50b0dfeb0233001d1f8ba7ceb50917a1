@@ -1,0 +1,78 @@
+/*
+ * utnArray.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#include "utnArray.h"
+#include <stdio.h>
+#include <string.h>
+
+int incializarArrayInt(int enteros[], int tamEnteros, int valor) {
+
+	int retorno = -1;
+
+	if (enteros != NULL && tamEnteros > 0) {
+
+		for (int i = 0; i < tamEnteros; i++)
+			enteros[i] = valor;
+
+		retorno = 0;
+	}
+
+	return retorno;
+
+}
+
+int incializarArrayFloat(float flotantes[], int tamFlotantes, float valor) {
+
+	int retorno = -1;
+
+	if (flotantes != NULL && tamFlotantes > 0) {
+
+		for (int i = 0; i < tamFlotantes; i++)
+			flotantes[i] = valor;
+
+		retorno = 0;
+	}
+
+	return retorno;
+
+}
+
+
+int incializarArrayChar(char caracteres[], int tamString, char valor) {
+
+	int retorno = -1;
+
+	if (caracteres != NULL && tamString > 0) {
+
+		for (int i = 0; i < tamString; i++)
+			caracteres[i] = valor;
+
+		retorno = 0;
+	}
+
+	return retorno;
+
+}
+
+
+int incializarArrayString(int tamString, int tamMatriz, char string[5][],
+		char valor[]) {
+
+	int retorno = -1;
+
+	if (string != NULL && tamString > 0) {
+
+		for (int i = 0; i < tamString; i++)
+			strcpy(string[i], valor);
+
+		retorno = 0;
+	}
+
+	return retorno;
+
+}
+

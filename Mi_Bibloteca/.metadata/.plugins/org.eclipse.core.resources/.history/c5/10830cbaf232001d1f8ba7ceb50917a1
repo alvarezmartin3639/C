@@ -1,0 +1,19 @@
+/*
+ * utnArrays.h
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNARRAY_H_
+#define UTNARRAY_H_
+
+int incializarInt(int enteros[], int tamEnteros);
+
+int incializarFloat(float flotantes[], int tamFlotantes);
+
+int incializarChar(char caracteres[], int tamString);
+
+int incializarString(int tamString, int tamMatriz, char string[][tamString]);
+
+#endif /* UTNARRAY_H_ */

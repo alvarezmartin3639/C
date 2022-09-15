@@ -1,0 +1,67 @@
+/*
+ ============================================================================
+ Name        : 3_Ordenamiento_Carga_Secuencial.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "ordenamiento.h"
+#define TAMEMPLEADOS 15
+/*
+ Ejercicio 6-3: Realizar un programa que permita el ingreso de datos de 15 empleados
+ legajo (coincidente con el índice), edad, salario, sexo (1-Femenino, 2-Masculino, 3-No
+ binario). Realizar carga secuencial. Calcular el sueldo promedio. Listar a los
+ empleados no binarios.
+ */
+int main(void) {
+	int edad;
+	float salario;
+	int sexo;
+
+	for (int i = 0; i < TAMEMPLEADOS; i++) {
+
+		do {
+			printf("\nIngrese el salario: ");
+			fflush(stdin);
+			scanf(" %f", &salario);
+
+			if (salario < 1)
+				printf("\n***Error,%2.f no es un salario valido", salario);
+		} while (salario < 1);
+
+		do {
+			printf("\nIngrese la edad: ");
+			fflush(stdin);
+			scanf(" %d", &edad);
+
+			if (edad < 18)
+				printf("\n***Error,%d no es una edad valido", edad);
+		} while (salario < 18);
+
+		do {
+			printf("\n1-Femenino");
+			printf("\n2-Masculino");
+			printf("\n3-No binario");
+			printf("\nIngrese el sexo: ");
+			fflush(stdin);
+			scanf(" %d", &sexo);
+
+			if (sexo > 3 || sexo < 1)
+				printf(
+						"\n***Error,la opción %d no es una opción válida (estas son 1, 2 o 3)",
+						sexo);
+		} while (salario > 3 || sexo < 1);
+
+
+
+	}
+
+	return EXIT_SUCCESS;
+}
+
+

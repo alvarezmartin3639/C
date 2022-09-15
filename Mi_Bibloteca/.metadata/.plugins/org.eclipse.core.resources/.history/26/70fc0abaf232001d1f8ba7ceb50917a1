@@ -1,0 +1,31 @@
+/*
+ * utnArray.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#include "utnArray.h"
+#include <stdio.h>
+
+
+int incializarInt(int enteros[], int tamEnteros, int valor){
+
+	int retorno = -1;
+
+	if(enteros != NULL && tamEnteros >0){
+
+		for(int i =0; i<tamEnteros; i++){
+
+			enteros[i] =
+		}
+
+		retorno = 0;
+	}
+}
+
+int incializarFloat(float flotantes[], int tamFlotantes, float valor);
+
+int incializarChar(char caracteres[], int tamString, char valor);
+
+int incializarString(, char string[][tamString], char valor[],int tamString, int tamMatriz);

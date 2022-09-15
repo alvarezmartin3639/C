@@ -1,0 +1,22 @@
+/*
+ ============================================================================
+ Name        : 1_Factorial_Del_Numero.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "pedirNumero.h";
+
+int main(void) {
+	float numeroPedido;
+
+	numeroPedido = pedirNumero();
+	printf("\n%.2f ", numeroPedido);
+
+	return EXIT_SUCCESS;
+}

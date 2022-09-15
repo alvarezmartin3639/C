@@ -1,0 +1,14 @@
+/*
+ * calculosMatematicos.c
+ *
+ *  Created on: 8 sept 2022
+ *      Author: kenyn
+ */
+
+int calcularPromedio(int numeros[], int tamArray) {
+	int acumulador = 0;
+
+	for (int i = 0; i < tamArray; i++)
+		acumulador += numeros[i];
+	return acumulador;
+}

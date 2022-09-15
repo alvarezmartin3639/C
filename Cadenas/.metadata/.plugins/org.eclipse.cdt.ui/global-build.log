@@ -1,0 +1,102 @@
+16:34:15 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+..\src\manipuladorString.c: In function 'FormarApellidoNombre':
+..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+   15 |   strcat(pCompleto,pNombre);
+      |   ^~~~~~
+..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
+..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   10 | #include <stdlib.h>
+  +++ |+#include <string.h>
+   11 | 
+..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   20 |   strcpy(pCompleto,"Error al formar el apellido.")
+      |   ^~~~~~
+..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\manipuladorString.c:20:51: error: expected ';' before '}' token
+   20 |   strcpy(pCompleto,"Error al formar el apellido.")
+      |                                                   ^
+      |                                                   ;
+   21 | }
+      | ~                                                  
+16:34:24 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+..\src\manipuladorString.c: In function 'FormarApellidoNombre':
+..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+   15 |   strcat(pCompleto,pApellido);
+      |   ^~~~~~
+..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
+..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   10 | #include <stdlib.h>
+  +++ |+#include <string.h>
+   11 | 
+..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   20 |   strcpy(pCompleto,"Error al formar el apellido.")
+      |   ^~~~~~
+..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\manipuladorString.c:20:51: error: expected ';' before '}' token
+   20 |   strcpy(pCompleto,"Error al formar el apellido.")
+      |                                                   ^
+      |                                                   ;
+   21 | }
+      | ~                                                  
+16:34:39 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+..\src\manipuladorString.c: In function 'FormarApellidoNombre':
+..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+   15 |   strcat(pCompleto,pApellido);
+      |   ^~~~~~
+..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
+..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   10 | #include <stdlib.h>
+  +++ |+#include <string.h>
+   11 | 
+..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   20 |   strcpy(pCompleto,"Error al formar el apellido.");
+      |   ^~~~~~
+..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
+gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
+16:36:05 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
+16:43:43 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+..\src\manipuladorString.c: In function 'FormarApellidoNombre':
+..\src\manipuladorString.c:16:10: warning: passing argument 1 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+   16 |   strcat(*pCompleto,*pApellido);
+      |          ^~~~~~~~~~
+      |          |
+      |          char
+In file included from ..\src\manipuladorString.c:11:
+c:\mingw\include\string.h:75:40: note: expected 'char *' but argument is of type 'char'
+   75 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcat (char *, const char *);
+      |                                        ^~~~~~
+..\src\manipuladorString.c:16:21: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+   16 |   strcat(*pCompleto,*pApellido);
+      |                     ^~~~~~~~~~
+      |                     |
+      |                     char
+In file included from ..\src\manipuladorString.c:11:
+c:\mingw\include\string.h:75:40: note: expected 'const char *' but argument is of type 'char'
+   75 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcat (char *, const char *);
+      |                                        ^~~~~~
+gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
+16:43:52 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
+17:07:54 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
+gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 

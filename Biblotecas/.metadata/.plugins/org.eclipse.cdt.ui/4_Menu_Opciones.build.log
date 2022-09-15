@@ -1,0 +1,7 @@
+03:10:21 **** Incremental Build of configuration Debug for project 4_Menu_Opciones ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Menu_Opciones.o" "..\\src\\4_Menu_Opciones.c" 
+gcc -o 4_Menu_Opciones.exe "src\\4_Menu_Opciones.o" "src\\configurarMenu.o" 
+
+03:10:22 Build Finished. 0 errors, 0 warnings. (took 525ms)
+

@@ -1,0 +1,16 @@
+/*
+ * ConvertCelsiusAndFahrenheit.h
+ *
+ *  Created on: 3 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef CONVERTCELSIUSANDFAHRENHEIT_H_
+#define CONVERTCELSIUSANDFAHRENHEIT_H_
+
+int celsiusToFahrenheit(int celsius);
+
+int fahrenheitToCelsius(int fahrenheit);
+
+
+#endif /* CONVERTCELSIUSANDFAHRENHEIT_H_ */

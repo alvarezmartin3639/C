@@ -1,0 +1,23 @@
+/*
+ * utnValidacion.h
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNVALIDACION_H_
+#define UTNVALIDACION_H_
+
+int getInt(int* pNumero, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+
+int getFloat(float* pNumero, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+
+int getChar(char* pNumero, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+
+int getString(char* pNumero, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+
+int esNumero();
+
+int esFloat();
+
+#endif /* UTNVALIDACION_H_ */

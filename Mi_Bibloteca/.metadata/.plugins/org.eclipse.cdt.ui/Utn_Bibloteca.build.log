@@ -1,0 +1,12 @@
+16:59:47 **** Incremental Build of configuration Debug for project Utn_Bibloteca ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn_Bibloteca.o" "..\\src\\Utn_Bibloteca.c" 
+..\src\Utn_Bibloteca.c: In function 'main':
+..\src\Utn_Bibloteca.c:20:6: warning: unused variable 'seSuperoLaPrueba' [-Wunused-variable]
+   20 |  int seSuperoLaPrueba = 1;
+      |      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -o Utn_Bibloteca.exe "src\\Utn_Bibloteca.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+16:59:49 Build Finished. 0 errors, 1 warnings. (took 1s.998ms)
+

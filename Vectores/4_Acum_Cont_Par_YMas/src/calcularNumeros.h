@@ -1,0 +1,23 @@
+/*
+ * calcularNumeros.h
+ *
+ *  Created on: 8 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef CALCULARNUMEROS_H_
+#define CALCULARNUMEROS_H_
+
+int contarPorRangoNumerico(int numeros[],int tamNumeros, int minRango, int maxRango);
+
+int buscarParMayor(int numeros[], int tamNumeros);
+
+int sumarImpares(int numeros[], int tamNumeros);
+
+int listarNumeros(int numeros[], int tamNumeros);
+
+int listarNumerosMayorA(int numeros[], int tamNumeros, int minRango);
+
+int listarIndicesImpares(int numeros[], int tamNumeros);
+
+#endif /* CALCULARNUMEROS_H_ */
