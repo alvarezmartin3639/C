@@ -1,102 +1,93 @@
-16:34:15 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+17:11:42 **** Rebuild of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-..\src\manipuladorString.c: In function 'FormarApellidoNombre':
-..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
-   15 |   strcat(pCompleto,pNombre);
-      |   ^~~~~~
-..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
-..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
-   10 | #include <stdlib.h>
-  +++ |+#include <string.h>
-   11 | 
-..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   20 |   strcpy(pCompleto,"Error al formar el apellido.")
-      |   ^~~~~~
-..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-..\src\manipuladorString.c:20:51: error: expected ';' before '}' token
-   20 |   strcpy(pCompleto,"Error al formar el apellido.")
-      |                                                   ^
-      |                                                   ;
-   21 | }
-      | ~                                                  
-16:34:24 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+17:11:44 Build Finished. 0 errors, 0 warnings. (took 2s.308ms)
+
+17:11:48 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-..\src\manipuladorString.c: In function 'FormarApellidoNombre':
-..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
-   15 |   strcat(pCompleto,pApellido);
-      |   ^~~~~~
-..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
-..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
-   10 | #include <stdlib.h>
-  +++ |+#include <string.h>
-   11 | 
-..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   20 |   strcpy(pCompleto,"Error al formar el apellido.")
-      |   ^~~~~~
-..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-..\src\manipuladorString.c:20:51: error: expected ';' before '}' token
-   20 |   strcpy(pCompleto,"Error al formar el apellido.")
-      |                                                   ^
-      |                                                   ;
-   21 | }
-      | ~                                                  
-16:34:39 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+..\src\3_Validar_Letras_Con_Espacio.c: In function 'main':
+..\src\3_Validar_Letras_Con_Espacio.c:34:5: warning: implicit declaration of function 'esLetra' [-Wimplicit-function-declaration]
+   34 |  if(esLetra(esSoloLetra) == 1)
+      |     ^~~~~~~
+..\src\3_Validar_Letras_Con_Espacio.c:39:5: error: called object 'esLetraConEspacio' is not a function or function pointer
+   39 |  if(esLetraConEspacio(esLetraConEspacio) == 1)
+      |     ^~~~~~~~~~~~~~~~~
+..\src\3_Validar_Letras_Con_Espacio.c:32:7: note: declared here
+   32 |  char esLetraConEspacio[23] = "Es letra con espacio";
+      |       ^~~~~~~~~~~~~~~~~
+17:12:05 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-..\src\manipuladorString.c: In function 'FormarApellidoNombre':
-..\src\manipuladorString.c:15:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
-   15 |   strcat(pCompleto,pApellido);
-      |   ^~~~~~
-..\src\manipuladorString.c:15:3: warning: incompatible implicit declaration of built-in function 'strcat'
-..\src\manipuladorString.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
-   10 | #include <stdlib.h>
-  +++ |+#include <string.h>
-   11 | 
-..\src\manipuladorString.c:20:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   20 |   strcpy(pCompleto,"Error al formar el apellido.");
-      |   ^~~~~~
-..\src\manipuladorString.c:20:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-..\src\manipuladorString.c:20:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
-gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
-16:36:05 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+..\src\3_Validar_Letras_Con_Espacio.c: In function 'main':
+..\src\3_Validar_Letras_Con_Espacio.c:40:5: error: called object 'esLetraConEspacio' is not a function or function pointer
+   40 |  if(esLetraConEspacio(esLetraConEspacio) == 1)
+      |     ^~~~~~~~~~~~~~~~~
+..\src\3_Validar_Letras_Con_Espacio.c:33:7: note: declared here
+   33 |  char esLetraConEspacio[23] = "Es letra con espacio";
+      |       ^~~~~~~~~~~~~~~~~
+17:12:57 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
-16:43:43 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:13:29 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-..\src\manipuladorString.c: In function 'FormarApellidoNombre':
-..\src\manipuladorString.c:16:10: warning: passing argument 1 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
-   16 |   strcat(*pCompleto,*pApellido);
-      |          ^~~~~~~~~~
-      |          |
-      |          char
-In file included from ..\src\manipuladorString.c:11:
-c:\mingw\include\string.h:75:40: note: expected 'char *' but argument is of type 'char'
-   75 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcat (char *, const char *);
-      |                                        ^~~~~~
-..\src\manipuladorString.c:16:21: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
-   16 |   strcat(*pCompleto,*pApellido);
-      |                     ^~~~~~~~~~
-      |                     |
-      |                     char
-In file included from ..\src\manipuladorString.c:11:
-c:\mingw\include\string.h:75:40: note: expected 'const char *' but argument is of type 'char'
-   75 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcat (char *, const char *);
-      |                                        ^~~~~~
-gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
-16:43:52 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:16:30 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
-17:07:54 **** Incremental Build of configuration Debug for project 1_Concatenar_Dos_Strings ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:18:36 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Concatenar_Dos_Strings.o" "..\\src\\1_Concatenar_Dos_Strings.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\manipuladorString.o" "..\\src\\manipuladorString.c" 
-gcc -o 1_Concatenar_Dos_Strings.exe "src\\1_Concatenar_Dos_Strings.o" "src\\manipuladorString.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:18:48 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:26:18 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:35:42 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+..\src\utnValidacion.c:414:1: error: expected identifier or '(' before '}' token
+  414 | }
+      | ^
+17:37:05 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:37:12 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:38:27 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 3_Validar_Letras_Con_Espacio
+17:38:39 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:38:44 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:38:50 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 

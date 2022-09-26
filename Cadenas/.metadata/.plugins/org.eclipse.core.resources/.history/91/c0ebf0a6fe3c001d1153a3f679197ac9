@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : 2_Validar_Alphanumericos_Telefonos.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utnValidacion.h"
+
+int main(void) {
+	setbuf(stdout,NULL);
+	char alfanumerico[24] = "ab555gT6";
+	char telefono[24] = "42322-222";
+
+	if(esAlfanumerico(alfanumerico))
+		printf("\nEs alfanumerico!");
+	else
+		printf("\nNo es alfanumerico!");
+
+	if(esNumeroTelefonico(telefono))
+		printf("\nEs telefono!");
+	else
+		printf("\nEs telefono!");
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,7 @@
+17:38:50 **** Incremental Build of configuration Debug for project 3_Validar_Letras_Con_Espacio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Validar_Letras_Con_Espacio.o" "..\\src\\3_Validar_Letras_Con_Espacio.c" 
+gcc -o 3_Validar_Letras_Con_Espacio.exe "src\\3_Validar_Letras_Con_Espacio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+17:38:50 Build Finished. 0 errors, 0 warnings. (took 635ms)
+

@@ -1,0 +1,7 @@
+18:18:50 **** Incremental Build of configuration Debug for project 1_Creacion_Productos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Creacion_Productos.o" "..\\src\\1_Creacion_Productos.c" 
+gcc -o 1_Creacion_Productos.exe "src\\1_Creacion_Productos.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+18:18:51 Build Finished. 0 errors, 0 warnings. (took 737ms)
+

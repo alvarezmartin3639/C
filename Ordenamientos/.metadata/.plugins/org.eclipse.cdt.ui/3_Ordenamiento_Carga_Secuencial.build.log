@@ -1,7 +1,7 @@
-11:10:21 **** Incremental Build of configuration Debug for project 3_Ordenamiento_Carga_Secuencial ****
+11:31:10 **** Incremental Build of configuration Debug for project 3_Ordenamiento_Carga_Secuencial ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Ordenamiento_Carga_Secuencial.o" "..\\src\\3_Ordenamiento_Carga_Secuencial.c" 
 gcc -o 3_Ordenamiento_Carga_Secuencial.exe "src\\3_Ordenamiento_Carga_Secuencial.o" "src\\ordienamiento.o" 
 
-11:10:21 Build Finished. 0 errors, 0 warnings. (took 571ms)
+11:31:11 Build Finished. 0 errors, 0 warnings. (took 858ms)
 

@@ -1,0 +1,162 @@
+/*
+ ============================================================================
+ Name        : 1_Creacion_Productos.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utnArray.h"
+#include "utnGUI.h"
+#include "utnValidacion.h"
+#include "utnCadenas.h"
+#define TAMPRODUCTOS 20
+
+int main(void) {
+	setbuf(stdout, NULL);
+	char codigo[TAMPRODUCTOS][20];
+	char modelo[TAMPRODUCTOS][10];
+	int cantidad[TAMPRODUCTOS];
+	float precio[TAMPRODUCTOS];
+	int contProductosCargados = 0;
+	char opcionElegida;
+	char prueba[23]= "Me gustan los";
+	char pruebaDos[23] ="Perro %s derte";
+
+
+	printf("\n%s", formatearString(pruebaDos,"%s","hola"));
+
+	//INICIALIZO ARRAYS
+	incializarArrayInt(cantidad, TAMPRODUCTOS, 0);
+	incializarArrayString(10, TAMPRODUCTOS, modelo, "0");
+
+	do {
+
+		printf("\nA) Carga de productos");
+		printf("\nB) Venta de productos");
+		printf("\nC) Modificación del precio");
+		printf("\nD) Modificar el modelo");
+		printf("\nE) Listar ordenado por código");
+		printf("\nF) Listar datos de los productos con menos de 3 unidades");
+		printf("\nG) Salir");
+
+		//Se ingresa y valida cada variable
+		if (getPedirCharDeLetra(&opcionElegida, "\nIngrese una opción: ",
+				"\n***Error, la opción es una letra entre 'a' y 'f'***\n", 'a',
+				'z', 1) == 0) {
+
+			switch (opcionElegida) {
+
+			case 'a':
+
+				do {
+
+					char auxCodigo[20];
+					char auxModelo[20];
+					int auxCantidad;
+					float auxPrecio;
+
+					if (getPedirAlfanumerico(auxCodigo,
+							"\nIngrese un codigo alfanumerico: ",
+							"\n***Error, no ingresó un codigo alfanumerico valido***\n",
+							2) == 0) {
+
+						if (getPedirAlfanumerico(auxModelo,
+								"\nIngrese un modelo: ",
+								"\n***Error, o se ingresó un modelo valido!***\n",
+								2) == 0) {
+
+							if (getPedirInt(&auxCantidad,
+									"\nIngrese una cantidad:",
+									"\n***Error, no se ingresó una cantidad valida!***\n",
+									0, 20, 2) == 0) {
+
+								if (getPedirFloat(&auxPrecio,
+										"\nIngrese una precio:",
+										"\n***Error, no se ingresó un precio valido!***\n",
+										0, 1000000, 2) == 0) {
+
+									strcpy(codigo[contProductosCargados],
+											auxCodigo);
+									strcpy(modelo[contProductosCargados],
+											auxModelo);
+									cantidad[contProductosCargados] =
+											auxCantidad;
+									precio[contProductosCargados] = auxPrecio;
+									contProductosCargados++;
+
+								}
+							}
+						}
+					}
+
+				} while (deseaContinuar(
+						"\n¿Desea seguir ingresado numeros?(si/no): ", "si",
+						"no") == 1);
+
+				break;
+
+				//Venta producto
+			case 'b':
+
+				if (contProductosCargados == 0)
+					printf("\n***Error, no se cargó ningun producto!***\n");
+				else {
+
+					int indiceMenu = 1;
+					int opcion;
+					int indiceProductosDisponibles[TAMPRODUCTOS];
+
+					printf("\nIngrese un producto para vender: ");
+
+					//Muestro los productos disponibles
+					for (int i = 0; i < TAMPRODUCTOS; i++) {
+
+						if (cantidad[i] != 0) {
+							printf("\n%d) %s ", indiceMenu, modelo[i]);
+							indiceProductosDisponibles[indiceMenu - 1] = i;
+							indiceMenu++;
+						}
+
+
+						getPedirInt(&opcion,
+								"\nIngrese el producto que desea vender: ",
+								"\n***Error, ingresó una opción  invalida, esta debe ser un numero *** \n",
+								1, indiceMenu, 2);
+
+					}
+				}
+
+				break;
+
+			case 'c':
+
+				if (contProductosCargados == 0)
+					printf("\n***Error, no se cargó ningun producto!***\n");
+
+				break;
+
+			case 'd':
+
+				break;
+
+			case 'e':
+
+				break;
+
+			case 'f':
+
+				break;
+			}
+
+		}
+
+	} while (opcionElegida != 'g');
+
+	return EXIT_SUCCESS;
+}
