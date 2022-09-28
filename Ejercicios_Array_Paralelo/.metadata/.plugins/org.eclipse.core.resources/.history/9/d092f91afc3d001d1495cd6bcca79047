@@ -1,0 +1,27 @@
+/*
+ * utnMenu.h
+ *
+ *  Created on: 26 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNMENU_H_
+#define UTNMENU_H_
+
+int altaProducto(char codigo[] [5], char fechaIngreso [] [25], char descripcion[][15], int* estaLibre, int tamProducto);
+
+int bajaProducto(char codigo[][5], char fechaIngreso[][25],
+		char descripcion[][15], int *estaLibre, int tamProducto);
+
+int buscarValorIntEnArray(int arrayInt[], char *valorBuscado,
+		int tamArrayString);
+
+int buscarValorStringEnArray(int tamCaracteres, int tamArrayString, char arrayString[][tamCaracteres], char *valorBuscado );
+
+int esFecha(char *fecha);
+
+int getFecha(char* pResultado);
+
+int getPedirTelefono(char *pChar, char *mensaje, char *mensajeError, int reintentos);
+
+#endif /* UTNMENU_H_ */

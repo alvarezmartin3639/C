@@ -51,12 +51,12 @@ int mostrarArrayChar(char caracteres[], int tamCaracteres) {
 
 }
 
-int mostrarArrayString(char texto[][50], int tamTexo) {
+int mostrarArrayString(int tamCaracter,  int tamMatriz,char texto[][tamCaracter]) {
 
 	int retorno = -1;
 
-	if (texto != NULL && tamTexo > 0) {
-		for (int i = 0; i < tamTexo; i++)
+	if (texto != NULL && tamMatriz > 0) {
+		for (int i = 0; i < tamMatriz; i++)
 			printf("\n%s", texto[i]);
 		retorno = 0;
 	}

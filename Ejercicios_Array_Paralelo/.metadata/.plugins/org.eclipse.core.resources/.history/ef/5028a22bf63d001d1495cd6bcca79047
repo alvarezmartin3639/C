@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : 7_Productos_Alta_Baja.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/**
+ *Ejercicio 8-7: Realizar un programa con un menú de opciones que permita hacer altas
+ y bajas de un máximo de 30 productos. Los datos que se ingresan son Código, fecha
+ de ingreso y descripción. El código es una cadena de caracteres de 5 dígitos, y la
+ descripción no puede exceder los 15 caracteres.
+ Se deben usar funciones para validar los datos. El Código no puede repetirse, en el
+ caso de ingresar un código existente de debe informar y no dejar ingresar el resto de
+ los datos.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#define TAMPRODUCTOS 30
+
+int main(void) {
+	setbuf(stdout, NULL);
+	char codigo[TAMPRODUCTOS][5];
+	char fechaIngreso[TAMPRODUCTOS][25];
+	char descripcion[TAMPRODUCTOS][15];
+	int estaLibre[TAMPRODUCTOS];
+	int opcionElegida;
+
+for(int i = 0; i<TAMPRODUCTOS;i++)
+	estaLibre[i] = 1;
+
+	getPedirInt(&opcionElegida, "\n1. Alta producto \n2. Baja producto", "\n***Error, no es una opción válida***", 1, 2, 4);
+
+	switch(opcionElegida){
+
+	case 1:
+		altaProducto(codigo, fechaIngreso, descripcion, estaLibre, TAMPRODUCTOS);
+		break;
+
+	case 2:
+
+		break;
+	}
+
+	return EXIT_SUCCESS;
+}

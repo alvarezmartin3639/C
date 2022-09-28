@@ -1,0 +1,7 @@
+15:04:56 **** Incremental Build of configuration Debug for project 7_Productos_Alta_Baja ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o 7_Productos_Alta_Baja.exe "src\\7_Productos_Alta_Baja.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+
+15:04:57 Build Finished. 0 errors, 0 warnings. (took 683ms)
+

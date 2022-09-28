@@ -1,7 +1,21 @@
-18:18:50 **** Incremental Build of configuration Debug for project 1_Creacion_Productos ****
+18:51:51 **** Rebuild of configuration Debug for project 1_Creacion_Productos ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Creacion_Productos.o" "..\\src\\1_Creacion_Productos.c" 
+..\src\1_Creacion_Productos.c: In function 'main':
+..\src\1_Creacion_Productos.c:292:24: warning: passing argument 1 of 'mostrarArrayString' from incompatible pointer type [-Wincompatible-pointer-types]
+  292 |     mostrarArrayString(codigo, TAMPRODUCTOS);
+      |                        ^~~~~~
+      |                        |
+      |                        char (*)[20]
+In file included from ..\src\1_Creacion_Productos.c:15:
+..\src\utnGUI.h:17:29: note: expected 'char (*)[50]' but argument is of type 'char (*)[20]'
+   17 | int mostrarArrayString(char texto[][50], int tamTexo);
+      |                        ~~~~~^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
 gcc -o 1_Creacion_Productos.exe "src\\1_Creacion_Productos.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
 
-18:18:51 Build Finished. 0 errors, 0 warnings. (took 737ms)
+18:51:53 Build Finished. 0 errors, 1 warnings. (took 2s.3ms)
 

@@ -289,7 +289,7 @@ int main(void) {
 			case 'e':
 
 				ordenarAlfanumerico(codigo, TAMPRODUCTOS, 1);
-				mostrarArrayString(codigo, TAMPRODUCTOS);
+				mostrarArrayString(20, TAMPRODUCTOS, codigo);
 
 				break;
 

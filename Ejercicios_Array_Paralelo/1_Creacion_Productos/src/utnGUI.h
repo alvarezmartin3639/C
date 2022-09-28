@@ -14,9 +14,10 @@ int mostrarArrayFloat(float flotantes[], int tamFloat);
 
 int mostrarArrayChar(char caracteres[], int tamCaracteres);
 
-int mostrarArrayString(char texto[][50], int tamTexo);
+int mostrarArrayString(int tamCaracter, int tamMatriz,
+		char texto[][tamCaracter]);
 
-void textoConEspera(char mensaje[60], int milisegundos) ;
+void textoConEspera(char mensaje[60], int milisegundos);
 
 void limpiarPantalla(void);
 

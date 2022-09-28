@@ -1,8 +1,9 @@
 LaunchTargetManager/configs/1_Creacion_Productos.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/7_Productos_Alta_Baja.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_Creacion_Productos.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_Creacion_Productos.exe,org.eclipse.launchbar.core.descriptorType.default\:7_Productos_Alta_Baja.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:1_Creacion_Productos.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:1_Creacion_Productos.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
