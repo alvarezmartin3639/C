@@ -1,0 +1,7 @@
+15:48:37 **** Incremental Build of configuration Debug for project 1_Puntero_Chars ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Puntero_Chars.o" "..\\src\\1_Puntero_Chars.c" 
+gcc -o 1_Puntero_Chars.exe "src\\1_Puntero_Chars.o" 
+
+15:48:38 Build Finished. 0 errors, 0 warnings. (took 506ms)
+

@@ -1,0 +1,16 @@
+/*
+ * generic.c
+ *
+ *  Created on: 6 oct 2022
+ *      Author: kenyn
+ */
+
+#include "generic.h"
+
+int genericRestart(eGeneric* generic){
+
+
+	generic->pNumero = NULL;
+
+
+}

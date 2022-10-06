@@ -1,0 +1,117 @@
+/*
+ ============================================================================
+ Name        : Utn_Bibloteca.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utnArray.h"
+#include "utnValidacion.h"
+#include <string.h>
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	int seSuperoLaPrueba = 0;
+
+//	getPedirInt(&seSuperoLaPrueba, "\n1. ALTAS \n2. MODIFICAR \n3. BAJA \n4 INFORMAR \n5. SALIR \n\nIngrese una opción: ",
+//			"\n***Error, no elegió una opción valida***", 1, 5, 4);
+	getPedirInt(&seSuperoLaPrueba, "\nIngresa ", "\nerro", 1, 111, 4);
+	cprintf("\n\n%d",seSuperoLaPrueba);
+
+
+//	VALIDAR DATOS
+//
+//	printf("\nProbando float");
+//	float pFlotante;
+//	getPedirFloat(&pFlotante, "\nIngrese un numero flotante: ",
+//			"No es un numero flotante valido", 0, 100, 2);
+//	printf("%.2f", pFlotante);
+//
+//	printf("\nProbando desea continuar?");
+//	if (getDeseaContinuar("\nDesea continuar?", "si", "no") == -1)
+//		printf("\nNo quiso continuar");
+//	else
+//		printf("\nQuiso continuar");
+//
+//	printf("\nProbando caracter letra");
+//	char pChar;
+//	if (getCharDeLetra(&pChar) == 0) {
+//		printf("\nEs letra");
+//	} else
+//		printf("\n NO es");
+//	printf("%c", pChar);
+//
+//	printf("\nProbando pedir char de letras");
+//	char pChar;
+//	getPedirCharDeLetras(&pChar, "\nIngrese un char!", "\nError", 0, 100, 2);
+
+//	printf("\nProbando pedir string de letras");
+//	char pChar[55];
+//	getPedirStringDeLetras(pChar, "\nIngrese un string!", "\nError", 2);
+
+//	printf("\nProbando es alfanumerico");
+//	char alfa[55] = "d22";
+//	if (esAlfanumerico(alfa) == 0)
+//		printf("\nEs alfa!");
+//	else
+//		printf("\nNo es alfa");
+
+//ARRAYS
+//
+//	printf("\nProbando Entero");
+//	int enteros[5];
+//	incializarArrayInt(enteros, 5, 0);
+//	for(int i = 0; i<5 ; i++){
+//		if(enteros[i] != 0)
+//			seSuperoLaPrueba = 0;
+//	}
+//	if(seSuperoLaPrueba ==0)
+//		printf("\nFracaso");
+//	else
+//		printf("\nExito!");
+
+//	printf("\nProbando Flotante");
+//	float flotantes[5];
+//	incializarArrayFloat(flotantes, 5, 0);
+//	for (int i = 0; i < 5; i++) {
+//		if (flotantes[i] != 0)
+//			seSuperoLaPrueba = 0;
+//	}
+//	if (seSuperoLaPrueba == 0)
+//		printf("\nFracaso");
+//	else
+//		printf("\nExito!");
+
+//	printf("\nProbando String");
+//	char caracteres[5];
+//	incializarArrayChar(caracteres, 5, 'c');
+//	for (int i = 0; i < 5; i++) {
+//		if (caracteres[i] != 'c')
+//			seSuperoLaPrueba = 0;
+//	}
+//	if (seSuperoLaPrueba == 0)
+//		printf("\nFracaso");
+//	else
+//		printf("\nExito!");
+
+//	printf("\nProbando Array de string");
+//	char string[5][30];
+//	incializarArrayString(30, 5, string, "hola");
+//	for (int i = 0; i < 5; i++) {
+//		if (strcmp(string[i],"hola") !=0)
+//			seSuperoLaPrueba = 0;
+//	}
+//	if (seSuperoLaPrueba == 0)
+//		printf("\nFracaso");
+//	else
+//		printf("\nExito!");
+
+//
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,7 @@
+19:34:32 **** Incremental Build of configuration Debug for project 5_ Cargar_Estructura_Por_Referencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\5_ Cargar_Estructura_Por_Referencia.o" "..\\src\\5_ Cargar_Estructura_Por_Referencia.c" 
+gcc -o "5_ Cargar_Estructura_Por_Referencia.exe" "src\\5_ Cargar_Estructura_Por_Referencia.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+19:34:33 Build Finished. 0 errors, 0 warnings. (took 588ms)
+

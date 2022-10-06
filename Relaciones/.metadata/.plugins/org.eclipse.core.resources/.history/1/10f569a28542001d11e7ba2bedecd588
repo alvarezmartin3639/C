@@ -1,0 +1,152 @@
+/*
+ ============================================================================
+ Name        : 2_Menu_Con_Relacion.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "sector.h"
+#include "utnGUI.h"
+#include "Empleado.h"
+#include "utnValidacion.h"
+#include "utnArray.h"
+int main(void) {
+
+	/**
+	 *
+	 * Manejar siemrpe con la descricpion de sectores, nunca con el id ,siempre elegir la descripcion
+	 * Revisar si el esSectorValido en el alta , mod anda bien.
+	 *
+	 *
+	 */
+	setbuf(stdout, NULL);
+	eEmpleado empleados[TAMEMPLEADOS] = {
+
+	{ 1, 1, "AMartin", "alvarez", 23.2, 0 }, { 2, 1, "ZRoberto", "Lopez", 24.2, 0 }, { 3, 1, "Federico", "Gonzales", 22.2, 0 }, { 4, 3,
+			"Juan", "Oreyana", 20.2, 0 }, { 5, 2, "Fran", "Pedrosa", 22.2, 0 }, { 6, 2, "Julia", "Freijo", 22.2, 0 }
+
+	};
+
+	eSector sectores[TAMSECTOR] = { { 1, "Sistemas" }, { 2, "RecursosHumanos" }, { 3, "Gerencia" }, };
+
+	int contId = 0;
+	//ESTO TIENE QUE IR EN 0!!!!
+	int contEmpleadosActivos = 1;
+	float acumSalarios = 0;
+	int opcion;
+
+//	for (int i = 0; i < TAMEMPLEADOS; i++)
+//		cargarEmpleado(&empleados[i],0, 0, "Roberto", "Pedrosa", 100, 1, 1);
+
+	do {
+
+		limpiarPantalla();
+		getPedirInt(&opcion, "\n1. ALTAS \n2. MODIFICAR \n3. BAJA \n4 INFORMAR \n5. SALIR \n\nIngrese una opción: ",
+				"\n***Error, no elegió una opción valida***", 1, 5, 4);
+
+		switch (opcion) {
+
+		case 1:
+			altaEmpleados(empleados, sectores, TAMSECTOR, TAMEMPLEADOS, &contId, &contEmpleadosActivos);
+			break;
+
+		case 2:
+			modificarEmpleados(empleados, sectores, TAMSECTOR, TAMEMPLEADOS, contEmpleadosActivos);
+			break;
+
+		case 3:
+			eliminarEmpleados(empleados, sectores, TAMSECTOR, TAMEMPLEADOS, &contEmpleadosActivos);
+			break;
+
+		case 4: {
+
+			int indiceDelSectorMax;
+			//array paralelo de sectores
+			int auxSectores[TAMSECTOR];
+
+			for(int i = 0; i < TAMSECTOR; i++)
+				auxSectores[i] = 0;
+
+
+			//Falta probarlo bien, sacar los encabezados de mostrar empleado y pasar todo a una función
+			ordenarEmpleadoPorNombreYSector(empleados, TAMEMPLEADOS);
+			mostrarEmpleados(empleados, sectores, TAMEMPLEADOS, TAMSECTOR, 0, 0, contEmpleadosActivos);
+
+			for (int i = 0; i < TAMEMPLEADOS; i++)
+				if (empleados[i].isEmpity == 0)
+					acumSalarios += empleados[i].salary;
+
+			printf("\n\nTotal: %.2f ", acumSalarios);
+			printf("\n\nPromedio: %.2f ", acumSalarios / contEmpleadosActivos);
+
+			//EJERCICIO RELACION
+
+			//ordenarEmpleadosPorIdSector(empleados, TAMEMPLEADOS, sectores, TAMSECTOR);
+			//cuenta la cant de empleados en cada sector, usando el array paralelo auxSectores
+			//ESTA MAL
+
+			for (int i = 0; i < TAMEMPLEADOS; i++) {
+
+				if (empleados[i].isEmpity == 0) {
+					auxSectores[empleados[i].idSector]++;
+				}
+
+			}
+
+			printf("\nAUX SECTORES POS 0 %d", auxSectores[0]);
+			//busca max
+			indiceDelSectorMax = buscarIndiceMaximoArrayInt(auxSectores,
+			TAMSECTOR);
+
+			printf("\n\n INDICE CON MAS SECTOR = %d \n\n", indiceDelSectorMax),
+////			char strAnterior = "new";
+////			int contSector[TAMSECTOR];
+////
+////			for (int j = 0; j < TAMSECTOR; j++) {
+////
+////				for (int i = 0; i < TAMEMPLEADOS; i++) {
+////
+////					if (empleados[i].isEmpity == 0 && empleados[i].idSector == sectores[j].idSector) {
+////
+////						contSector[j]++;
+////
+////					}
+////				}
+////			}
+
+			printf("\nEl sector con mas empleados es %s, con un total de %d empleados ", sectores[indiceDelSectorMax].descripcionSector,
+					auxSectores[indiceDelSectorMax]);
+
+			//mostrar sectores con sus empleados
+			printf("\nListado de sectores junto a sus empleados!");
+			for (int i = 0; i < TAMSECTOR; i++) {
+
+				printf("\nEmpleados del sector %s", sectores[i].descripcionSector);
+
+				for (int j = 0; j < TAMEMPLEADOS; j++) {
+
+					if (empleados[j].isEmpity == 0) {
+
+						if (empleados[j].idSector == sectores[i].idSector) {
+
+							mostrarEmpleado(&empleados[j], sectores, TAMSECTOR, 0);
+
+						}
+					}
+				}
+			}
+		}
+			break;
+
+		}
+
+	} while (opcion != 5);
+
+	return EXIT_SUCCESS;
+}

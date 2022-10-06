@@ -1,0 +1,52 @@
+/*
+ ============================================================================
+ Name        : Menu.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	char opcion;
+	int seInicio = 0;
+
+	do{
+		printf("\na)Iniciar");
+		printf("\nb)Procesar");
+		printf("\nc)Finalizar");
+		printf("\nd)Salir");
+		fflush(stdin);
+		scanf("%c", &opcion);
+
+		switch(opcion){
+
+		case 'a':
+			printf("\nIniciado!.");
+			seInicio = 1;
+			break;
+
+		case 'b':
+			if(seInicio == 1)
+			printf("\nProcesando");
+			else
+				printf("\n Se debe inciar antes de procesar");
+			break;
+
+		case 'c':
+			if(seInicio == 1)
+			printf("\nFinalizando");
+			else
+				printf("\n Se debe inciar antes de finalizar");
+			break;
+		}
+	}while(opcion != 'd');
+
+
+	return EXIT_SUCCESS;
+}

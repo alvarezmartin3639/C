@@ -1,0 +1,426 @@
+17:45:36 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+Info: Nothing to build for TP_1
+17:46:21 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:665:6: error: invalid operands to binary - (have 'float *' and 'double')
+  665 |      - *costoMantenimiento * 0.35;
+      |      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                            |
+      |                            double
+..\src\utnMenu.c:668:22: warning: assignment to 'float *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  668 |   costoMantenimiento = costoComida + costoTransporte + costoHospedaje;
+      |                      ^
+17:46:33 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:665:27: error: invalid operands to binary * (have 'float *' and 'double')
+  665 |      - costoMantenimiento * 0.35;
+      |                           ^
+..\src\utnMenu.c:668:22: warning: assignment to 'float *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  668 |   costoMantenimiento = costoComida + costoTransporte + costoHospedaje;
+      |                      ^
+17:46:46 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:47:55 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:602:6: warning: variable 'recargo' set but not used [-Wunused-but-set-variable]
+  602 |  int recargo = *cantidadDeRecargo;
+      |      ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:49:17 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+Info: Nothing to build for TP_1
+17:50:13 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:51:07 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:51:17 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:672:22: warning: assignment to 'float *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  672 |   costoMantenimiento = costoComida + costoTransporte + costoHospedaje;
+      |                      ^
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:51:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+Info: Nothing to build for TP_1
+17:52:45 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:660:53: error: invalid operands to binary + (have 'float' and 'float *')
+  660 |   costoMantenimiento = costoComida + costoHospedaje + costoMantenimiento
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+      |                                    |
+      |                                    float
+17:52:56 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:660:54: error: invalid operands to binary + (have 'float' and 'float *')
+  660 |   *costoMantenimiento = costoComida + costoHospedaje + costoMantenimiento
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+      |                                     |
+      |                                     float
+17:53:29 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:54:13 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:603:8: warning: unused variable 'mantenimiento' [-Wunused-variable]
+  603 |  float mantenimiento =* costoMantenimiento;
+      |        ^~~~~~~~~~~~~
+..\src\utnMenu.c:602:8: warning: unused variable 'recargo' [-Wunused-variable]
+  602 |  float recargo = *cantidadDeRecargo;
+      |        ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:54:59 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:603:8: warning: unused variable 'mantenimiento' [-Wunused-variable]
+  603 |  float mantenimiento =* costoMantenimiento;
+      |        ^~~~~~~~~~~~~
+..\src\utnMenu.c:602:8: warning: unused variable 'recargo' [-Wunused-variable]
+  602 |  float recargo = *cantidadDeRecargo;
+      |        ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+Info: Nothing to build for TP_1
+17:57:19 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:603:8: warning: unused variable 'mantenimiento' [-Wunused-variable]
+  603 |  float mantenimiento =* costoMantenimiento;
+      |        ^~~~~~~~~~~~~
+..\src\utnMenu.c:602:8: warning: unused variable 'recargo' [-Wunused-variable]
+  602 |  float recargo = *cantidadDeRecargo;
+      |        ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:57:49 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:603:8: warning: unused variable 'mantenimiento' [-Wunused-variable]
+  603 |  float mantenimiento =* costoMantenimiento;
+      |        ^~~~~~~~~~~~~
+..\src\utnMenu.c:602:8: warning: unused variable 'recargo' [-Wunused-variable]
+  602 |  float recargo = *cantidadDeRecargo;
+      |        ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+17:58:18 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:603:8: warning: unused variable 'mantenimiento' [-Wunused-variable]
+  603 |  float mantenimiento =* costoMantenimiento;
+      |        ^~~~~~~~~~~~~
+..\src\utnMenu.c:602:8: warning: unused variable 'recargo' [-Wunused-variable]
+  602 |  float recargo = *cantidadDeRecargo;
+      |        ^~~~~~~
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:558:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  558 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  559 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:09:28 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:560:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  560 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  561 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:09:51 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:12:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:567:6: warning: 'auxConfederacion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  567 |      printf("\n Confederación -> %s ",
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  568 |        mostrarConfederacion(auxConfederacion));
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:12:59 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'cargarJugadores':
+..\src\utnMenu.c:545:14: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  545 |    else if ( auxConfederacion = pedirConfedereacion(contJugadoresAFC, contJugadoresCAF,
+      |              ^~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:13:12 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+18:14:08 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:44:38 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+Info: Nothing to build for TP_1
+22:45:58 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:46:47 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:47:06 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:668:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  668 |   printf("\n%d", promedioJugadoresEnConfederacion[3]);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |                                   |
+      |              int                                 double
+      |             %f
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:47:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:47:50 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:48:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:668:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  668 |   printf("\ncont conmebol %f", contJugadoresCONMEBOL);
+      |                           ~^   ~~~~~~~~~~~~~~~~~~~~~
+      |                            |   |
+      |                            |   int
+      |                            double
+      |                           %d
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:49:06 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:49:20 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:50:31 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+..\src\utnMenu.c: In function 'realizarCalculos':
+..\src\utnMenu.c:656:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  656 |   if (contJugadoresCONCACAF != 0)
+      |   ^~
+..\src\utnMenu.c:660:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  660 |    promedioJugadoresEnConfederacion[3] = (float) contJugadoresCONMEBOL
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+22:50:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+12:55:33 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+In file included from ..\src\TP_1.c:18:
+..\src\utnMenu.h:273:25: error: redefinition of parameter 'seRealizoCalculo'
+  273 |   int tamJugadores, int seRealizoCalculo);
+      |                     ~~~~^~~~~~~~~~~~~~~~
+..\src\utnMenu.h:272:56: note: previous definition of 'seRealizoCalculo' was here
+  272 |   float costoMantenimiento, float costoTransporte, int seRealizoCalculo,
+      |                                                    ~~~~^~~~~~~~~~~~~~~~
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:83:4: error: too few arguments to function 'cargarJugadores'
+   83 |    cargarJugadores(posicion, numeroCamiseta, TAMJUGADORES,
+      |    ^~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:18:
+..\src\utnMenu.h:217:5: note: declared here
+  217 | int cargarJugadores(int posicion[], int numeroCamiseta[], int tamJugadores,
+      |     ^~~~~~~~~~~~~~~
+..\src\TP_1.c:101:4: error: too few arguments to function 'informarResultados'
+  101 |    informarResultados(posicion, promedioJugadoresEnConfederacion,
+      |    ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_1.c:18:
+..\src\utnMenu.h:270:5: note: declared here
+  270 | int informarResultados(int *posicion, float *promedioJugadoresEnConfederacion,
+      |     ^~~~~~~~~~~~~~~~~~
+12:56:18 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:87:23: warning: passing argument 12 of 'cargarJugadores' makes pointer from integer without a cast [-Wint-conversion]
+   87 |      TAMEQUIPOTITULAR,seRealizoCalculo);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       |
+      |                       int
+In file included from ..\src\TP_1.c:18:
+..\src\utnMenu.h:221:29: note: expected 'int *' but argument is of type 'int'
+  221 |   int tamEquipoTitular,int* seRealizoCalculo);
+      |                        ~~~~~^~~~~~~~~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+12:56:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+12:57:06 **** Building Selected Files of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+12:59:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:79:4: error: too few arguments to function 'cargarCostos'
+   79 |    cargarCostos(&costoHospedaje, &costoComida, &costoTransporte);
+      |    ^~~~~~~~~~~~
+In file included from ..\src\TP_1.c:18:
+..\src\utnMenu.h:136:5: note: declared here
+  136 | int cargarCostos(float *costoHospedaje, float *costoComida,
+      |     ^~~~~~~~~~~~
+13:00:54 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+13:03:13 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+13:03:27 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+13:04:24 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+13:06:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 

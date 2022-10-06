@@ -1,0 +1,160 @@
+19:37:26 **** Rebuild of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:59:3: warning: implicit declaration of function 'getPedirStringDeLetras' [-Wimplicit-function-declaration]
+   59 |   getPedirStringDeLetras(auxEstudiante.nombre, "\nIngrese nombre",
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:53:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   53 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 4_Cargar_Estructura
+19:37:41 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:59:3: warning: implicit declaration of function 'getPedirStringDeLetras' [-Wimplicit-function-declaration]
+   59 |   getPedirStringDeLetras(auxEstudiante.nombre, "\nIngrese nombre",
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:53:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   53 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:38:16 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:55:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   55 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:40:23 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:62:40: warning: unknown escape sequence: '\.'
+   62 |     && getPedirInt(auxEstudiante.edad, "\.nIngrese edad: ",
+      |                                        ^~~~~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:62:33: warning: passing argument 1 of 'getPedirInt' makes pointer from integer without a cast [-Wint-conversion]
+   62 |     && getPedirInt(auxEstudiante.edad, "\.nIngrese edad: ",
+      |                    ~~~~~~~~~~~~~^~~~~
+      |                                 |
+      |                                 int
+In file included from ..\src\4_Cargar_Estructura.c:34:
+..\src\utnValidacion.h:68:22: note: expected 'int *' but argument is of type 'int'
+   68 | int getPedirInt(int *pNumero, char *mensaje, char *mensajeError, int minimo,
+      |                 ~~~~~^~~~~~~
+..\src\4_Cargar_Estructura.c:54:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   54 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:41:25 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:62:41: warning: unknown escape sequence: '\.'
+   62 |     && getPedirInt(&auxEstudiante.edad, "\.nIngrese edad: ",
+      |                                         ^~~~~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:54:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   54 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:41:55 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:63:41: warning: unknown escape sequence: '\.'
+   63 |     && getPedirInt(&auxEstudiante.edad, "\.nIngrese edad: ",
+      |                                         ^~~~~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:55:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   55 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:42:06 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:55:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   55 |  int retorno = -1;
+      |      ^~~~~~~
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:42:45 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c:53:13: error: conflicting types for 'cargarEstudiante'
+   53 | eEstudiante cargarEstudiante(int *esUnExito, int *legajo) {
+      |             ^~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:30:13: note: previous declaration of 'cargarEstudiante' was here
+   30 | eEstudiante cargarEstudiante(int *esUnExito);
+      |             ^~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c: In function 'cargarEstudiante':
+..\src\4_Cargar_Estructura.c:55:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   55 |  int retorno = -1;
+      |      ^~~~~~~
+19:43:12 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c:53:13: error: conflicting types for 'cargarEstudiante'
+   53 | eEstudiante cargarEstudiante(int *esUnExito, int *legajo) {
+      |             ^~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:30:13: note: previous declaration of 'cargarEstudiante' was here
+   30 | eEstudiante cargarEstudiante(int *esUnExito);
+      |             ^~~~~~~~~~~~~~~~
+19:43:24 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'main':
+..\src\4_Cargar_Estructura.c:45:25: error: too few arguments to function 'cargarEstudiante'
+   45 |   *(miEstudiante + i) = cargarEstudiante(&esUnExito);
+      |                         ^~~~~~~~~~~~~~~~
+..\src\4_Cargar_Estructura.c:30:13: note: declared here
+   30 | eEstudiante cargarEstudiante(int *esUnExito, int* legajo);
+      |             ^~~~~~~~~~~~~~~~
+19:43:32 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:51:36 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:53:40 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+..\src\4_Cargar_Estructura.c: In function 'mostrarEstudiantes':
+..\src\4_Cargar_Estructura.c:81:1: error: expected '(' before '}' token
+   81 | }
+      | ^
+      | (
+..\src\4_Cargar_Estructura.c:77:6: warning: unused variable 'retorno' [-Wunused-variable]
+   77 |  int retorno = -1;
+      |      ^~~~~~~
+..\src\4_Cargar_Estructura.c:81:1: warning: control reaches end of non-void function [-Wreturn-type]
+   81 | }
+      | ^
+19:55:37 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:56:37 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:57:07 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 4_Cargar_Estructura
+19:57:53 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\4_Cargar_Estructura.o" "..\\src\\4_Cargar_Estructura.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+19:58:14 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 

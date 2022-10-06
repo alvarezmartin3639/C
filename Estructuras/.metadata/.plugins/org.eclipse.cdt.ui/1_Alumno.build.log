@@ -1,0 +1,7 @@
+10:54:54 **** Incremental Build of configuration Debug for project 1_Alumno ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Alumno.o" "..\\src\\1_Alumno.c" 
+gcc -o 1_Alumno.exe "src\\1_Alumno.o" "src\\alumno.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+10:54:54 Build Finished. 0 errors, 0 warnings. (took 683ms)
+

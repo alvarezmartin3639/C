@@ -1,0 +1,88 @@
+/*
+ ============================================================================
+ Name        : TP_1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utnArray.h"
+#include "utnValidacion.h"
+#include "utnCadenas.h"
+#include "utnGUI.h"
+#include "utnMenu.h"
+#define TAMJUGADORES 22
+#define TAMCONFEDERACION 30
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	//Uso arrays paralelos por si se agranda el programa
+	int numeroCamiseta[TAMJUGADORES];
+	//0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros
+	int posicion[TAMJUGADORES];
+	//Conf Asia
+	int contJugadoresAFC;
+	//Conf África
+	int contJugadoresCAF;
+	//Conf zona del Norte
+	int contJugadoresCONCACAF;
+	//Conf Sudamerica
+	int contJugadoresCONMEBOL;
+	//Conf Europa
+	int contJugadoresUEFA;
+	//Conf Oceanía
+	int contJugadoresOFC;
+
+	float costoHospedaje;
+	float costoComida;
+	float costoTransporte;
+
+	int opcionElegida;
+
+	inicializacionDeVariables(&costoHospedaje, &costoComida, &costoTransporte,
+			&contJugadoresAFC, &contJugadoresCAF, &contJugadoresCONCACAF,
+			&contJugadoresCONMEBOL, &contJugadoresOFC, &contJugadoresUEFA,
+			numeroCamiseta, posicion, TAMJUGADORES);
+
+	do {
+
+		mostrarMenuPrincipal(&costoHospedaje, &costoComida, &costoTransporte,
+				posicion, TAMJUGADORES);
+
+		getPedirInt(&opcionElegida, "\n\nIngrese una opción:  ",
+				"\n***Error, lo ingresado no es una opción válida, está debe ser un numero entre 1 y 5",
+				1, 5, 2);
+
+		switch (opcionElegida) {
+
+		case 1:
+			pedirCostos(&costoHospedaje, &costoComida, &costoTransporte);
+			break;
+
+		case 2:
+			cargarJugadores(posicion, numeroCamiseta, TAMJUGADORES,
+					&contJugadoresAFC, &contJugadoresCAF,
+					&contJugadoresCONCACAF, &contJugadoresCONMEBOL,
+					&contJugadoresUEFA, &contJugadoresOFC);
+			break;
+
+		case 3:
+
+		break;
+
+		case 4:
+
+			break;
+
+		}
+
+	} while (opcionElegida != 5);
+
+	return EXIT_SUCCESS;
+}

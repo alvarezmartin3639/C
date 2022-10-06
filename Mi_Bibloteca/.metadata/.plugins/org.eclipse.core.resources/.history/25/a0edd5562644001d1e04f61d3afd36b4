@@ -1,0 +1,41 @@
+/*
+ * utnTabla.h
+ *
+ *  Created on: 4 oct 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNTABLA_H_
+#define UTNTABLA_H_
+//https://es.acervolima.com/como-imprimir-un-nombre-de-variable-en-c/
+#define getIdentificadorVariable(var)  #var
+
+/**
+ *
+ eTabla va a tener un array  a puntero de función, tanto char, como int, como float,etc...  si no es null se ejecuta, va a tener un puntero a una función de su clase que se llame mostrarTabla, esta va a recorrer los campos de eTabla (los punteros) mostrando los de la posición 0;
+
+pMostrarInt (int* arrayInt, int tamArray, int indice);
+
+
+int mostrarTabla();
+Recorre los atributos con los punteros y si no son nul los imprime, pasandole la posición (los tamaños se sacan de
+
+
+
+//
+ *
+ * int mostrarTabla(int *pInt(int array*, int tam), char *pChar(char * array, int tam );
+ *
+ *
+ *
+ */
+typedef struct {
+
+	int* der ;
+
+
+} eTabla;
+
+
+
+#endif /* UTNTABLA_H_ */

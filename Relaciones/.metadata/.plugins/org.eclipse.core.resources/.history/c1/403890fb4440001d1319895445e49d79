@@ -1,0 +1,50 @@
+/*
+ * sectores.c
+ *
+ *  Created on: 29 sept 2022
+ *      Author: kenyn
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "sector.h"
+
+int setSector(eSector *sector, int idSector, char *descripcion) {
+
+	int retorno = -1;
+
+	if (sector != NULL && descripcion != NULL) {
+
+		strcpy(sector->descripcionSector, descripcion);
+		sector->idSector = idSector;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int esSectorValido(eSector *sectores, int tamSectores, char *nombreDelSector) {
+
+	int retorno = -1;
+
+	if (sectores != NULL && tamSectores > 0 && nombreDelSector != NULL) {
+
+		for (int i = 0; i < tamSectores; i++) {
+
+			if (strcmp(sectores[i].descripcionSector, nombreDelSector) == 0) {
+				retorno = 0;
+				break;
+			}
+
+		}
+	}
+
+	return retorno;
+}
+
+int getPedirSectorValido(char *texto, char *pResultado, eSector sectores, int tamSectores) {
+
+
+
+}

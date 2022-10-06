@@ -1,0 +1,41 @@
+/*
+ * utnMenu.h
+ *
+ *  Created on: 18 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNMENU_H_
+#define UTNMENU_H_
+
+int mostrarMenuPrincipal(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *posicion, int tamJugadores);
+
+int inicializacionDeVariables(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresOFC, int *contJugadoresUEFA, int *numeroCamiseta,
+		int *posicion, int tamJugadores);
+
+int calcularNumeroDePosiciones(int *contArqueros, int *contDefensores,
+		int *contMediocampistas, int *contDelanteros, int *posicion,
+		int tamJugadores);
+
+int mostrarPosicionesYCantidadDeJugadores(int *posicion, int tamJugadores, int mostrarIndices);
+
+int mostrarCostos(float costoHospedaje, float costoComida,float costoTransporte);
+
+int pedirCostos(int *costoHospedaje, int *costoComida, int *costoTransporte);
+
+int pedirPosicion(int *posicion, int tamJugadores, int *auxPosicion);
+
+int pedirConfedereacion(int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+int cargarJugadores(int posicion[], int numeroCamiseta[], int tamJugadores,
+		int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+#endif /* UTNMENU_H_ */

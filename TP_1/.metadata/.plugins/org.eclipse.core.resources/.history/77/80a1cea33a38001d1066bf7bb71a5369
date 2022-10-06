@@ -1,0 +1,131 @@
+/*
+ ============================================================================
+ Name        : TP_1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utnArray.h"
+#include "utnValidacion.h"
+#include "utnCadenas.h"
+#include "utnGUI.h"
+#include "utnMenu.h"
+#define TAMJUGADORES 22
+#define TAMCONFEDERACION 6
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	//Uso arrays paralelos por si se agranda el programa
+	int numeroCamiseta[TAMJUGADORES];
+	//0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros
+	int posicion[TAMJUGADORES];
+	//Conf Asia
+	int contJugadoresAFC;
+	//Conf África
+	int contJugadoresCAF;
+	//Conf zona del Norte
+	int contJugadoresCONCACAF;
+	//Conf Sudamerica
+	int contJugadoresCONMEBOL;
+	//Conf Europa
+	int contJugadoresUEFA;
+	//Conf Oceanía
+	int contJugadoresOFC;
+	//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC
+	float promedioJugadoresEnConfederacion[TAMCONFEDERACION];
+	float costoMantenimiento;
+	float costoHospedaje;
+	float costoComida;
+	float costoTransporte;
+
+	int opcionElegida;
+
+	inicializacionDeVariables(&costoHospedaje, &costoComida, &costoTransporte,
+			&costoMantenimiento, &contJugadoresAFC, &contJugadoresCAF,
+			&contJugadoresCONCACAF, &contJugadoresCONMEBOL, &contJugadoresOFC,
+			&contJugadoresUEFA, numeroCamiseta, posicion,
+			TAMJUGADORES, promedioJugadoresEnConfederacion, TAMCONFEDERACION);
+
+	do {
+
+		mostrarMenuPrincipal(&costoHospedaje, &costoComida, &costoTransporte,
+				posicion, TAMJUGADORES);
+
+		getPedirInt(&opcionElegida, "\n\nIngrese una opción:  ",
+				"\n***Error, lo ingresado no es una opción válida, está debe ser un numero entre 1 y 5",
+				1, 5, 2);
+
+		switch (opcionElegida) {
+
+		case 1:
+			cargarCostos(&costoHospedaje, &costoComida, &costoTransporte);
+			break;
+
+		case 2:
+			cargarJugadores(posicion, numeroCamiseta, TAMJUGADORES,
+					&contJugadoresAFC, &contJugadoresCAF,
+					&contJugadoresCONCACAF, &contJugadoresCONMEBOL,
+					&contJugadoresUEFA, &contJugadoresOFC);
+			break;
+
+		case 3: {
+
+			int tamJugadoresCargados = 0;
+
+			tamJugadoresCargados = TAMJUGADORES
+					- contarCantDeNumerosEnArrayInt(posicion, TAMJUGADORES, 0);
+
+			//a
+			promedioJugadoresEnConfederacion[0] = (float) tamJugadoresCargados
+					/ contJugadoresAFC;
+			promedioJugadoresEnConfederacion[1] = (float) tamJugadoresCargados
+					/ contJugadoresCAF;
+			promedioJugadoresEnConfederacion[2] = (float) tamJugadoresCargados
+					/ contJugadoresAFC;
+			promedioJugadoresEnConfederacion[3] = (float) tamJugadoresCargados
+					/ contJugadoresCONCACAF;
+			promedioJugadoresEnConfederacion[4] = (float) tamJugadoresCargados
+					/ contJugadoresCONMEBOL;
+			promedioJugadoresEnConfederacion[5] = (float) tamJugadoresCargados
+					/ contJugadoresUEFA;
+			promedioJugadoresEnConfederacion[6] = (float) tamJugadoresCargados
+					/ contJugadoresOFC;
+
+			//b
+			costoMantenimiento = costoComida + costoHospedaje + costoMantenimiento + costoTransporte;
+
+
+			buscarindi(promedioJugadoresEnConfederacion, TAMCONFEDERACION);
+
+			printf("\n               Realizar todos los cálculos.\n");
+
+			if (costoComida != 0 && costoMantenimiento != 0
+					&& costoTransporte != 0 && costoHospedaje != 0)
+				costoMantenimiento = costoComida + costoTransporte
+						+ costoHospedaje;
+
+			else
+				printf(
+						"\n***Error, no se pudo calcular el mantenimiento debido a que uno de los datos no fue cargado***\n");
+
+		}
+
+			break;
+
+		case 4:
+
+			break;
+
+		}
+
+	} while (opcionElegida != 5);
+
+	return EXIT_SUCCESS;
+}

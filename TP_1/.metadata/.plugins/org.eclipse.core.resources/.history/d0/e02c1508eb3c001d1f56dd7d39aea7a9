@@ -1,0 +1,275 @@
+/*
+ * utnMenu.h
+ *
+ *  Created on: 18 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNMENU_H_
+#define UTNMENU_H_
+
+/**
+ * @fn int mostrarMenuPrincipal(float*, float*, float*, int*, int)
+ * @brief Muestra las opciones del menú principal
+ *
+ * @param costoHospedaje el costo del hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @return retorna un int con los valores de: -1 = existe un error inesperado, 0 = se ejecutó sin problemas
+ */
+int mostrarMenuPrincipal(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *posicion, int tamJugadores);
+
+/**
+ * @fn char mostrarPosicion*(int)
+ * @brief muestra la posición de un jugador (Arquero, Defensor, Mediocampista o Delantero)
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @return retorna un char con los valores de posición ( 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ */
+char* mostrarPosicion(int posicion);
+
+/**
+ * @fn int inicializacionDeVariables(float*, float*, float*, float*, int*, int*, int*, int*, int*, int*, int*, int*, int, int*, int, int*)
+ * @brief	incializa toda las variables del sistema
+ *
+ * @param costoHospedaje el costo del hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @param costoDeMantenimiento el costo total del mantenimiento del equipo, este se calcula sumando la comida, transporte y hospedaje
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param numeroCamiseta array paralelo de un jugador que hace referencia a su numero de camiseta
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param equipoTitular un array que contiene indices del array paralelo de jugadores
+ * @param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11
+ * @param seRealizoCalculo si se realizó el calculo del menu (opcion 3)
+ * @return retorna un int con los valores de -1 si no se pudo incializar las posiciones
+ */
+int inicializacionDeVariables(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, float *costoDeMantenimiento,
+		int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresOFC, int *contJugadoresUEFA, int *numeroCamiseta,
+		int *posicion, int tamJugadores, int *equipoTitular,
+		int tamEquipoTitular, int *seRealizoCalculo);
+
+/**
+ * @fn void hardcodearMenu(float*, float*, float*, int*, int*, int*, int*, int*, int*, int*, int*, int, int*)
+ * @brief da un valor a cada atributo del sistema para poder probarlo
+ *
+ * @param costoHospedaje el costo del hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param numeroCamiseta array paralelo de un jugador que hace referencia a su numero de camiseta
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param seRealizoCalculo si se realizó el calculo del menu (opcion 3)
+ */
+void hardcodearMenu(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresOFC, int *contJugadoresUEFA, int *numeroCamiseta,
+		int *posicion, int tamJugadores, int *seRealizoCalculo);
+
+/**
+ * @fn int calcularNumeroDePosiciones(int*, int*, int*, int*, int*, int)
+ * @brief calcula cuantos jugadores tienen cada posición, las cuenta y luego las guarda en los contadores pasados por parametros
+ *
+ * @param contArqueros contador que hace referencia a la cantidad de arqueros que hay en el equipo (tanto suplentes como titulares)
+ * @param contArqueros contador que hace referencia a la cantidad de defensores que hay en el equipo (tanto suplentes como titulares)
+ * @param contMediocampistas contador que hace referencia a la cantidad de mediocampistas que hay en el equipo (tanto suplentes como titulares)
+ * @param contDelanteros contador que hace referencia a la cantidad de delanteros que hay en el equipo (tanto suplentes como titulares)
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @return -1 = error inesperado, 0 = se ejecutó la función correctamente
+ */
+int calcularNumeroDePosiciones(int *contArqueros, int *contDefensores,
+		int *contMediocampistas, int *contDelanteros, int *posicion,
+		int tamJugadores);
+
+/**
+ * @fn int mostrarPosicionesYCantidadDeJugadores(int*, int, int)
+ * @brief muestra las posiciones  y la cantidad de jugadores que las ocupan
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param mostrarIndices 1 = se muestran los indices, 0 = se ocultan
+ * @return  -1 = si ocurrió un error inesperado, 0 = se ejecutó la función correctamente
+ */
+int mostrarPosicionesYCantidadDeJugadores(int *posicion, int tamJugadores,
+		int mostrarIndices);
+/**
+ * @fn int mostrarCostos(float, float, float)
+ * @brief muestra los costos (hospedaje, comida y tranpsorte)
+ *
+ * @param costoHospedaje el costo del hospedaje de todo el equipo el costo de hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo el coste de la comida de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @return -1 = si ocurrió un error inesperado,  1 = si alguno de los costos tiene un valor menor a 0, 0  = si se ejecutó correctamente.
+ */
+int mostrarCostos(float costoHospedaje, float costoComida,
+		float costoTransporte);
+
+/**
+ * @fn int cargarCostos(float*, float*, float*)
+ * @brief permite ingresar los costos de transporte, comida y hospedaje, mediante una interfaz gráfica
+ *
+ * @param costoHospedaje el costo del hospedaje de todo el equipo el costo de hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @return -1 = si ocurrió un error inesperado, 0 = sin errores
+ */
+int cargarCostos(float *costoHospedaje, float *costoComida,
+		float *costoTransporte);
+
+/**
+ * @fn int pedirPosicion(int*, int, int*)
+ * @brief permite al usuario elegir una posición validandola y verificando que no se supere el maximo de jugadores en cada posición
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param auxPosicion
+ * @return -1 = si ocurrió un error inesperado, 0 = sin errores
+ */
+int pedirPosicion(int *posicion, int tamJugadores, int *auxPosicion);
+
+/**
+ * @fn int pedirConfedereacion(int*, int*, int*, int*, int*, int*)
+ * @brief permite al usario elegir una confederación para un jugador
+ *
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @return -1 = si ocurrió un error inesperado, 1 = error con los parametros, un numero del 1 al 6 = pertenciente a la confederación elegida
+ */
+int pedirConfedereacion(int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+/**
+ * @fn int pedirTitularidad(int*, int*, int, int, int*, int*, int*, int*, int*, int*)
+ * @brief permite al usuario elegir si el jugador es titular o suplente validando que exista espacios disponbiles para titulares
+ *
+ * @param equipoTitular un array que contiene indices del array paralelo de jugadores
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @return -1 = si ocurrió un error inesperado, 1 = error con los parametros, 0 = sin errores
+ */
+int pedirTitularidad(int *equipoTitular, int *posicion, int tamEquipoTitular,
+		int tamJugadores, int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+/**
+ * @fn int verificarEspacioParaSerTitular(int*, int*, int, int)
+ * @brief verifica si existe espacio disponbile para un nuevo titular
+ *
+ * @param equipoTitular un array que contiene indices del array paralelo de jugadores
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @return 1  = si hay espacio en el equipo titular, 0 = si no hay espacio en el equipo titular
+ */
+int verificarEspacioParaSerTitular(int *equipoTitular, int *posicion,
+		int tamEquipoTitular, int tamJugadores);
+
+/**
+ * @fn int cargarJugadores(int[], int[], int, int*, int*, int*, int*, int*, int*, int*, int)
+ * @brief permite al usuario cargar un jugador al sistema, preguntando su posición, confederación, titularidad y numero de camiseta
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param numeroCamiseta array paralelo de un jugador que hace referencia a su numero de camiseta
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @param equipoTitular un array que contiene indices del array paralelo de jugadores
+ * @param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11
+ * @return -1 = si ocurrió un error inesperado, 0 = el jugador se creo con exito
+ */
+int cargarJugadores(int posicion[], int numeroCamiseta[], int tamJugadores,
+		int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC, int *equipoTitular,
+		int tamEquipoTitular,int* seRealizoCalculo);
+
+/**
+ * @fn int realizarCalculos(int*, int*, float*, float*, float*, int*, int, int, int, int, int, int, float, float, float, int, int, int)
+ * @brief permite calcular el promedio de jugadores en cada confederación, el coste y la cantidad de recargo extra
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param equipoTitular un array que contiene indices del array paralelo de jugadores
+ * @param promedioJugadoresEnConfederacion array que contiene los promedios de jugadores en su confederación correspondiente, cada indice es una confederación distinta (  	//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC )  array que contiene los promedios de jugadores en su confederación correspondiente, cada indice es una confederación distinta (  	//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC )
+ * @param costoMantenimiento el costo de mantenimiento de todo el equipo
+ * @param cantidadDeRecargo la cantidad de recargo que se se aplica al precio final
+ * @param seRealizoCalculo si se realizó el calculo del menu (opcion 3)
+ * @param contJugadoresAFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Asia (AFC)
+ * @param contJugadoresCAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de África(CAF)
+ * @param contJugadoresCONCACAF contador que hace referencia a la cantidad de jugadores que contiene la confederación de zona del Norte(CONCACAF)
+ * @param contJugadoresCONMEBOL contador que hace referencia a la cantidad de jugadores que contiene la confederación de Sudamerica(CONMEBOL)
+ * @param contJugadoresUEFA contador que hace referencia a la cantidad de jugadores que contiene la confederación de Europa(UEFA)
+ * @param contJugadoresOFC contador que hace referencia a la cantidad de jugadores que contiene la confederación de Oceanía(OFC)
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoHospedaje el costo del hospedaje de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11
+ * @param tamConfederacion la cantidad de confederaciones que existen en el torneo
+ * @return -1 = si ocurrió un error inesperado, 1 = error con los parametros , 0 = se calculó con exito
+ */
+int realizarCalculos(int *posicion, int *equipoTitular,
+		float *promedioJugadoresEnConfederacion, float *costoMantenimiento,
+		float *cantidadDeRecargo, int *seRealizoCalculo, int contJugadoresAFC,
+		int contJugadoresCAF, int contJugadoresCONCACAF,
+		int contJugadoresCONMEBOL, int contJugadoresUEFA, int contJugadoresOFC,
+		float costoComida, float costoHospedaje, float costoTransporte,
+		int tamJugadores, int tamEquipoTitular, int tamConfederacion);
+
+/**
+ * @fn int informarResultados(int*, float*, float, float, float, float, float, int, int)
+ * @brief informa los resultados de los calculos, estos son promedio de jugadores en cada confederación y todos los gastos del equipo
+ *
+ * @param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)
+ * @param promedioJugadoresEnConfederacion array que contiene los promedios de jugadores en su confederación correspondiente, cada indice es una confederación distinta (  	//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC )  array que contiene los promedios de jugadores en su confederación correspondiente, cada indice es una confederación distinta (  	//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC )
+ * @param cantidadDeRecargo la cantidad de recargo que se se aplica al precio final
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoHospedaje el costo del hospedaje de todo el equipo
+ * @param costoMantenimiento el costo de mantenimiento de todo el equipo
+ * @param costoTransporte el costo de transporte de todo el equipo
+ * @param seRealizoCalculo si se realizó el calculo del menu (opcion 3)
+ * @param tamJugadores la cantidad de jugadores maximos que puede tener el equipo
+ * @return -1 = si ocurrió un error inesperado, 1 = error en los parametros, 0 = se informó con exito los resulatados
+ */
+int informarResultados(int *posicion, float *promedioJugadoresEnConfederacion,
+		float cantidadDeRecargo, float costoComida, float costoHospedaje,
+		float costoMantenimiento, float costoTransporte, int seRealizoCalculo,
+		int tamJugadores);
+
+#endif /* UTNMENU_H_ */

@@ -1,0 +1,67 @@
+/*
+ * utnMostrar.h
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNGUI_H_
+#define UTNGUI_H_
+
+/**
+ * @fn int mostrarArrayInt(int[], int)
+ * @brief
+ *
+ * @param enteros
+ * @param tamEnteros
+ * @return
+ */
+int mostrarArrayInt(int enteros[], int tamEnteros);
+
+/**
+ * @fn int mostrarArrayFloat(float[], int)
+ * @brief
+ *
+ * @param flotantes
+ * @param tamFloat
+ * @return
+ */
+int mostrarArrayFloat(float flotantes[], int tamFloat);
+
+/**
+ * @fn int mostrarArrayChar(char[], int)
+ * @brief
+ *
+ * @param caracteres
+ * @param tamCaracteres
+ * @return
+ */
+int mostrarArrayChar(char caracteres[], int tamCaracteres);
+
+/**
+ * @fn int mostrarArrayString(char[][], int)
+ * @brief
+ *
+ * @param texto
+ * @param tamTexo
+ * @return
+ */
+int mostrarArrayString(char texto[][50], int tamTexo);
+
+/**
+ * @fn void textoConEspera(char[], int)
+ * @brief
+ *
+ * @param mensaje
+ * @param seconds
+ */
+void textoConEspera(char mensaje[60], int seconds) ;
+
+/**
+ * @fn void limpiarPantalla(void)
+ * @brief
+ *
+ */
+void limpiarPantalla(void);
+
+#endif /* UTNGUI_H_ */

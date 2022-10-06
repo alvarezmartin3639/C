@@ -1,0 +1,24 @@
+/*
+ * sector.h
+ *
+ *  Created on: 29 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef SECTOR_H_
+#define SECTOR_H_
+#define TAMSECTOR 9
+typedef struct {
+
+	int idSector;
+	char descripcionSector[64];
+
+} eSector;
+
+int setSector(eSector* sector,int idSector, char* descripcion);
+
+int getPedirSectorValido(char* texto, char* pResultado, eSector sectores, int tamSectores);
+
+int esSectorValido(eSector *sectores, int tamSectores, char *nombreDelSector);
+
+#endif /* SECTOR_H_ */

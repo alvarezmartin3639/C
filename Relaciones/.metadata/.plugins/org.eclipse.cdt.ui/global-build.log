@@ -1,0 +1,962 @@
+15:36:57 **** Rebuild of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:476:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  476 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:492:1: warning: control reaches end of non-void function [-Wreturn-type]
+  492 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+15:38:03 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:39:20 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:41:14 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:41:51 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:42:56 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:97:47: error: 'tamSectores' undeclared (first use in this function); did you mean 'auxSectores'?
+   97 |      mostrarEmpleado(&empleados[i], sectores, tamSectores, 1);
+      |                                               ^~~~~~~~~~~
+      |                                               auxSectores
+..\src\2_Menu_Con_Relacion.c:97:47: note: each undeclared identifier is reported only once for each function it appears in
+15:43:06 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:43:48 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:81:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   81 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:79:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   79 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:51:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   51 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:44:08 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:81:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   81 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:79:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   79 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:51:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   51 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:44:54 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:85:14: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   85 |     printf("%s", empleados[i].isEmpity);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~
+      |              |               |
+      |              char *          int
+      |             %d
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:45:00 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:46:21 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:84:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   84 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:82:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   82 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:48:33 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'hardcodearEmpleados':
+..\src\Empleado.c:21:17: error: expected expression before '{' token
+   21 |  empleados[0] = {1, 1, "Martin", "alvarez", 23.2, 0};
+      |                 ^
+..\src\Empleado.c:24:4: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |    ^
+..\src\Empleado.c:24:7: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |       ^
+..\src\Empleado.c:24:17: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |                 ^
+..\src\Empleado.c:24:28: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |                            ^
+..\src\Empleado.c:24:34: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |                                  ^
+..\src\Empleado.c:24:34: warning: statement with no effect [-Wunused-value]
+..\src\Empleado.c:24:37: error: expected ';' before '}' token
+   24 |   1, 1, "Martin", "alvarez", 23.2, 0
+      |                                     ^
+      |                                     ;
+   25 |  }
+      |  ~                                   
+..\src\Empleado.c:26:1: error: expected expression before ',' token
+   26 | , { 2, 1, "Roberto", "Lopez", 24.2, 0}, {3, 1, "Federico", "Gonzales", 22.2, 0}, {4, 3,
+      | ^
+..\src\Empleado.c:26:1: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+..\src\Empleado.c:19:12: warning: variable 'empleados' set but not used [-Wunused-but-set-variable]
+   19 |  eEmpleado empleados[TAMEMPLEADOS];
+      |            ^~~~~~~~~
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:156:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  156 |    printf("");
+      |           ^~
+..\src\Empleado.c: In function 'hardcodearEmpleados':
+..\src\Empleado.c:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+   29 | }
+      | ^
+15:49:54 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:50:20 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:50:46 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:51:01 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:51:09 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:52:08 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:88:100: error: 'tamSectores' undeclared (first use in this function); did you mean 'auxSectores'?
+   88 |        printf("\nSector -> %s\n", mostrarDescripcionSectorPorId(empleados[i].idEmpleado, sectores, tamSectores));
+      |                                                                                                    ^~~~~~~~~~~
+      |                                                                                                    auxSectores
+..\src\2_Menu_Con_Relacion.c:88:100: note: each undeclared identifier is reported only once for each function it appears in
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+15:52:24 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:52:46 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:52:55 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:53:38 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:53:46 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:08 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:16 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:26 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:76:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   76 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:74:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   74 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:46:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   46 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:54:41 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:55:05 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:55:16 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:55:32 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:55:45 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:56:09 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:41:8: warning: unused variable 'acumSalarios' [-Wunused-variable]
+   41 |  float acumSalarios = 0;
+      |        ^~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:56:36 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:71:8: warning: unused variable 'auxSectores' [-Wunused-variable]
+   71 |    int auxSectores[TAMSECTOR];
+      |        ^~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:69:8: warning: unused variable 'indiceDelSectorMax' [-Wunused-variable]
+   69 |    int indiceDelSectorMax;
+      |        ^~~~~~~~~~~~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:59:44 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:01:54 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:02:37 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:04:14 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:05:07 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:05:48 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:06:23 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:94:6: error: invalid type argument of unary '*' (have 'int')
+   94 |      *auxSectores[empleados[i].idSector]++;
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16:07:34 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:08:14 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:08:44 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:10:59 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:12:36 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:13:36 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+16:58:02 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:481:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  481 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:497:1: warning: control reaches end of non-void function [-Wreturn-type]
+  497 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+17:02:12 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:483:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  483 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:499:1: warning: control reaches end of non-void function [-Wreturn-type]
+  499 | }
+      | ^
+..\src\utnArray.c: In function 'buscarIndiceMaximoArrayInt':
+..\src\utnArray.c:362:19: warning: 'i' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  362 |    valorDeRetorno = i;
+      |    ~~~~~~~~~~~~~~~^~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:02:29 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:483:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  483 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:499:1: warning: control reaches end of non-void function [-Wreturn-type]
+  499 | }
+      | ^
+..\src\utnArray.c: In function 'buscarIndiceMaximoArrayInt':
+..\src\utnArray.c:362:19: warning: 'i' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  362 |    valorDeRetorno = i;
+      |    ~~~~~~~~~~~~~~~^~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:02:45 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:483:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  483 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:499:1: warning: control reaches end of non-void function [-Wreturn-type]
+  499 | }
+      | ^
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+17:13:09 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:144:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  144 |    printf("");
+      |           ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+18:57:05 **** Rebuild of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:483:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  483 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:499:1: warning: control reaches end of non-void function [-Wreturn-type]
+  499 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:09:15 **** Rebuild of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:483:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  483 |  int retorno[tamArray];
+      |      ^~~~~~~
+..\src\utnArray.c:499:1: warning: control reaches end of non-void function [-Wreturn-type]
+  499 | }
+      | ^
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:09:38 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:500:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  500 |  return retorno;
+      |         ^~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:09:45 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:500:17: error: expected expression before ';' token
+  500 |  return retorno*;
+      |                 ^
+..\src\utnArray.c:501:1: warning: control reaches end of non-void function [-Wreturn-type]
+  501 | }
+      | ^
+15:09:51 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:500:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  500 |  return retorno;
+      |         ^~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:10:03 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+..\src\utnArray.c: In function 'buscarIndicesPorValorEnArrayInt':
+..\src\utnArray.c:500:9: warning: returning 'int' from a function with return type 'int *' makes pointer from integer without a cast [-Wint-conversion]
+  500 |  return *retorno;
+      |         ^~~~~~~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:10:21 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+15:15:35 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:81:6: warning: implicit declaration of function 'ordenarEmpleadoPorNombreYSector'; did you mean 'ordenarEmpleadosPorNombreDeSector'? [-Wimplicit-function-declaration]
+   81 |      ordenarEmpleadoPorNombreYSector(empleados, TAMEMPLEADOS);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      ordenarEmpleadosPorNombreDeSector
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:12:22: warning: passing argument 2 of 'mostrarEmpleados' makes pointer from integer without a cast [-Wint-conversion]
+   12 | #define TAMEMPLEADOS 6
+      |                      ^
+      |                      |
+      |                      int
+..\src\2_Menu_Con_Relacion.c:82:34: note: in expansion of macro 'TAMEMPLEADOS'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |                                  ^~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:77:53: note: expected 'eSector *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+   77 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |                                            ~~~~~~~~~^~~~~~~~
+..\src\2_Menu_Con_Relacion.c:82:6: error: too few arguments to function 'mostrarEmpleados'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |      ^~~~~~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:77:5: note: declared here
+   77 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |     ^~~~~~~~~~~~~~~~
+..\src\2_Menu_Con_Relacion.c:110:6: error: a label can only be part of a statement and a declaration is not a statement
+  110 |      int indiceDelSectorMax;
+      |      ^~~
+..\src\2_Menu_Con_Relacion.c:112:6: error: expected expression before 'int'
+  112 |      int auxSectores[TAMSECTOR];
+      |      ^~~
+..\src\2_Menu_Con_Relacion.c:115:7: error: 'auxSectores' undeclared (first use in this function); did you mean 'sectores'?
+  115 |       auxSectores[i] = 0;
+      |       ^~~~~~~~~~~
+      |       sectores
+..\src\2_Menu_Con_Relacion.c:115:7: note: each undeclared identifier is reported only once for each function it appears in
+15:15:50 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\2_Menu_Con_Relacion.c:81:6: warning: implicit declaration of function 'ordenarEmpleadoPorNombreYSector'; did you mean 'ordenarEmpleadosPorNombreDeSector'? [-Wimplicit-function-declaration]
+   81 |      ordenarEmpleadoPorNombreYSector(empleados, TAMEMPLEADOS);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      ordenarEmpleadosPorNombreDeSector
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:12:22: warning: passing argument 2 of 'mostrarEmpleados' makes pointer from integer without a cast [-Wint-conversion]
+   12 | #define TAMEMPLEADOS 6
+      |                      ^
+      |                      |
+      |                      int
+..\src\2_Menu_Con_Relacion.c:82:34: note: in expansion of macro 'TAMEMPLEADOS'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |                                  ^~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:77:53: note: expected 'eSector *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+   77 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |                                            ~~~~~~~~~^~~~~~~~
+..\src\2_Menu_Con_Relacion.c:82:6: error: too few arguments to function 'mostrarEmpleados'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |      ^~~~~~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:77:5: note: declared here
+   77 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |     ^~~~~~~~~~~~~~~~
+15:16:43 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+..\src\Empleado.c: In function 'ordenarEmpleadoPorNombreYSector':
+..\src\Empleado.c:464:24: error: 'eEmpleado' {aka 'struct <anonymous>'} has no member named 'sector'; did you mean 'idSector'?
+  464 |       if (empleados[i].sector > empleados[j].sector) {
+      |                        ^~~~~~
+      |                        idSector
+..\src\Empleado.c:464:46: error: 'eEmpleado' {aka 'struct <anonymous>'} has no member named 'sector'; did you mean 'idSector'?
+  464 |       if (empleados[i].sector > empleados[j].sector) {
+      |                                              ^~~~~~
+      |                                              idSector
+15:17:19 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\2_Menu_Con_Relacion.c: In function 'main':
+..\src\Empleado.h:12:22: warning: passing argument 2 of 'mostrarEmpleados' makes pointer from integer without a cast [-Wint-conversion]
+   12 | #define TAMEMPLEADOS 6
+      |                      ^
+      |                      |
+      |                      int
+..\src\2_Menu_Con_Relacion.c:82:34: note: in expansion of macro 'TAMEMPLEADOS'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |                                  ^~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:75:53: note: expected 'eSector *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+   75 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |                                            ~~~~~~~~~^~~~~~~~
+..\src\2_Menu_Con_Relacion.c:82:6: error: too few arguments to function 'mostrarEmpleados'
+   82 |      mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+      |      ^~~~~~~~~~~~~~~~
+In file included from ..\src\2_Menu_Con_Relacion.c:16:
+..\src\Empleado.h:75:5: note: declared here
+   75 | int mostrarEmpleados(eEmpleado *empleados, eSector *sectores, int tamEmpleado, int tamSectores, int estaVacio, int conCabecera,
+      |     ^~~~~~~~~~~~~~~~
+15:19:02 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:19:12 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:4: error: expected expression before 'else'
+  143 |    else {
+      |    ^~~~
+15:20:28 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'altaEmpleados':
+..\src\Empleado.c:143:12: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  143 |     printf("");
+      |            ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+15:22:08 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+10:50:22 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+10:57:46 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:02:29 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+Info: Nothing to build for 2_Menu_Con_Relacion
+11:05:19 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:07:54 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:08:28 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:09:21 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:09:33 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:32:55 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'mostrarDescripcionSectorPorId':
+..\src\Empleado.c:57:25: error: 'i' undeclared (first use in this function)
+   57 |  return strdup(sectores[i].descripcionSector);
+      |                         ^
+..\src\Empleado.c:57:25: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Empleado.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+   58 | }
+      | ^
+11:33:31 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+..\src\Empleado.c: In function 'mostrarDescripcionSectorPorId':
+..\src\Empleado.c:52:2: warning: statement with no effect [-Wunused-value]
+   52 |  for (i; i < tamSectores; i++) {
+      |  ^~~
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:33:39 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:34:32 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:35:21 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:36:30 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:36:57 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:37:45 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:38:32 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:39:43 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:40:14 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:41:00 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:41:47 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:42:38 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:43:35 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sector.o" "..\\src\\sector.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:51:12 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Menu_Con_Relacion.o" "..\\src\\2_Menu_Con_Relacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+11:52:51 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 

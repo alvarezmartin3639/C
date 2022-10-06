@@ -1,0 +1,89 @@
+/*
+ ============================================================================
+ Name        : 2_Empleado_Con_Menu.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 9-2:Una empresa requiere un sistema para administrar su nómina de
+ empleados. Se sabe que dicha nómina bajo ninguna circunstancia superara los 300
+ empleados.
+ El sistema deberá tener el siguiente menú de
+ opciones:
+ Ejercicio 9-3:
+ 1. ALTAS: Se debe permitir ingresar un empleado
+ calculando automáticamente el número
+ de Id. El resto de los campos se le pedirá al usuario.
+ Ejercicio 9-4:
+ 2. MODIFICAR: Se ingresará el Número de Id, permitiendo modificar:
+ Nombre o Apellido o Salario o Sector
+ Ejercicio 9-5:
+ 3. BAJA: Se ingresará el Número de Id y se eliminará el empleado del sistema.
+ Ejercicio 9-6:
+ 4. INFORMAR:
+ 1. Listado de los empleados ordenados alfabéticamente por Apellido y Sector.
+ 2. Total y promedio de los salarios, y cuántos empleados superan el salario promedio.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utnGUI.h"
+#include "Empleado.h"
+#include "utnValidacion.h"
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	eEmpleado empleados[TAMEMPLEADOS];
+	int contId = 0;
+	int contEmpleadosActivos = 0;
+	int acumSalarios = 0;
+	int opcion;
+
+	for (int i = 0; i < TAMEMPLEADOS; i++)
+		cargarEmpleado(&empleados[i], 0, "Roberto", "Pedrosa", 100, 1, 1);
+
+	do {
+
+		limpiarPantalla();
+		getPedirInt(&opcion, "\n1. ALTAS \n2. MODIFICAR \n3. BAJA \n4 INFORMAR \n5. SALIR \n\nIngrese una opción: ",
+				"\n***Error, no elegió una opción valida***", 1, 5, 4);
+
+		switch (opcion) {
+
+		case 1:
+			altaEmpleados(empleados, TAMEMPLEADOS, &contId, &contEmpleadosActivos);
+			break;
+
+		case 2:
+			modificarEmpleados(empleados, TAMEMPLEADOS, contEmpleadosActivos);
+			break;
+
+		case 3:
+			eliminarEmpleados(empleados, TAMEMPLEADOS, &contEmpleadosActivos);
+			break;
+
+		case 4:
+			ordenarEmpleadoPorNombreYSector(empleados, TAMEMPLEADOS);
+			mostrarEmpleados(empleados, TAMEMPLEADOS, 0, 1, contEmpleadosActivos);
+
+			for (int i = 0; i < TAMEMPLEADOS; i++)
+				if (empleados[i].isEmpity == 0)
+					acumSalarios += empleados[i].salary;
+
+			printf("\n\nTotal: ", acumSalarios);
+			printf("\n\nPromedio: ", acumSalarios / contEmpleadosActivos);
+
+			break;
+		}
+
+	} while (opcion != 5);
+
+	return EXIT_SUCCESS;
+}
+

@@ -1,0 +1,8 @@
+13:06:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnMenu.o" "..\\src\\utnMenu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnMenu.o" "src\\utnValidacion.o" 
+
+13:06:04 Build Finished. 0 errors, 0 warnings. (took 879ms)
+

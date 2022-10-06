@@ -1,0 +1,23 @@
+/*
+ * utnTabla.h
+ *
+ *  Created on: 4 oct 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNTABLA_H_
+#define UTNTABLA_H_
+//https://es.acervolima.com/como-imprimir-un-nombre-de-variable-en-c/
+#define getIdentificadorVariable(var)  #var
+
+typedef struct {
+
+	char header[];
+	char valor[];
+
+
+} eTabla;
+
+
+
+#endif /* UTNTABLA_H_ */

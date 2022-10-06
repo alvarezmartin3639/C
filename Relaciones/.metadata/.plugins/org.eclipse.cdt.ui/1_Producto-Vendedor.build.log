@@ -1,0 +1,8 @@
+10:26:29 **** Incremental Build of configuration Debug for project 1_Producto-Vendedor ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alumno.o" "..\\src\\alumno.c" 
+gcc -o 1_Producto-Vendedor.exe "src\\1_Producto-Vendedor.o" "src\\alumno.o" "src\\dueño.o" "src\\localidad.o" "src\\mascota.o" "src\\producto.o" "src\\provedoor.o" 
+
+10:26:30 Build Finished. 0 errors, 0 warnings. (took 815ms)
+

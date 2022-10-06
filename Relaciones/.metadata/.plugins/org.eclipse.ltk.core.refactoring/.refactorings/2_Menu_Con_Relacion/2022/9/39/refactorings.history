@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;2_Menu_Con_Relacion/src/sectores.c&apos; to &apos;sector.c&apos;" description="Rename resource &apos;sectores.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/sectores.c" name="sector.c" stamp="1664467991594" updateReferences="true"/>
+</session>

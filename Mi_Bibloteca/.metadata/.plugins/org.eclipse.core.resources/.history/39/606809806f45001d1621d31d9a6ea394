@@ -1,0 +1,24 @@
+/*
+ * generic.h
+ *
+ *  Created on: 6 oct 2022
+ *      Author: kenyn
+ */
+
+#ifndef GENERIC_H_
+#define GENERIC_H_
+
+#include <stdio.h>
+
+typedef struct{
+
+	int *pNumero;
+	float *pNumeroFlotante = 0;
+	char *pTexto = NULL;
+	void (*pRestart)(void) = NULL;
+
+}eGeneric;
+
+int genericRestart(eGeneric *generic);
+
+#endif /* GENERIC_H_ */

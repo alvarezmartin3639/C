@@ -1,0 +1,7 @@
+11:52:51 **** Incremental Build of configuration Debug for project 2_Menu_Con_Relacion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -o 2_Menu_Con_Relacion.exe "src\\2_Menu_Con_Relacion.o" "src\\Empleado.o" "src\\sector.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+11:52:52 Build Finished. 0 errors, 0 warnings. (took 614ms)
+

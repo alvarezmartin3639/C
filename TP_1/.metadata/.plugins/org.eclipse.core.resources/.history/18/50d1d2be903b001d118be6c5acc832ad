@@ -1,0 +1,275 @@
+/*
+ * utnMenu.h
+ *
+ *  Created on: 18 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNMENU_H_
+#define UTNMENU_H_
+
+/**
+ * @fn int mostrarMenuPrincipal(float*, float*, float*, int*, int)
+ * @brief Muestra las opciones del menú principal
+ *
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoComida
+ * @param costoTransporte
+ * @param posicion
+ * @param tamJugadores
+ * @return
+ */
+int mostrarMenuPrincipal(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *posicion, int tamJugadores);
+
+/**
+ * @fn char mostrarPosicion*(int)
+ * @brief
+ *
+ * @param posicion
+ * @return
+ */
+char* mostrarPosicion(int posicion);
+
+/**
+ * @fn int inicializacionDeVariables(float*, float*, float*, float*, int*, int*, int*, int*, int*, int*, int*, int*, int, int*, int, int*)
+ * @brief
+ *
+ * @param costoHospedaje el coste de hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte
+ * @param costoDeMantenimiento
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresOFC
+ * @param contJugadoresUEFA
+ * @param numeroCamiseta
+ * @param posicion
+ * @param tamJugadores
+ * @param equipoTitular
+ * @param tamEquipoTitular
+ * @param seRealizoCalculo
+ * @return
+ */
+int inicializacionDeVariables(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, float *costoDeMantenimiento,
+		int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresOFC, int *contJugadoresUEFA, int *numeroCamiseta,
+		int *posicion, int tamJugadores, int *equipoTitular,
+		int tamEquipoTitular, int *seRealizoCalculo);
+
+/**
+ * @fn void hardcodearMenu(float*, float*, float*, int*, int*, int*, int*, int*, int*, int*, int*, int, int*)
+ * @brief
+ *
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresOFC
+ * @param contJugadoresUEFA
+ * @param numeroCamiseta
+ * @param posicion
+ * @param tamJugadores
+ * @param seRealizoCalculo
+ */
+void hardcodearMenu(float *costoHospedaje, float *costoComida,
+		float *costoTransporte, int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresOFC, int *contJugadoresUEFA, int *numeroCamiseta,
+		int *posicion, int tamJugadores, int *seRealizoCalculo);
+
+/**
+ * @fn int calcularNumeroDePosiciones(int*, int*, int*, int*, int*, int)
+ * @brief
+ *
+ * @param contArqueros
+ * @param contDefensores
+ * @param contMediocampistas
+ * @param contDelanteros
+ * @param posicion
+ * @param tamJugadores
+ * @return
+ */
+int calcularNumeroDePosiciones(int *contArqueros, int *contDefensores,
+		int *contMediocampistas, int *contDelanteros, int *posicion,
+		int tamJugadores);
+
+/**
+ * @fn int mostrarPosicionesYCantidadDeJugadores(int*, int, int)
+ * @brief
+ *
+ * @param posicion
+ * @param tamJugadores
+ * @param mostrarIndices
+ * @return
+ */
+int mostrarPosicionesYCantidadDeJugadores(int *posicion, int tamJugadores,
+		int mostrarIndices);
+/**
+ * @fn int mostrarCostos(float, float, float)
+ * @brief
+ *
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoComida el coste de la comida de todo el equipo
+ * @param costoTransporte
+ * @return
+ */
+int mostrarCostos(float costoHospedaje, float costoComida,
+		float costoTransporte);
+
+/**
+ * @fn int cargarCostos(float*, float*, float*)
+ * @brief
+ *
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoComida
+ * @param costoTransporte
+ * @return
+ */
+int cargarCostos(float *costoHospedaje, float *costoComida,
+		float *costoTransporte);
+
+/**
+ * @fn int pedirPosicion(int*, int, int*)
+ * @brief
+ *
+ * @param posicion
+ * @param tamJugadores
+ * @param auxPosicion
+ * @return
+ */
+int pedirPosicion(int *posicion, int tamJugadores, int *auxPosicion);
+
+/**
+ * @fn int pedirConfedereacion(int*, int*, int*, int*, int*, int*)
+ * @brief
+ *
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresUEFA
+ * @param contJugadoresOFC
+ * @return
+ */
+int pedirConfedereacion(int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+/**
+ * @fn int pedirTitularidad(int*, int*, int, int, int*, int*, int*, int*, int*, int*)
+ * @brief
+ *
+ * @param equipoTitular
+ * @param posicion
+ * @param tamEquipoTitular
+ * @param tamJugadores
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresUEFA
+ * @param contJugadoresOFC
+ * @return
+ */
+int pedirTitularidad(int *equipoTitular, int *posicion, int tamEquipoTitular,
+		int tamJugadores, int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC);
+
+/**
+ * @fn int verificarEspacioParaSerTitular(int*, int*, int, int)
+ * @brief
+ *
+ * @param equipoTitular
+ * @param posicion
+ * @param tamEquipoTitular
+ * @param tamJugadores
+ * @return
+ */
+int verificarEspacioParaSerTitular(int *equipoTitular, int *posicion,
+		int tamEquipoTitular, int tamJugadores);
+
+/**
+ * @fn int cargarJugadores(int[], int[], int, int*, int*, int*, int*, int*, int*, int*, int)
+ * @brief
+ *
+ * @param posicion
+ * @param numeroCamiseta
+ * @param tamJugadores
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresUEFA
+ * @param contJugadoresOFC
+ * @param equipoTitular
+ * @param tamEquipoTitular
+ * @return
+ */
+int cargarJugadores(int posicion[], int numeroCamiseta[], int tamJugadores,
+		int *contJugadoresAFC, int *contJugadoresCAF,
+		int *contJugadoresCONCACAF, int *contJugadoresCONMEBOL,
+		int *contJugadoresUEFA, int *contJugadoresOFC, int *equipoTitular,
+		int tamEquipoTitular);
+
+/**
+ * @fn int realizarCalculos(int*, int*, float*, float*, float*, int*, int, int, int, int, int, int, float, float, float, int, int, int)
+ * @brief
+ *
+ * @param posicion
+ * @param equipoTitular
+ * @param promedioJugadoresEnConfederacion
+ * @param costoMantenimiento
+ * @param cantidadDeRecargo
+ * @param seRealizoCalculo
+ * @param contJugadoresAFC
+ * @param contJugadoresCAF
+ * @param contJugadoresCONCACAF
+ * @param contJugadoresCONMEBOL
+ * @param contJugadoresUEFA
+ * @param contJugadoresOFC
+ * @param costoComida
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoTransporte
+ * @param tamJugadores
+ * @param tamEquipoTitular
+ * @param tamConfederacion
+ * @return
+ */
+int realizarCalculos(int *posicion, int *equipoTitular,
+		float *promedioJugadoresEnConfederacion, float *costoMantenimiento,
+		float *cantidadDeRecargo, int *seRealizoCalculo, int contJugadoresAFC,
+		int contJugadoresCAF, int contJugadoresCONCACAF,
+		int contJugadoresCONMEBOL, int contJugadoresUEFA, int contJugadoresOFC,
+		float costoComida, float costoHospedaje, float costoTransporte,
+		int tamJugadores, int tamEquipoTitular, int tamConfederacion);
+
+/**
+ * @fn int informarResultados(int*, float*, float, float, float, float, float, int, int)
+ * @brief
+ *
+ * @param posicion
+ * @param promedioJugadoresEnConfederacion
+ * @param cantidadDeRecargo
+ * @param costoComida
+ * @param costoHospedaje el costo de hospedaje de todo el equipo
+ * @param costoMantenimiento
+ * @param costoTransporte
+ * @param seRealizoCalculo
+ * @param tamJugadores
+ * @return
+ */
+int informarResultados(int *posicion, float *promedioJugadoresEnConfederacion,
+		float cantidadDeRecargo, float costoComida, float costoHospedaje,
+		float costoMantenimiento, float costoTransporte, int seRealizoCalculo,
+		int tamJugadores);
+
+#endif /* UTNMENU_H_ */

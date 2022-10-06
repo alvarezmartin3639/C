@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="promedio"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="promedio"/>
+			<item value="@param costoDeMantenimiento"/>
+			<item value="@param posicion"/>
+			<item value="@param numeroCamiseta"/>
+			<item value="@param promedioJugadoresEnConfederacion"/>
+			<item value="@param cantidadDeRecargo"/>
+			<item value="@param equipoTitular"/>
+			<item value="@param tamConfederacion"/>
+			<item value="@param tamConfederacion "/>
+			<item value="@param tamEquipoTitular"/>
+			<item value="@param contJugadoresOFC"/>
+			<item value="@param contJugadoresUEFA"/>
+			<item value="@param contJugadoresCONMEBOL"/>
+			<item value="@param contJugadoresCONCACAF"/>
+			<item value="@param contJugadoresCAF"/>
+		</list>
+		<list key="replacehistory">
+			<item value="@param costoDeMantenimiento el costo total del mantenimiento del equipo, este se calcula sumando la comida, transporte y hospedaje"/>
+			<item value="@param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo (0=Sin carga, 1=Arquero, 2=Defensores, 3=Mediocampista, 4=Delanteros)"/>
+			<item value="@param posicion array paralelo de un jugador que hace referencia a su posición dentro del equipo ("/>
+			<item value="@param numeroCamiseta array paralelo de un jugador que hace referencia a su numero de camiseta"/>
+			<item value="@param numeroCamiseta "/>
+			<item value="@param numeroCamiseta"/>
+			<item value="@param promedioJugadoresEnConfederacion array que contiene los promedios de jugadores en su confederación correspondiente, cada indice es una confederación distinta (  &#x09;//0=AFC, 1=CAF, 2=CONCACAF, 3=CONMEBOL, 4=UEFA, 5=OFC ) "/>
+			<item value="@param promedioJugadoresEnConfederacion "/>
+			<item value="@param cantidadDeRecargo la cantidad de recargo que se se aplica al precio final "/>
+			<item value="@param cantidadDeRecargo la cantidad de recargo que se "/>
+			<item value="@param equipoTitular un array que contiene indices del array paralelo de jugadores"/>
+			<item value="@param equipoTitular"/>
+			<item value="@param tamConfederacion la cantidad de confederaciones que existen en el torneo"/>
+			<item value="@param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 11"/>
+			<item value="@param tamEquipoTitular la cantidad de jugadores que compone el equipo titular (no incluye suplentes), con un maximo de 12"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1060"/>
+		<item key="DIALOG_Y_ORIGIN" value="254"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

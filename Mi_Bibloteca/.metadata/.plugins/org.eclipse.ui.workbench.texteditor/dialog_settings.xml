@@ -6,11 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="textoConEspera"/>
+		<item key="selection" value="buscarIndiceValorIntEnArray"/>
 		<list key="findhistory">
+			<item value="buscarValorIntEnArray"/>
+			<item value="&#x09;printf(&quot;\nProbando float&quot;);"/>
+			<item value="atoi"/>
 			<item value="textAndSleep"/>
 		</list>
 		<list key="replacehistory">
+			<item value="buscarIndiceValorIntEnArray"/>
 			<item value="textoConEspera"/>
 		</list>
 	</section>

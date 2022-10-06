@@ -1,0 +1,17 @@
+/*
+ * utnTabla.h
+ *
+ *  Created on: 4 oct 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNTABLA_H_
+#define UTNTABLA_H_
+
+typedef struct{
+
+	char e[][];
+
+}eTabla;
+
+#endif /* UTNTABLA_H_ */

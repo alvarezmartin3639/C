@@ -1,0 +1,66 @@
+/*
+ ============================================================================
+ Name        : 4_Cargar_Estructura.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+/*
+ Ejercicio 11-4: Utilizar aritmética de punteros. Dada la siguiente estructura:
+ int legajo;
+ char nombre[20];
+ int edad;
+ Realizar una función que cargue un array de 3 estudiantes. Recibe un entero. Retorna
+ el estudiante dado de alta y por parámetro 0 si funcionó correctamente -1 mal. Una
+ vez devuelto el estudiante cargarlo en una posición del array. Al final mostrar el array
+ cargado.
+ */
+
+typedef struct {
+
+	int legajo;
+	char nombre[20];
+	int edad;
+
+} eEstudiante;
+
+eEstudiante cargarEstudiante(int *esUnExito);
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	eEstudiante miEstudiante[3];
+	int esUnExito = 0;
+
+	for (int i = 0; i < 3; i++) {
+
+		*(miEstudiante + i) = cargarEstudiante(&esUnExito);
+
+	}
+
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+eEstudiante cargarEstudiante(int *esUnExito) {
+
+	int retorno = -1;
+	eEstudiante auxEstudiante;
+
+	if (esUnExito != NULL) {
+		retorno = 0;
+
+		getPedirStringDeLetras(auxEstudiante.nombre, "\nIngrese nombre",
+				"\nError", 4);
+
+		//FALTA COMPLETAR
+	}
+
+	return auxEstudiante;
+}

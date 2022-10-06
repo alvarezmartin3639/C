@@ -1,0 +1,18 @@
+/*
+ * sector.h
+ *
+ *  Created on: 29 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef SECTOR_H_
+#define SECTOR_H_
+#define TAMSECTOR 9
+typedef struct {
+
+	int idSector;
+	char descripcion[64];
+
+} eSector;
+
+#endif /* SECTOR_H_ */

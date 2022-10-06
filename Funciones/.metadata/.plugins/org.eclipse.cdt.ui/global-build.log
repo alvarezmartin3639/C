@@ -1,40 +1,26 @@
-Info: Nothing to build for 3-7_Funcion_Validar_Inputs
-15:40:06 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
+14:54:24 **** Clean-only build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
+rm -rf 3-7_Funcion_Validar_Inputs.exe src/3-7_Funcion_Validar_Inputs.o src/3-7_Funcion_Validar_Inputs.d 
+rm: cannot remove `3-7_Funcion_Validar_Inputs.exe': Permission denied
+14:54:28 **** Rebuild of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3-7_Funcion_Validar_Inputs.o" "..\\src\\3-7_Funcion_Validar_Inputs.c" 
-..\src\3-7_Funcion_Validar_Inputs.c: In function 'main':
-..\src\3-7_Funcion_Validar_Inputs.c:35:7: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
-   35 |   if (isdigit(numero) == 0) {
-      |       ^~~~~~~
 gcc -o 3-7_Funcion_Validar_Inputs.exe "src\\3-7_Funcion_Validar_Inputs.o" 
 c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-7_Funcion_Validar_Inputs.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-15:40:14 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
+14:54:44 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
 Info: Internal Builder is used for build
 gcc -o 3-7_Funcion_Validar_Inputs.exe "src\\3-7_Funcion_Validar_Inputs.o" 
-15:40:41 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-7_Funcion_Validar_Inputs.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:59:08 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3-7_Funcion_Validar_Inputs.o" "..\\src\\3-7_Funcion_Validar_Inputs.c" 
-..\src\3-7_Funcion_Validar_Inputs.c: In function 'main':
-..\src\3-7_Funcion_Validar_Inputs.c:36:7: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
-   36 |   if (isdigit(numero) == 0) {
-      |       ^~~~~~~
 gcc -o 3-7_Funcion_Validar_Inputs.exe "src\\3-7_Funcion_Validar_Inputs.o" 
-15:41:27 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-7_Funcion_Validar_Inputs.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:27:44 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3-7_Funcion_Validar_Inputs.o" "..\\src\\3-7_Funcion_Validar_Inputs.c" 
-..\src\3-7_Funcion_Validar_Inputs.c: In function 'main':
-..\src\3-7_Funcion_Validar_Inputs.c:36:7: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
-   36 |   if (isdigit(numero) == 0) {
-      |       ^~~~~~~
 gcc -o 3-7_Funcion_Validar_Inputs.exe "src\\3-7_Funcion_Validar_Inputs.o" 
-15:41:42 **** Incremental Build of configuration Debug for project 3-7_Funcion_Validar_Inputs ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3-7_Funcion_Validar_Inputs.o" "..\\src\\3-7_Funcion_Validar_Inputs.c" 
-..\src\3-7_Funcion_Validar_Inputs.c: In function 'main':
-..\src\3-7_Funcion_Validar_Inputs.c:36:7: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
-   36 |   if (isdigit(numero[2]) == 0) {
-      |       ^~~~~~~
-..\src\3-7_Funcion_Validar_Inputs.c:36:21: error: subscripted value is neither array nor pointer nor vector
-   36 |   if (isdigit(numero[2]) == 0) {
-      |                     ^
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-7_Funcion_Validar_Inputs.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status

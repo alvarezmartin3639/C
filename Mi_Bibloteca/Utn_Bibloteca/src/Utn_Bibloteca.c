@@ -10,16 +10,25 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include "utnArray.h"
 #include "utnValidacion.h"
 #include <string.h>
 
 int main(void) {
+
+
 	setbuf(stdout, NULL);
 
-	int seSuperoLaPrueba = 1;
+	int seSuperoLaPrueba = 0;
 
-//	VALIDAR DATOS
+//	getPedirInt(&seSuperoLaPrueba, "\n1. ALTAS \n2. MODIFICAR \n3. BAJA \n4 INFORMAR \n5. SALIR \n\nIngrese una opción: ",
+//			"\n***Error, no elegió una opción valida***", 1, 5, 4);
+	getPedirInt(&seSuperoLaPrueba, "\nIngresa ", "\nerro", 1, 111, 4);
+	printf("\n\n%d",seSuperoLaPrueba);
+
+
+	//	VALIDAR DATOS
 //
 //	printf("\nProbando float");
 //	float pFlotante;
@@ -40,17 +49,21 @@ int main(void) {
 //	} else
 //		printf("\n NO es");
 //	printf("%c", pChar);
-
+//
 //	printf("\nProbando pedir char de letras");
 //	char pChar;
-//	getPedirCharDeLetras(&pChar,"\nIngrese un char!","\nError",0,100,2);
+//	getPedirCharDeLetras(&pChar, "\nIngrese un char!", "\nError", 0, 100, 2);
 
+//	printf("\nProbando pedir string de letras");
+//	char pChar[55];
+//	getPedirStringDeLetras(pChar, "\nIngrese un string!", "\nError", 2);
 
-		printf("\nProbando pedir string de letras");
-		char pChar[55];
-		getPedirStringDeLetras(pChar,"\nIngrese un string!","\nError",2);
-
-
+//	printf("\nProbando es alfanumerico");
+//	char alfa[55] = "d22";
+//	if (esAlfanumerico(alfa) == 0)
+//		printf("\nEs alfa!");
+//	else
+//		printf("\nNo es alfa");
 
 //ARRAYS
 //

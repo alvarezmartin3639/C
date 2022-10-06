@@ -1,0 +1,12 @@
+09:28:38 **** Rebuild of configuration Debug for project 2_Empleado_Con_Menu ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Empleado_Con_Menu.o" "..\\src\\2_Empleado_Con_Menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Empleado.o" "..\\src\\Empleado.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -o 2_Empleado_Con_Menu.exe "src\\2_Empleado_Con_Menu.o" "src\\Empleado.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+09:28:41 Build Finished. 0 errors, 0 warnings. (took 3s.172ms)
+
