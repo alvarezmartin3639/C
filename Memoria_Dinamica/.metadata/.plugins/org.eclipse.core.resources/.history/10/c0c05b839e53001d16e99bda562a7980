@@ -1,0 +1,525 @@
+/*
+ * utnValidacion.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "utnValidacion.h"
+#include "utnCadenas.h"
+#define ERROR -1;
+
+int getInt(int *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0 && esNumero(buffer) == 0) {
+			*pResultado = atoi(buffer);
+			retorno = EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getFloat(float *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		fflush(stdin);
+		if (myGets(buffer, sizeof(buffer)) == 0 && esFlotante(buffer) == 0) {
+			*pResultado = atof(buffer);
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getCharDeLetra(char *pResultado) {
+
+	int retorno = ERROR;
+	char buffer;
+
+	if (pResultado != NULL) {
+
+		fflush(stdin);
+		if (scanf("%c", &buffer) == 1 && isalpha(buffer)) {
+			*pResultado = buffer;
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+
+}
+
+int getStringDeLetras(char *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0 && esLetra(buffer) == 0) {
+			strcpy(pResultado, buffer);
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getStringDeLetrasConEspacio(char *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0
+				&& esLetraConEspacio(buffer) == 0) {
+			strcpy(pResultado, buffer);
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getAlfanumerico(char *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0
+				&& esAlfanumerico(buffer) == 0) {
+			strcpy(pResultado, buffer);
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	return retorno;
+}
+
+int getAlfanumericoConEspacios(char *pResultado) {
+
+	int retorno = ERROR;
+	char buffer[64];
+
+	if (pResultado != NULL) {
+
+		if (myGets(buffer, sizeof(buffer)) == 0
+				&& esAlfanumericoConEspacios(buffer) == EXIT_SUCCESS) {
+			strcpy(pResultado, buffer);
+			retorno =  EXIT_SUCCESS;
+		}
+
+	}
+
+	if(retorno != EXIT_SUCCESS)
+		printf("\nFallo en get");
+
+	return retorno;
+}
+int getPedirInt(int *pNumero, char *mensaje, char *mensajeError, int minimo,
+		int maximo, int reintentos) {
+
+	int retorno = ERROR;
+	int num;
+
+	if (pNumero != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			reintentos--;
+			printf(mensaje);
+
+			if (getInt(&num) ==  EXIT_SUCCESS) {
+				if (num <= maximo && num >= minimo)
+					break;
+			}
+
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			*pNumero = num;
+		}
+	}
+
+	return retorno;
+}
+
+int getPedirFloat(float *pNumero, char *mensaje, char *mensajeError,
+		float minimo, float maximo, int reintentos) {
+
+	int retorno = ERROR;
+	float num;
+
+	if (pNumero != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getFloat(&num) ==  EXIT_SUCCESS) {
+				if (num <= maximo && num >= minimo)
+					break;
+			}
+
+			fflush(stdin);
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			*pNumero = num;
+		}
+	}
+
+	return retorno;
+
+}
+
+int getPedirCharDeLetra(char *pChar, char *mensaje, char *mensajeError,
+		char minimo, char maximo, int esCaseSensitive, int reintentos) {
+
+	int retorno = ERROR;
+	char caracter;
+
+	if (pChar != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getCharDeLetra(&caracter) == 0) {
+
+				if (esCaseSensitive == 0 && caracter <= tolower(maximo)
+						&& caracter >= tolower(minimo))
+					break;
+
+				if (caracter <= maximo && caracter >= minimo)
+					break;
+
+			}
+
+			fflush(stdin);
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			*pChar = caracter;
+		}
+	}
+
+	return retorno;
+}
+
+int getPedirStringDeLetras(char *pArrayChar, char *mensaje, char *mensajeError,
+		int strlenMax, int reintentos) {
+
+	int retorno = ERROR;
+	char cadena[64];
+
+	if (pArrayChar != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getStringDeLetras(cadena) ==  EXIT_SUCCESS)
+				break;
+
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			strcpy(pArrayChar, cadena);
+		}
+	}
+
+	return retorno;
+
+}
+
+int getPedirStringDeLetrasConEspacio(char *pArrayChar, char *mensaje,
+		char *mensajeError, int strlenMax, int reintentos) {
+
+	int retorno = ERROR;
+	char cadena[64];
+
+	if (pArrayChar != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getStringDeLetrasConEspacio(cadena) ==  EXIT_SUCCESS
+					&& strlen(cadena) <= strlenMax)
+				break;
+
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			strcpy(pArrayChar, cadena);
+		}
+	}
+
+	return retorno;
+
+}
+
+int getPedirAlfanumerico(char *pArrayChar, char *mensaje, char *mensajeError,
+		int strlenMax, int reintentos) {
+
+	int retorno = ERROR;
+	char cadena[64];
+
+	if (pArrayChar != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getAlfanumerico(cadena) ==  EXIT_SUCCESS)
+				break;
+
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			strcpy(pArrayChar, cadena);
+		}
+	}
+
+	return retorno;
+
+}
+
+int getPedirAlfanumericoConEspacios(char *pArrayChar, char *mensaje, char *mensajeError,
+		int strlenMax, int reintentos) {
+
+	int retorno = ERROR;
+	char cadena[64];
+
+	if (pArrayChar != NULL && mensaje != NULL && mensajeError != NULL
+			&& reintentos > 0) {
+
+		while (reintentos > 0) {
+
+			printf(mensaje);
+
+			if (getAlfanumericoConEspacios(cadena) ==  EXIT_SUCCESS)
+				break;
+
+			printf("\nFallo en pediralfa");
+			reintentos--;
+			printf(mensajeError);
+
+		}
+
+		if (reintentos > 0) {
+			retorno =  EXIT_SUCCESS;
+			strcpy(pArrayChar, cadena);
+		}
+	}
+
+	return retorno;
+
+}
+int esNumero(char *cadena) {
+
+	int i = 0;
+	int retorno =  EXIT_SUCCESS;
+
+	if (cadena != NULL && strlen(cadena) > 0) {
+
+		while (cadena[i] != '\0') {
+
+			if ((cadena[i] < '0' || cadena[i] > '9') && (cadena[i] != '-')) {
+				retorno = ERROR;
+				break;
+			}
+
+			i++;
+		}
+	}
+
+	return retorno;
+}
+
+int esFlotante(char *cadena) {
+
+	int retorno =   EXIT_SUCCESS;
+	int tienePunto = 0;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (cadena[i] == '.')
+			tienePunto++;
+
+		if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1) {
+			retorno = ERROR;
+		}
+
+	}
+
+	return retorno;
+}
+
+int esFlotanteSinDecimal(char *cadena) {
+
+	int retorno =  EXIT_SUCCESS;
+	int esDecimal = 1;
+	int esEnteroDecimal = 1;
+	int tienePunto = 0;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (cadena[i] == '.')
+			tienePunto++;
+
+		if ((!isdigit(cadena[i]) && cadena[i] != '.') || tienePunto > 1) {
+			esDecimal = 0;
+			retorno = ERROR;
+		}
+
+		if (esDecimal == 0 && cadena[i] > 0) {
+			esEnteroDecimal = 0;
+		}
+	}
+
+	if (esDecimal == 1 && esEnteroDecimal == 1)
+		retorno = 1;
+
+	return retorno;
+}
+
+int esLetra(char *cadena) {
+
+	int retorno =  EXIT_SUCCESS;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (!isalpha(cadena[i]))
+			retorno = -1;
+
+	}
+
+	return retorno;
+
+}
+
+int esLetraConEspacio(char *cadena) {
+
+	int retorno =  EXIT_SUCCESS;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (!isalpha(cadena[i]) && cadena[i] != ' ')
+			retorno = -1;
+
+	}
+
+	return retorno;
+
+}
+
+int esAlfanumerico(char *cadena) {
+
+	int retorno =  EXIT_SUCCESS;
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (!isalpha(cadena[i]) && !isdigit(cadena[i])) {
+			retorno = -1;
+			break;
+		}
+
+	}
+
+	return retorno;
+
+}
+
+int esAlfanumericoConEspacios(char *cadena) {
+
+	int retorno = 0;
+
+
+	for (int i = 0; i < strlen(cadena); i++) {
+
+		if (!isalpha(cadena[i]) && !isdigit(cadena[i]) && cadena[i] != ' ') {
+			retorno = ERROR;
+			break;
+		}
+
+	}
+
+	return retorno;
+}
+
+int elegirEntreOpciones(char mensaje[60], char condicionParaContinuar[60],
+		char condicionParaSalir[60]) {
+
+	int retorno = ERROR;
+	char respuestaUsuario[60];
+
+	do {
+
+		printf(mensaje);
+		myGets(respuestaUsuario, 60);
+
+	} while ((strcmp(condicionParaContinuar, respuestaUsuario) != 0)
+			&& (strcmp(condicionParaSalir, respuestaUsuario) != 0));
+
+	//Si desea continuar retorná 1, si no desea continuar 0, en caso de error -1.
+	if (strcmp(condicionParaContinuar, respuestaUsuario) == 0) {
+		retorno = 1;
+	} else
+		retorno = 0;
+
+	return retorno;
+}

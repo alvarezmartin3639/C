@@ -1,0 +1,7 @@
+09:44:09 **** Incremental Build of configuration Debug for project 3_Calcular_Maximo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3_Calcular_Maximo.o" "..\\src\\3_Calcular_Maximo.c" 
+gcc -o 3_Calcular_Maximo.exe "src\\3_Calcular_Maximo.o" 
+
+09:44:09 Build Finished. 0 errors, 0 warnings. (took 528ms)
+

@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name        : 1_Borrar_Primer_Ocurrencia.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char desc[2][20];
+
+	scanf("%c",&desc[2][20] );
+
+	printf("\ndesc : %c ", desc[2][20]);
+	return EXIT_SUCCESS;
+}

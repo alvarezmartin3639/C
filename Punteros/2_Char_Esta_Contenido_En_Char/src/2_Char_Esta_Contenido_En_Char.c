@@ -40,36 +40,23 @@ int estaContenidoEnChar(char *primero, char *segundo) {
 	int contAciertosConsecutivos = 0;
 
 	if (primero != NULL && segundo != NULL) {
-
 		retorno = 0;
 
 		for (int i = 0; i < strlen(segundo); i++) {
-
-			//printf("\ni = %c" ,*(segundo + i));
-
 			for (int j = indiceUltimoAcierto; j < strlen(primero); j++) {
-
-				//printf("\n j = %c",*(primero + j));
-
-				//	printf("%c es igual a %c? ",*(segundo + i), *(primero + j));
-
 				if (*(segundo + i) == *(primero + j)) {
-					//printf("\nSi es igual\n");
 					contAciertosConsecutivos++;
 					indiceUltimoAcierto = j;
 					break;
 				}
 
 				else if (contAciertosConsecutivos == strlen(segundo)) {
-					//	printf("\n Se superó la prueba");
 					retorno = 1;
 					break;
 				}
 
-				else {
-					//	printf("\n no es igual \n");
+				else
 					contAciertosConsecutivos = 0;
-				}
 			}
 		}
 	}

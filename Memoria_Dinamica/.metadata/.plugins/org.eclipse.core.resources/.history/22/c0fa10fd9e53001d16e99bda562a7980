@@ -1,0 +1,63 @@
+/*
+ ============================================================================
+ Name        : 1_Borrar_Primer_Ocurrencia.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//---------------------------------------------------------------------------------------------
+
+int borrarOcurrencia(int *pArray, int tamArray, int numeroParaBorrar);
+
+//---------------------------------------------------------------------------------------------
+
+int main(void) {
+	int *pNumeros;
+
+	/*
+	 * Reservo memoria dinamicamente y asigno en su valor el numero de su indice
+	 */
+	if ((pNumeros = (int*) malloc(sizeof(int) * 10)) != NULL)
+		for (int i = 0; i < 10; i++)
+			*(pNumeros + i) = i;
+
+	free(pNumeros);
+	return EXIT_SUCCESS;
+}
+
+//---------------------------------------------------------------------------------------------
+
+int borrarOcurrencia(int *pArray, int tamArray, int numeroParaBorrar) {
+	int retorno = -1;
+	int contTamReallocArray = tamArray;
+	int* aux;
+	/*
+	 * Recorro pArray, si pArray[i] no es el numero buscado lo guardo en auxArray[contIndiceAux]
+	 * para luego remplazarlo
+	 */
+	if (pArray != NULL && tamArray > 0) {
+		retorno = 0;
+		for (int i = 0; i < tamArray; i++) {
+			if (*(pArray + i) == numeroParaBorrar) {
+				contTamReallocArray--;
+				for (int j = i + 1; j < tamArray - 1; j++) {
+					aux = (pArray + j);
+					(pArray + 2) = aux;
+				}
+			}
+		}
+
+	if((aux = realloc(pArray, sizeof(int) * contTamReallocArray)) != NULL)
+		pArray = aux;
+	}
+
+	return retorno;
+}
+
+//---------------------------------------------------------------------------------------------

@@ -1,0 +1,136 @@
+/*
+ * utnCadenas.c
+ *
+ *  Created on: 13 sept 2022
+ *      Author: kenyn
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#define ERROR -1
+#define OCUPADO 0
+#define LIBRE 1
+#define INDIFERENTE 2
+
+int myGets(char *cadena, int longitud) {
+
+	int retorno = ERROR;
+
+	fflush(stdin);
+	if (cadena != NULL && longitud > 0
+			&& fgets(cadena, longitud, stdin) == cadena) {
+
+		if (*(cadena + strlen(cadena) - 1) == '\n')
+			*(cadena + strlen(cadena) - 1) = '\0';
+
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+char* formatearString(char *str, char *a, char *b) {
+
+	int len = strlen(str);
+	int lena = strlen(a), lenb = strlen(b);
+	char aux[54];
+
+	strcpy(aux, str);
+
+	for (char *p = aux; (p = strstr(p, a)); ++p) {
+
+		if (lena != lenb)
+			memmove(p + lenb, p + lena, len - (p - aux) + lenb);
+		memcpy(p, b, lenb);
+
+	}
+
+	return strdup(aux);
+}
+
+char* convertirFloatAString(float numeroParaConvertir) {
+
+	char retorno[50];
+
+	snprintf(retorno, sizeof(retorno), "%f", numeroParaConvertir);
+
+	return strdup(retorno);
+}
+
+
+void ConvertirTodoMayuscula(char cadena[], int tam) {
+	int i;
+
+	for (i = 0; i < tam; i++)
+		*(cadena + i) = toupper(*(cadena + i));
+
+}
+
+
+void ConvertirTodoMinuscula(char* cadena, int tam) {
+	int i;
+
+	for (i = 0; i < tam; i++)
+		*(cadena + i) = tolower(*(cadena + i));
+
+}
+
+
+
+void ConvertirPrimerLetraEnMayuscula(char* cadena, int tam) {
+
+	int i;
+
+	if (cadena != NULL && tam > 0) {
+
+		ConvertirTodoMinuscula(cadena, tam);
+
+		cadena[0] = toupper(cadena[0]);
+
+		for (i = 0; i < tam; i++)
+			if (*(cadena + i) == ' ')
+				*(cadena + i + 1) = toupper(*(cadena + i + 1));
+
+	}
+
+}
+
+
+
+void RepetirCadena(char* mensajeParaRepetir, int numeroDeVecesParaRepetir) {
+
+	int contadorDeRepeticiones;
+
+	if (mensajeParaRepetir != NULL && numeroDeVecesParaRepetir > -1) {
+
+		contadorDeRepeticiones = 0;
+
+		while (contadorDeRepeticiones != numeroDeVecesParaRepetir) {
+
+			puts(mensajeParaRepetir);
+			contadorDeRepeticiones++;
+
+		}
+	}
+}
+
+char* getEstado(int estado) {
+
+	char retorno[23] = "ERROR";
+
+	if (estado == OCUPADO || estado == LIBRE) {
+		switch (estado) {
+
+		case OCUPADO:
+			strcpy(retorno, "Ocupado");
+			break;
+
+		case LIBRE:
+			strcpy(retorno, "Libre");
+			break;
+		}
+	}
+
+	return strdup(retorno);
+}

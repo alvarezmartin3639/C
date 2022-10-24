@@ -1,0 +1,7 @@
+17:02:49 **** Incremental Build of configuration Debug for project 2_Ordenar_Con_Criterio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2_Ordenar_Con_Criterio.o" "..\\src\\2_Ordenar_Con_Criterio.c" 
+gcc -o 2_Ordenar_Con_Criterio.exe "src\\2_Ordenar_Con_Criterio.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+
+17:02:49 Build Finished. 0 errors, 0 warnings. (took 627ms)
+

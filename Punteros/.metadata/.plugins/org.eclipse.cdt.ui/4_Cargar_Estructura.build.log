@@ -1,7 +1,1 @@
-19:58:14 **** Incremental Build of configuration Debug for project 4_Cargar_Estructura ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
-gcc -o 4_Cargar_Estructura.exe "src\\4_Cargar_Estructura.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
-
-19:58:14 Build Finished. 0 errors, 0 warnings. (took 584ms)
-
+Info: Nothing to build for 4_Cargar_Estructura

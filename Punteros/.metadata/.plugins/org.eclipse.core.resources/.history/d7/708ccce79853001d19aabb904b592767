@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : 3_Calcular_Maximo.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int buscarMayor(int *pArray, int *pRespuesta, int tam);
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int numeros[] = { 1, 4, 2, 6, 3 };
+
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+int buscarMayor(int *pArray, int *pRespuesta, int tam) {
+	int retorno = -1;
+
+	if (pArray != NULL && pRespuesta != NULL && tam > 0) {
+		*pRespuesta = 0;
+		for (int i = 0; i < tam - 1; i++)
+			if (pArray[i] > pArray[i + 1]) {
+				*pRespuesta = pArray[i];
+			}
+	}
+
+	return retorno;
+}

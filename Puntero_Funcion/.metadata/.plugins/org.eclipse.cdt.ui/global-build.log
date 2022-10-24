@@ -1,0 +1,224 @@
+13:38:07 **** Rebuild of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" 
+Info: Nothing to build for pruebaParaElExmen
+13:54:11 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnValidacion.o" "..\\src\\utnValidacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnGUI.o" "..\\src\\utnGUI.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnCadenas.o" "..\\src\\utnCadenas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utnArray.o" "..\\src\\utnArray.c" 
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+14:32:48 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+14:35:04 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:26: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",&articulos[2][20].descripcion);
+      |                          ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:35:10 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[20]' [-Wformat=]
+   27 |  scanf("%s",&articulos[2].descripcion);
+      |         ~^  ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          |  |
+      |          |  char (*)[20]
+      |          char *
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+14:35:21 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:25: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",articulos[2][20].descripcion);
+      |                         ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:35:46 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:26: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",&articulos[2][20].descripcion);
+      |                          ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:35:53 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:25: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",articulos[2][20].descripcion);
+      |                         ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:36:01 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[20]' [-Wformat=]
+   27 |  scanf("%s",&articulos[2].descripcion);
+      |         ~^  ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          |  |
+      |          |  char (*)[20]
+      |          char *
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+14:36:13 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:26: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",&articulos[2][20].descripcion);
+      |                          ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:36:24 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:25: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",articulos[2][20].descripcion);
+      |                         ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:36:44 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:25: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",articulos[3][20].descripcion);
+      |                         ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:36:54 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:27:26: error: subscripted value is neither array nor pointer nor vector
+   27 |  scanf("%s",&articulos[2][20].descripcion);
+      |                          ^
+..\src\pruebaParaElExmen.c:25:12: warning: variable 'articulos' set but not used [-Wunused-but-set-variable]
+   25 |  eProducto articulos [TAM];
+      |            ^~~~~~~~~
+14:37:13 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c:19:1: warning: no semicolon at end of struct or union
+   19 | }eProducto;
+      | ^
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+14:40:50 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:21:5: error: invalid type argument of unary '*' (have 'int')
+   21 |  if(*texto[2] == 'c')
+      |     ^~~~~~~~~
+14:41:10 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:21:5: error: invalid type argument of unary '*' (have 'int')
+   21 |  if(*num == 1)
+      |     ^~~~
+17:40:01 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:19:5: warning: unused variable 'num' [-Wunused-variable]
+   19 | int num = 1;
+      |     ^~~
+gcc -o pruebaParaElExmen.exe "src\\pruebaParaElExmen.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+17:40:13 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:17:2: warning: implicit declaration of function 'setbuf' [-Wimplicit-function-declaration]
+   17 |  setbuf(stdout, NULL);
+      |  ^~~~~~
+..\src\pruebaParaElExmen.c:17:9: error: 'stdout' undeclared (first use in this function)
+   17 |  setbuf(stdout, NULL);
+      |         ^~~~~~
+..\src\pruebaParaElExmen.c:12:1: note: 'stdout' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+   11 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+   12 | #define TAM 3
+..\src\pruebaParaElExmen.c:17:9: note: each undeclared identifier is reported only once for each function it appears in
+   17 |  setbuf(stdout, NULL);
+      |         ^~~~~~
+..\src\pruebaParaElExmen.c:21:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   21 |   printf("hola");
+      |   ^~~~~~
+..\src\pruebaParaElExmen.c:21:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\pruebaParaElExmen.c:21:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\pruebaParaElExmen.c:23:2: warning: implicit declaration of function 'fflush' [-Wimplicit-function-declaration]
+   23 |  fflush(stdin);
+      |  ^~~~~~
+..\src\pruebaParaElExmen.c:23:9: error: 'stdin' undeclared (first use in this function)
+   23 |  fflush(stdin);
+      |         ^~~~~
+..\src\pruebaParaElExmen.c:23:9: note: 'stdin' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+..\src\pruebaParaElExmen.c:24:2: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+   24 |  puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+      |  ^~~~
+..\src\pruebaParaElExmen.c:18:5: warning: unused variable 'num' [-Wunused-variable]
+   18 | int num = 1;
+      |     ^~~
+17:40:18 **** Incremental Build of configuration Debug for project pruebaParaElExmen ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebaParaElExmen.o" "..\\src\\pruebaParaElExmen.c" 
+..\src\pruebaParaElExmen.c: In function 'main':
+..\src\pruebaParaElExmen.c:25:9: error: 'EXIT_SUCCESS' undeclared (first use in this function)
+   25 |  return EXIT_SUCCESS;
+      |         ^~~~~~~~~~~~
+..\src\pruebaParaElExmen.c:25:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\pruebaParaElExmen.c:18:5: warning: unused variable 'num' [-Wunused-variable]
+   18 | int num = 1;
+      |     ^~~

@@ -1,0 +1,176 @@
+/*
+ * utnGUI.c
+ *
+ *  Created on: 12 sept 2022
+ *      Author: kenyn
+ */
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <unistd.h>
+#include <string.h>
+#include "utnGUI.h"
+#include "utnCadenas.h"
+#include "utnValidacion.h"
+#define ERROR -1
+#define ACEPTO 1
+#define NOACEPTO 2
+#define REINTENTOS 4
+
+int mostrarArrayInt(int enteros[], int tamEnteros) {
+
+	int retorno = ERROR;
+
+	if (enteros != NULL && tamEnteros > 0) {
+
+		for (int i = 0; i < tamEnteros; i++)
+			printf("\n%d", enteros[i]);
+
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+
+}
+
+int mostrarArrayFloat(float flotantes[], int tamFloat) {
+
+	int retorno = ERROR;
+
+	if (flotantes != NULL && tamFloat > 0) {
+
+		for (int i = 0; i < tamFloat; i++)
+			printf("\n%.2f", flotantes[i]);
+
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+
+}
+
+int mostrarArrayChar(char caracteres[], int tamCaracteres) {
+
+	int retorno = ERROR;
+
+	if (caracteres != NULL && tamCaracteres > 0) {
+
+		for (int i = 0; i < tamCaracteres; i++)
+			printf("\n%c", caracteres[i]);
+
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+
+}
+
+int mostrarArrayString(char texto[][50], int tamTexo) {
+
+	int retorno = ERROR;
+
+	if (texto != NULL && tamTexo > 0) {
+
+		for (int i = 0; i < tamTexo; i++)
+			printf("\n%s", texto[i]);
+
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+
+}
+
+void mostrarTextoConEspera(char mensaje[60], int seconds) {
+
+	if (mensaje != NULL) {
+
+		puts(mensaje);
+		sleep(seconds);
+
+	}
+
+}
+
+int ConfirmarCambios(void) {
+
+	int retorno = ERROR;
+
+	if (elegirEntreOpciones(
+			"\n\n---------------------------------------------------------------------------------------------------------------------------------------------------"
+					"\nEstá a punto de realizar cambios que no se pueden deshacer. ¿Está seguro "
+					"\nque  desea continuar?('si'/'no')"
+					"\n---------------------------------------------------------------------------------------------------------------------------------------------------\n",
+			"si", "no") == ACEPTO) {
+
+		retorno = ACEPTO;
+
+	} else
+		retorno = NOACEPTO;
+
+
+
+	return retorno;
+}
+
+void PresionarEnterParaContinuar(void) {
+
+	char bufferUsuario[10];
+
+	do {
+
+		printf("\nPresione 'enter' para continuar...");
+		myGets(bufferUsuario, 10);
+
+	} while (strcmp(bufferUsuario, "") != 0);
+
+}
+
+void limpiarPantalla(void) {
+
+	for (int i = 0; i < 40; i++)
+		printf("\n");
+
+}
+
+char* mostrarTextoConLimpiarPantalla(char *pTexto, int posicionLimpiarPantalla) {
+
+	printf("\n3");
+
+	if (pTexto != NULL
+			&& (posicionLimpiarPantalla == 1 || posicionLimpiarPantalla == 2)) {
+
+		if (posicionLimpiarPantalla == 1)
+			limpiarPantalla();
+
+		printf("%s", pTexto);
+
+		if (posicionLimpiarPantalla == 2)
+			limpiarPantalla();
+
+	}
+
+	return strdup(pTexto);
+}
+
+char getOpcionPrincipal(void) {
+
+	char retorno = '*';
+	char opcion;
+
+	limpiarPantalla();
+printf("\n =-=-=-=-=-=-=-=-=-=-=-=-=");
+printf("\n| MENU PRINCIPAL          |");
+printf("\n =-=-=-=-=-=-=-=-=-=-=-=-=");
+
+	if (getPedirCharDeLetra(&opcion,
+			"\n A. ALTA RECURSO \n B. MODIFICAR RECURSO \n C. BAJA RECURSO: \n D. LISTAR RECURSOS \n E. LISTAR TIPOS \n F. ALTA EVENTO \n G. LISTAR EVENTOS \n H. INFORMES \n I. SALIR \n\n Ingrese una opción: ",
+			"\n\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n"
+					"ERROR, no elegió una opción valida"
+					"\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n\n",
+			'A', 'I', 0, REINTENTOS) == EXIT_SUCCESS)
+		retorno = opcion;
+
+	return toupper(retorno);
+}
+

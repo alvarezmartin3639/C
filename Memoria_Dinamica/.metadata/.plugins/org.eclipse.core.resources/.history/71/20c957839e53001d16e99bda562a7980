@@ -1,0 +1,86 @@
+/*
+ * utnCadenas.h
+ *
+ *  Created on: 13 sept 2022
+ *      Author: kenyn
+ */
+
+#ifndef UTNCADENAS_H_
+#define UTNCADENAS_H_
+
+/***
+ * @fn int myGets(char*, int)
+ * @brief función personalizda de fgets para evitar problemas
+ *
+ * @param cadena un puntero a donde se va a guardar el texto
+ * @param longitud longitud maxima dl texto
+ * @return -1 = Error, 0 = Sin errores
+ */
+int myGets(char *cadena, int longitud);
+
+/**
+ * @fn char formatearString*(char*, char*, char*)
+ * @brief introduce un texto(b) dentro de otro texto (str), remplzandolo al encontrar ocurrencias con otro texto (a)
+ *
+ * @param str el texto donde se va a introducir otro texto
+ * @param a el texto que el cual se va a remplazar
+ * @param b el nuevo texto que lo va a remplazar
+ * @return devuelve el nuevo texto formateado
+ */
+char* formatearString(char *str, char *a, char *b);
+
+/**
+ * @fn char convertirFloatAString*(double)
+ * @brief Convierte un double a una cadena de caracteres
+ *
+ * @param numeroParaConvertir el numero double que se va a convertir en cadena de caracteres
+ * @return el double convertido a cadena de carcteres
+ */
+char* convertirFloatAString(double numeroParaConvertir);
+
+/**
+ * @fn void ConvertirTodoMayuscula(char*, int)
+ * @brief Convierte  el texto pasado por parametro a mayusculas
+ *
+ * @param cadena el texto que se va a transformar en mayusculas y donde se va a guardr
+ * @param tam el numero de cracteres que tiene el texto
+ */
+void ConvertirTodoMayuscula(char *cadena, int tam);
+
+/**
+ * @fn void ConvertirTodoMinuscula(char*, int)
+ * @brief Convierte el texto pasado por parametro a minusculas
+ *
+ * @param cadena el texto que se va a transformar en minusculas y donde se va a guardar
+ * @param tam el numero de cracteres que tiene el texto
+ */
+void ConvertirTodoMinuscula(char *cadena, int tam);
+
+/**
+ * @fn void ConvertirPrimerLetraEnMayuscula(char*, int)
+ * @brief Convierte la primera letr de la cadena en mayuscul
+ *
+ * @param cadena el texto que se va a transformar el primer caracter en mayuscula
+ * @param tam el numero de cracteres que tiene el texto
+ */
+void ConvertirPrimerLetraEnMayuscula(char *cadena, int tam);
+
+/**
+ * @fn void RepetirCadena(char*, int)
+ * @brief  repite mensajeParaRepetir 'n' veces
+ *
+ * @param mensajeParaRepetir el mensaje que se va a repetir
+ * @param numeroDeVecesParaRepetir las veces que se va a repetir
+ */
+void RepetirCadena(char *mensajeParaRepetir, int numeroDeVecesParaRepetir);
+
+/**
+ * @fn char getEstado*(int)
+ * @brief Convierte el entero estado a un valor similar en cadena ( estado '1' = LIBRE, estado '0' = OCUPADO)
+ *
+ * @param estado el numero correspondiente al define que hace referencia a estados
+ * @return el estado convertido a cadena
+ */
+char* getEstado(int estado);
+
+#endif /* UTNCADENAS_H_ */

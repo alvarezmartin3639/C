@@ -458,6 +458,7 @@ int ordenarEmpleadoPorNombreYSector(eEmpleado *empleados, int tamEmpleados) {
 	int j;
 	eEmpleado auxEmpleados;
 
+
 	if (empleados != NULL) {
 
 		for (i = 0; i < tamEmpleados - 1; i++) {

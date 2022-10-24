@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 8 resources" deleteContents="false" description="Delete 8 resources" element1="/1_Borrar_Primer_Ocurrencia/src/utnArray.c" element2="/1_Borrar_Primer_Ocurrencia/src/utnArray.h" element3="/1_Borrar_Primer_Ocurrencia/src/utnCadenas.c" element4="/1_Borrar_Primer_Ocurrencia/src/utnCadenas.h" element5="/1_Borrar_Primer_Ocurrencia/src/utnGUI.c" element6="/1_Borrar_Primer_Ocurrencia/src/utnGUI.h" element7="/1_Borrar_Primer_Ocurrencia/src/utnValidacion.c" element8="/1_Borrar_Primer_Ocurrencia/src/utnValidacion.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="8" stamp="1666617579233"/>
+</session>

@@ -1,0 +1,308 @@
+10:19:28 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" "src\\utnArray.o" "src\\utnCadenas.o" "src\\utnGUI.o" "src\\utnValidacion.o" 
+gcc: error: src\utnArray.o: No such file or directory
+gcc: error: src\utnCadenas.o: No such file or directory
+gcc: error: src\utnGUI.o: No such file or directory
+gcc: error: src\utnValidacion.o: No such file or directory
+10:19:41 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:19:53 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:51:19: error: lvalue required as left operand of assignment
+   51 |      (pArray + i) = aux;
+      |                   ^
+10:20:08 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:20:14 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:51:16: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   51 |      pArray[i] = aux;
+      |                ^
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:20:19 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:51:17: error: lvalue required as left operand of assignment
+   51 |      &pArray[i] = aux;
+      |                 ^
+10:20:34 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:51:19: error: lvalue required as left operand of assignment
+   51 |      (pArray + 2) = aux;
+      |                   ^
+10:23:03 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:54:1: error: expected declaration or statement at end of input
+   54 | }
+      | ^
+..\src\1_Borrar_Primer_Ocurrencia.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+10:23:09 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:47:42: error: expected statement before ')' token
+   47 |    if (*(pArray + i) != numeroParaBorrar)) {
+      |                                          ^
+..\src\1_Borrar_Primer_Ocurrencia.c:47:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   47 |    if (*(pArray + i) != numeroParaBorrar)) {
+      |    ^~
+..\src\1_Borrar_Primer_Ocurrencia.c:47:44: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   47 |    if (*(pArray + i) != numeroParaBorrar)) {
+      |                                            ^
+..\src\1_Borrar_Primer_Ocurrencia.c:54:1: error: expected declaration or statement at end of input
+   54 | }
+      | ^
+..\src\1_Borrar_Primer_Ocurrencia.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+   54 | }
+      | ^
+10:23:26 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:29:43 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:30:06 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:64:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   64 |   printf(contNoCoindicencias);
+      |          ^~~~~~~~~~~~~~~~~~~
+      |          |
+      |          int
+In file included from ..\src\1_Borrar_Primer_Ocurrencia.c:11:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'int'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:30:14 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:64:10: error: invalid type argument of unary '*' (have 'int')
+   64 |   printf(*contNoCoindicencias);
+      |          ^~~~~~~~~~~~~~~~~~~~
+10:30:23 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:64:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   64 |   printf(contNoCoindicencias);
+      |          ^~~~~~~~~~~~~~~~~~~
+      |          |
+      |          int
+In file included from ..\src\1_Borrar_Primer_Ocurrencia.c:11:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'int'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:30:31 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:31:32 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:32:03 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:32:37 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:32:55 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:33:29 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:2: error: variable-sized object may not be initialized
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |  ^~~
+..\src\1_Borrar_Primer_Ocurrencia.c:44:23: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                       ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:23: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:25: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                         ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:25: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:27: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                           ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:27: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:29: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                             ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:29: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:31: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                               ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:31: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:33: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                                 ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:33: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:35: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2};
+      |                                   ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:35: note: (near initialization for 'aux')
+10:33:43 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:2: error: variable-sized object may not be initialized
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |  ^~~
+..\src\1_Borrar_Primer_Ocurrencia.c:44:23: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                       ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:23: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:25: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                         ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:25: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:27: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                           ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:27: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:29: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                             ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:29: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:31: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                               ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:31: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:33: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                                 ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:33: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:35: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                                   ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:35: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:37: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                                     ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:37: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:39: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                                       ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:39: note: (near initialization for 'aux')
+..\src\1_Borrar_Primer_Ocurrencia.c:44:41: warning: excess elements in array initializer
+   44 |  int aux[tamArray] = {2,3,4,5,6,7,2,1,2,3};
+      |                                         ^
+..\src\1_Borrar_Primer_Ocurrencia.c:44:41: note: (near initialization for 'aux')
+10:33:54 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:34:10 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:34:57 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'main':
+..\src\1_Borrar_Primer_Ocurrencia.c:22:20: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   22 |  int* tamNumeros = 10;
+      |                    ^~
+..\src\1_Borrar_Primer_Ocurrencia.c:26:44: error: invalid operands to binary * (have 'unsigned int' and 'int *')
+   26 |  if ((pNumeros = (int*) malloc(sizeof(int) * tamNumeros)) != NULL)
+      |                                            ^
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:6: error: size of array 'aux' has non-integer type
+   44 |  int aux[tamArray];
+      |      ^~~
+..\src\1_Borrar_Primer_Ocurrencia.c:53:21: warning: comparison between pointer and integer
+   53 |   for (int i = 0; i < tamArray; i++) {
+      |                     ^
+10:35:05 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'main':
+..\src\1_Borrar_Primer_Ocurrencia.c:30:29: warning: passing argument 2 of 'borrarOcurrencia' makes pointer from integer without a cast [-Wint-conversion]
+   30 |  borrarOcurrencia(pNumeros, tamNumeros, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             int
+..\src\1_Borrar_Primer_Ocurrencia.c:16:40: note: expected 'int *' but argument is of type 'int'
+   16 | int borrarOcurrencia(int *pArray, int* tamArray, int numeroParaBorrar);
+      |                                   ~~~~~^~~~~~~~
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:6: error: size of array 'aux' has non-integer type
+   44 |  int aux[tamArray];
+      |      ^~~
+..\src\1_Borrar_Primer_Ocurrencia.c:53:21: warning: comparison between pointer and integer
+   53 |   for (int i = 0; i < tamArray; i++) {
+      |                     ^
+10:35:26 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:6: error: size of array 'aux' has non-integer type
+   44 |  int aux[&tamArray];
+      |      ^~~
+..\src\1_Borrar_Primer_Ocurrencia.c:53:21: warning: comparison between pointer and integer
+   53 |   for (int i = 0; i < &tamArray; i++) {
+      |                     ^
+10:35:39 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+..\src\1_Borrar_Primer_Ocurrencia.c: In function 'borrarOcurrencia':
+..\src\1_Borrar_Primer_Ocurrencia.c:44:6: error: size of array 'aux' has non-integer type
+   44 |  int aux[&tamArray];
+      |      ^~~
+10:35:49 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:36:00 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:36:25 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:36:33 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:36:43 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+Info: Nothing to build for 1_Borrar_Primer_Ocurrencia
+10:37:22 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
+10:37:49 **** Incremental Build of configuration Debug for project 1_Borrar_Primer_Ocurrencia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\1_Borrar_Primer_Ocurrencia.o" "..\\src\\1_Borrar_Primer_Ocurrencia.c" 
+gcc -o 1_Borrar_Primer_Ocurrencia.exe "src\\1_Borrar_Primer_Ocurrencia.o" 
